@@ -108,7 +108,7 @@ May 2018 - Dec 2023
 
 ## Certificates
 The best way to showcase skills is by doing and sharing your job done but sometimes certificates appear to be as an indirect result. Here's a list of the ones I have (in reverse-chronological order, with the date of completion in brackets):
-- [IBM IBM Data Science Professional]([https://www.coursera.org/account/accomplishments/professional-cert/LRQ498UKBBSJ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof](https://www.coursera.org/account/accomplishments/specialization/XQD6FNV9Q5FB)) (Dec 2023) (Coursera - IBM)
+- [IBM Data Science Professional](https://www.coursera.org/account/accomplishments/specialization/XQD6FNV9Q5FB) (Dec 2023) (Coursera - IBM)
 - [Tableau](https://www.linkedin.com/learning/certificates/814d91fd0c6ab19bb16c9d29fd23fb3a7915ad908637ed0b5ba19f5684ac1dc5) (Jan 2023) (Linkedin Learning)
 
 ## Contacts
