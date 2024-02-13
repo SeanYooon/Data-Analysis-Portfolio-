@@ -6,7 +6,7 @@ I am deeply fascinated by the potential of data to drive decision-making and pro
 
 Outside of academics and work, I am committed to continuous learning and stay updated on the latest advancements in data analytics tools and techniques. I am eager to contribute my technical expertise and analytical prowess to projects that drive innovation and create tangible impact.
 
-You can view my CV [pdf](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/Seokhyun%20Yoon%20resume.pdf). 
+You can view my resume [pdf](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/Seokhyun%20Yoon%20resume.pdf). 
 
 This repository to showcase of my skills, featuring projects that demonstrate my proficiency in data analysis, statistical modeling, and problem-solving. I am excited to embark on my journey as a data analyst and eager to tackle new challenges in the ever-evolving field of data science.
 
