@@ -4,8 +4,6 @@ Hello, I'm Seokhyun! With a Bachelor of Science in Statistics and a certificate 
 
 I am deeply fascinated by the potential of data to drive decision-making and problem-solving across various domains. Whether it's exploring precipitation patterns or building predictive models for housing prices, I thrive on the challenge of unraveling complex datasets to extract actionable insights.
 
-In addition to my academic pursuits, I have practical experience in diverse work settings, including serving in the Korean Army and working as a barista. These experiences have honed my organizational skills, teamwork abilities, and attention to detail, which I believe are essential traits for success in the field of data analysis.
-
 Outside of academics and work, I am committed to continuous learning and stay updated on the latest advancements in data analytics tools and techniques. I am eager to contribute my technical expertise and analytical prowess to projects that drive innovation and create tangible impact.
 
 You can view my CV [pdf](). 
