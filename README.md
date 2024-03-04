@@ -15,16 +15,11 @@ This repository to showcase of my skills, featuring projects that demonstrate my
 - [About](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#about)
 - [Portfolio Projects](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#portfolio-projects)
   - Python
-    - [Analyzing the Factors Contributing to the Success of a Movie](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#analyzing-the-factors-contributing-to-the-success-of-a-movie)
-    - [Tech Store Sales Analysis](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#tech-store-sales-analysis)  
-  - SQL
-    - [Covid 19 Data Exploration](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#covid-19-data-exploration)
-    - [Nashville Housing Data Cleaning](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#nashville-housing-data-cleaning)
+    - [Predicting Successful Falcon 9 First Stage Landings](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
   - R
     - [Legendary Pokémon Analysis (Study Project)](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#legendary-pok%C3%A9mon-analysis)
   - Excel / Google Sheets
   - Tableau---> [go to Tableau..](https://public.tableau.com/app/profile/tianna.parris)
-  - Power BI
   
 
 
