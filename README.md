@@ -30,8 +30,8 @@ This repository to showcase of my skills, featuring projects that demonstrate my
 In this section I will list data analytics projects briefly describing the technology stack used to solve cases.
 
 ### SpaceX Falcon 9 first stage Landing Prediction
-**Code:** [`coursera study project.ipynb`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb) \n
-          ['https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb'](Folium interactive map)
+**Code:** [`coursera study project.ipynb`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
+          ['Folium Interactive map.ipynb']['https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb'](Folium interactive map)
 
 **Goal:** To determine what factors contribute the most to a movie's success.
 
