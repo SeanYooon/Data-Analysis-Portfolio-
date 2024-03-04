@@ -15,7 +15,7 @@ This repository to showcase of my skills, featuring projects that demonstrate my
 - [About](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#about)
 - [Portfolio Projects](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#portfolio-projects)
   - Python
-    - [Predicting Successful Falcon 9 First Stage Landings](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
+    - [Predicting Successful Falcon 9 First Stage Landings](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#SpaceX-Falcon-9-first-stage-Landing-Prediction)
   - R
     - [Legendary Pokémon Analysis (Study Project)](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#legendary-pok%C3%A9mon-analysis)
   - Excel / Google Sheets
