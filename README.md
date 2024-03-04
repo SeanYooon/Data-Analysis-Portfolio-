@@ -33,8 +33,9 @@ In this section I will list data analytics projects briefly describing the techn
 **Code:** [`coursera study project.ipynb`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb),
           [`Folium Interactive map.ipynb`]('https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb')
 
-          [![Open in Jupyter Notebook](https://img.shields.io/badge/Open%20in%20Jupyter-Code-blue?logo=jupyter)](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
-[![Open Folium Interactive Map](https://img.shields.io/badge/Open%20Folium%20Map-Interactive%20Map-green)](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)
+- [Coursera Study Project Notebook](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
+- [Folium Interactive Map Notebook](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)
+
 
 
 **Goal:** Develop machine learning algorithms for predicting the successful landing of the Falcon 9 first stage.
