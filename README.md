@@ -31,17 +31,18 @@ In this section I will list data analytics projects briefly describing the techn
 
 ### SpaceX Falcon 9 first stage Landing Prediction
 **Code:** [`coursera study project.ipynb`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
-          [`Folium Interactive map.ipynb`]['https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb']
+          [`Folium Interactive map.ipynb`]('https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb')
 
-**Goal:** To determine what factors contribute the most to a movie's success.
+**Goal:** Develop machine learning algorithms for predicting the successful landing of the Falcon 9 first stage.
 
-**Description:** The project focused on analyzing a dataset of movies released between 1980 and 2022. The dataset included movie titles, ratings, genres, release dates, budgets, gross earnings, and other relevant information. The project involved loading the data, cleaning and preprocessing it, performing exploratory data analysis (EDA), analyzing the correlation between budget and gross earnings, and implemented Pearson’s correlation statistical analysis.
+**Description:** This capstone project focuses on leveraging machine learning techniques to predict whether the first stage of the Falcon 9 rocket will successfully land after launch. The successful landing of the first stage is crucial for reducing launch expenses and determining the overall cost-effectiveness of space missions. By accurately predicting landing outcomes, this project aims to provide valuable insights into launch cost estimation, influencing decision-making processes for companies entering the competitive space exploration market.
 
-**Skills:** data cleaning, data analysis, correlation matrices, hypothesis testing, data visualization.
+**Skills:** request api, data cleaning, Interactive map, data wrangling, data visualization, data analysis, correlation matrix
 
-**Technology:** Python, Pandas, Numpy, Seaborn, Matplotlib, SciPy.
+**Technology:** Python, Pandas, Numpy, Seaborn, Matplotlib, SQL, bs4, Folium
 
-**Results:** Using Python functions the analysis revealed that votes and budget have the highest correlation with gross earnings, while the company has no significant correlation.
+**Results:** Through Python functions, comprehensive data analysis, visualization, and machine learning model development were conducted, resulting in a robust predictive model capable of accurately forecasting Falcon 9 first stage landing outcomes.
+
 
 ### Tech Store Sales Analysis
 
