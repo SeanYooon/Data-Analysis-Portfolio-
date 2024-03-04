@@ -31,7 +31,7 @@ In this section I will list data analytics projects briefly describing the techn
 
 ### SpaceX Falcon 9 first stage Landing Prediction
 **Code:** [`coursera study project.ipynb`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
-          ['Folium Interactive map.ipynb']['https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb'](Folium interactive map)
+          [`Folium Interactive map.ipynb`]['https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb']
 
 **Goal:** To determine what factors contribute the most to a movie's success.
 
