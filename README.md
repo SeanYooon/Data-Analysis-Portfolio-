@@ -30,7 +30,7 @@ This repository to showcase of my skills, featuring projects that demonstrate my
 In this section I will list data analytics projects briefly describing the technology stack used to solve cases.
 
 ### Analyzing the Factors Contributing to the Success of a Movie
-**Code:** [`Analyzing the Factors Contributing to the Success of a Movie.ipynb`](https://github.com/tiannaparris/PortfolioProjects/blob/main/Analyzing%20the%20Factors%20Contributing%20to%20the%20Success%20of%20a%20Movie.ipynb)
+**Code:** [`coursera study project.ipynb`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
 
 **Goal:** To determine what factors contribute the most to a movie's success.
 
