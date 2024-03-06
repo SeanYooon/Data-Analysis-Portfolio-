@@ -59,46 +59,33 @@ In this section I will list data analytics projects briefly describing the techn
 
 **Technology:** R, tidyverse, glmnet, Xgboost
 
-**Results:** Utilizing advanced machine learning techniques like XGBoost in R, we can create a sophisticated predictive model for housing prices. By incorporating feature engineering, hyperparameter tuning, and ensemble methods, we can enhance the model's accuracy and robustness, providing accurate predictions for housing prices with high precision and flair. 
+**Results:** Utilizing advanced machine learning technique, XGBoost in R, we can create a sophisticated predictive model for housing prices. By incorporating feature engineering, hyperparameter tuning, and ensemble methods, we can enhance the model's accuracy and robustness, providing accurate predictions for housing prices with high precision and flair. 
 
 
-### Nashville Housing Data Cleaning
-**Code:** [`Data Cleaning Project Queries: Nashville Housing.sql`](https://github.com/tiannaparris/PortfolioProjects/blob/main/Data%20Cleaning%20Project%20Queries:%20Nashville%20Housing.sql)
+### Police complaints prediction 
+**Code:** [`Police-complaints-prediction.R`](https://github.com/jasondang01/440module2-jason-tyler-sean/blob/main/Final_Version.R)
 
-**Description:** The dataset contains a list of houses that have been sold in Nashville between 2013 and 2019. This project includes the following steps: data loading, data cleaning and preprocessing.
+**Description:** Police violence is a serious concern in North America and throughout the world. The Chicago Police Department (CPD) has been criticized for their potentially excessive use of deadly force. Regarding CPD, a particularly hard time in Chicago has been identified between 2000 and 2016, and after extensive FOIA (Freedom of Information Act) requests, information about CPD during this period (including formal complaints) are now in the public domain. In this module, you will predict which CPD officers had complaints filed against them in 2015 and 2016, given information from 2000 to 2014 involving prior complaints, salary, covariates, and awards.
 
+**Skills:** data cleaning, data imputation, feature engineering, machine learning, AUC, ROC. 
 
-**Skills:** DML(Data Manipulation Language), DQL (Data Query Language), DDL (Data Definition Language).
+**Technology:** R, ggplot2, dplyr, tidyr, random forest, Xgboost, pRoc
 
-**Technology:** SQL Server
+**Results:** Utilizing advanced machine learning techniques like random forest and XGBoost in R, we can create a sophisticated predictive model for housing prices. By incorporating feature engineering, hyperparameter tuning, and ensemble methods, we can enhance the model's accuracy and robustness, providing accurate predictions for housing prices with high precision. By computing the Area Under the Curve (AUC) and Receiver Operating Characteristic (ROC) metrics, we validate the model's performance, showcasing its ability to accurately predict police complaint occurrences with remarkable precision. 
 
+### Time Series Analysis of Rainfall Data
 
-### Covid 19 Data Exploration
-**Code:** [`COVID Portfolio Project.sql`](https://github.com/tiannaparris/PortfolioProjects/blob/main/COVID%20Portfolio%20Project.sql)
+**Goal:**  To analyze historical rainfall data for Perth, Australia, using time series analysis techniques
 
-**Description:** The dataset contains records of Covid-19 cases, deaths and vaccine records by country in 2020-2021. This project includes the following steps: data loading, data cleaning and preprocessing and EDA (exploratory data analysis).
+**Code:** [`Time-Series-Analysis-of-Rainfall-Data.Rmd`](https://github.com/bba32/stat485/blob/main/Rainfall%20Final.Rmd)
 
-**Skills:** Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+**Description:** This project involves the analysis of historical rainfall data for Perth, Australia, using time series analysis techniques. The main objectives are to identify patterns and trends in monthly average rainfall, select the most suitable ARIMA model for forecasting future rainfall, generate a 12-month precipitation forecast, and validate the forecast accuracy against actual data. By leveraging time series analysis, the project aims to provide valuable insights into Perth's rainfall patterns and develop a reliable forecasting model to support decision-making in various sectors such as water resource management and urban planning.
 
-**Technology:** SQL Server
+**Skills:** data cleaning, data analysis, data visualization, time series analysis, model selection, forecasting
 
+**Technology:** dplyr, tidyr, TSA, forecast. 
 
-
-### Legendary Pokémon Analysis
-
-**Goal:** To predict Pokémon status based on their characteristics and rank their importance in determining whether a Pokémon is classified as legendary.
-
-**Code:** [`Legendary Pokémon Analysis (Study Project)`](https://github.com/tiannaparris/PortfolioProjects/blob/main/Legendary%20Pok%C3%A9mon%20Analysis.ipynb)
-
-**Description:** The dataset contains a list of  Pokémon.  The records include their characteristics such as attack, defense, type and size. The project includes the following steps: data loading, data cleaning EDA (exploratory data analysis), analyzing characteristics of different Pokémon.
-
-**Skills:** data cleaning, data analysis, data visualization.
-
-**Technology:** Tidyverse 
-
-
-
-
+**Results:** Utilizing advanced time series analysis methods such as ARIMA modeling in R, we can develop a sophisticated forecasting model for monthly rainfall in Perth. By leveraging techniques like Box-Jenkins method and dynamics modeling, along with careful model selection and validation, we ensure the accuracy and reliability of our forecasts. Furthermore, by computing evaluation metrics like Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE), we validate the model's performance and demonstrate its capability to provide precise forecasts of rainfall patterns in the region.
 
 ## Education
 Simon Fraser University, Burnaby: 
