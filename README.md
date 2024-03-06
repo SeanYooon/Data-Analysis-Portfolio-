@@ -32,7 +32,8 @@ In this section I will list data analytics projects briefly describing the techn
 - [Coursera Study Project Notebook](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
 - [Folium Interactive Map Notebook](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)
 
-
+**Report**
+- [`spacex-final.pdf`](https://github.com/DoubleOne7/coursera/blob/main/spacex-final.pdf)
 
 **Goal:** Develop machine learning algorithms for predicting the successful landing of the Falcon 9 first stage.
 
@@ -80,6 +81,9 @@ In this section I will list data analytics projects briefly describing the techn
 
 **Code:** 
 - [`Time-Series-Analysis-of-Rainfall-Data.Rmd`](https://github.com/bba32/stat485/blob/main/Rainfall%20Final.Rmd)
+
+**report** 
+- [`485 Project Report Official.pdf`](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/485%20Project%20Report%20Official.pdf)
 
 **Description:** This project involves the analysis of historical rainfall data for Perth, Australia, using time series analysis techniques. The main objectives are to identify patterns and trends in monthly average rainfall, select the most suitable ARIMA model for forecasting future rainfall, generate a 12-month precipitation forecast, and validate the forecast accuracy against actual data. By leveraging time series analysis, the project aims to provide valuable insights into Perth's rainfall patterns and develop a reliable forecasting model to support decision-making in various sectors such as water resource management and urban planning.
 
