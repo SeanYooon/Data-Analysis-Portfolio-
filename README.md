@@ -29,8 +29,8 @@ In this section I will list data analytics projects briefly describing the techn
 
 ### SpaceX Falcon 9 first stage Landing Prediction
 **Code:** 
-- [Coursera Study Project Notebook](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
-- [Folium Interactive Map Notebook](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)
+- [`Coursera Study Project Notebook`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
+- [`Folium Interactive Map Notebook`](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)
 
 **Report**
 - [`spacex-final.pdf`](https://github.com/DoubleOne7/coursera/blob/main/spacex-final.pdf)
