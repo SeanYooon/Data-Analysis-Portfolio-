@@ -51,7 +51,7 @@ In this section I will list data analytics projects briefly describing the techn
 
 **Goal:** To make a best prediciton for the close test housing data set.
 
-**Code:** [`Tech Store Sales Analysis.ipynb`](https://github.com/tiannaparris/PortfolioProjects/blob/main/Tech%20Store%20Sales%20Analysis.ipynb)
+**Code:** [`Housing-price-prediction.Rmd`](https://github.com/DoubleOne7/Housing-prediciton-project/blob/main/Housing-price-prediction.Rmd)
 
 **Description:** This project focuses on leveraging machine learning techniques to predict the sale price (in USD) of residential properties in Connecticut, based on sales data encompassing 995,644 properties sold between 2019 and 2020. The dataset includes properties sold for less than $10,000,000. The training set constitutes 20% of the data, while the private leaderboard comprises 50% of the testing set. Covariates such as List_Year indicate the year of property listing, and Date_Recorded denotes the completion date of the sale. Additionally, the Address covariate contains the street name of the property, with street numbers suppressed.
 
