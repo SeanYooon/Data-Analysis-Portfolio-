@@ -15,13 +15,11 @@ This repository to showcase of my skills, featuring projects that demonstrate my
 - [About](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#about)
 - [Portfolio Projects](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#portfolio-projects)
   - Python
-    - [Predicting Successful Falcon 9 First Stage Landings](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#SpaceX-Falcon-9-first-stage-Landing-Prediction)
+    - [SpaceX Falcon 9 first stage Landing Prediction](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#SpaceX-Falcon-9-first-stage-Landing-Prediction)
   - R
-    - [Legendary Pokémon Analysis (Study Project)](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#legendary-pok%C3%A9mon-analysis)
-  - Excel / Google Sheets
-  - Tableau---> [go to Tableau..](https://public.tableau.com/app/profile/tianna.parris)
-  
-
+    - [Housing price prediction](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#legendary-pok%C3%A9mon-analysis)
+    - [Police complaints prediction](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#Police-complaints-prediction)
+    - [Time Series Analysis of Rainfall Data](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#Time-Series-Analysis-of-Rainfall-Data)
 
 - [Education](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#education)  
 - [Certificates](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#certificates)
@@ -49,7 +47,8 @@ In this section I will list data analytics projects briefly describing the techn
 
 ###  Housing price prediction
 
-**Goal:** To make a best prediciton for the close test housing data set.
+**Goal:** 
+- To make a best prediciton for the close test housing data set.
 
 **Code:** [`Housing-price-prediction.Rmd`](https://github.com/DoubleOne7/Housing-prediciton-project/blob/main/Housing-price-prediction.Rmd)
 
@@ -63,7 +62,9 @@ In this section I will list data analytics projects briefly describing the techn
 
 
 ### Police complaints prediction 
-**Code:** [`Police-complaints-prediction.R`](https://github.com/jasondang01/440module2-jason-tyler-sean/blob/main/Final_Version.R)
+
+**Code:** 
+- [`Police-complaints-prediction.R`](https://github.com/jasondang01/440module2-jason-tyler-sean/blob/main/Final_Version.R)
 
 **Description:** Police violence is a serious concern in North America and throughout the world. The Chicago Police Department (CPD) has been criticized for their potentially excessive use of deadly force. Regarding CPD, a particularly hard time in Chicago has been identified between 2000 and 2016, and after extensive FOIA (Freedom of Information Act) requests, information about CPD during this period (including formal complaints) are now in the public domain. In this module, you will predict which CPD officers had complaints filed against them in 2015 and 2016, given information from 2000 to 2014 involving prior complaints, salary, covariates, and awards.
 
@@ -77,7 +78,8 @@ In this section I will list data analytics projects briefly describing the techn
 
 **Goal:**  To analyze historical rainfall data for Perth, Australia, using time series analysis techniques
 
-**Code:** [`Time-Series-Analysis-of-Rainfall-Data.Rmd`](https://github.com/bba32/stat485/blob/main/Rainfall%20Final.Rmd)
+**Code:** 
+- [`Time-Series-Analysis-of-Rainfall-Data.Rmd`](https://github.com/bba32/stat485/blob/main/Rainfall%20Final.Rmd)
 
 **Description:** This project involves the analysis of historical rainfall data for Perth, Australia, using time series analysis techniques. The main objectives are to identify patterns and trends in monthly average rainfall, select the most suitable ARIMA model for forecasting future rainfall, generate a 12-month precipitation forecast, and validate the forecast accuracy against actual data. By leveraging time series analysis, the project aims to provide valuable insights into Perth's rainfall patterns and develop a reliable forecasting model to support decision-making in various sectors such as water resource management and urban planning.
 
