@@ -59,8 +59,7 @@ In this section I will list data analytics projects briefly describing the techn
 
 **Technology:** R, tidyverse, glmnet, Xgboost
 
-**Results:** Python functions that calculated and visually presented the sales data by month, city, and the most commonly sold items. Additionally, the reasons for the high frequency of these items being sold were analyzed and provided as insights.
-
+**Results:** Utilizing advanced machine learning techniques like XGBoost in R, we can create a sophisticated predictive model for housing prices. By incorporating feature engineering, hyperparameter tuning, and ensemble methods, we can enhance the model's accuracy and robustness, providing accurate predictions for housing prices with high precision and flair. 
 
 
 ### Nashville Housing Data Cleaning
