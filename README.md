@@ -53,7 +53,7 @@ In this section I will list data analytics projects briefly describing the techn
 **Code:** 
 - [`Housing-price-prediction.Rmd`](https://github.com/DoubleOne7/Housing-prediciton-project/blob/main/Housing-price-prediction.Rmd)
 
-**Description:** This project focuses on leveraging machine learning techniques to predict the sale price (in USD) of residential properties in Connecticut, based on sales data encompassing 995,644 properties sold between 2019 and 2020. The dataset includes properties sold for less than $10,000,000. The training set constitutes 20% of the data, while the private leaderboard comprises 50% of the testing set. Covariates such as List_Year indicate the year of property listing, and Date_Recorded denotes the completion date of the sale. Additionally, the Address covariate contains the street name of the property, with street numbers suppressed.
+**Description:** This group project focuses on leveraging machine learning techniques to predict the sale price (in USD) of residential properties in Connecticut, based on sales data encompassing 995,644 properties sold between 2019 and 2020. The dataset includes properties sold for less than $10,000,000. The training set constitutes 20% of the data, while the private leaderboard comprises 50% of the testing set. Covariates such as List_Year indicate the year of property listing, and Date_Recorded denotes the completion date of the sale. Additionally, the Address covariate contains the street name of the property, with street numbers suppressed.
 
 **Skills:** data cleaning, data analysis, data visualization, data imputation, meachine learning
 
@@ -85,7 +85,7 @@ In this section I will list data analytics projects briefly describing the techn
 **report** 
 - [`485 Project Report Official.pdf`](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/485%20Project%20Report%20Official.pdf)
 
-**Description:** This project involves the analysis of historical rainfall data for Perth, Australia, using time series analysis techniques. The main objectives are to identify patterns and trends in monthly average rainfall, select the most suitable ARIMA model for forecasting future rainfall, generate a 12-month precipitation forecast, and validate the forecast accuracy against actual data. By leveraging time series analysis, the project aims to provide valuable insights into Perth's rainfall patterns and develop a reliable forecasting model to support decision-making in various sectors such as water resource management and urban planning.
+**Description:** This group project involves the analysis of historical rainfall data for Perth, Australia, using time series analysis techniques. The main objectives are to identify patterns and trends in monthly average rainfall, select the most suitable ARIMA model for forecasting future rainfall, generate a 12-month precipitation forecast, and validate the forecast accuracy against actual data. By leveraging time series analysis, the project aims to provide valuable insights into Perth's rainfall patterns and develop a reliable forecasting model to support decision-making in various sectors such as water resource management and urban planning.
 
 **Skills:** data cleaning, data analysis, data visualization, time series analysis, model selection, forecasting
 
