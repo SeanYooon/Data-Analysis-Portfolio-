@@ -1,108 +1,132 @@
 # Seokhyun Yoon - Data Analyst Portfolio
-## About Me
-Hello, I'm Seokhyun! With a Bachelor of Science in Statistics and a certificate in IBM Data Science, I possess a strong foundation in statistical analysis and a passion for leveraging data to derive meaningful insights. My academic journey has equipped me with extensive knowledge in machine learning algorithms, data visualization, and predictive modeling.
 
-I am deeply fascinated by the potential of data to drive decision-making and problem-solving across various domains. Whether it's exploring precipitation patterns or building predictive models for housing prices, I thrive on the challenge of unraveling complex datasets to extract actionable insights.
+## 👋 About Me
 
-Outside of academics and work, I am committed to continuous learning and stay updated on the latest advancements in data analytics tools and techniques. I am eager to contribute my technical expertise and analytical prowess to projects that drive innovation and create tangible impact.
+Hello, I'm Seokhyun Yoon — a Statistics graduate from Simon Fraser University with a strong foundation in data analysis, machine learning, and business intelligence tools.
 
-You can view my resume [pdf](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/main/Seokhyun_Yoon_resume_new.pdf). 
+I’ve developed hands-on projects applying predictive modeling, time series analysis, and classification algorithms to real-world problems such as rainfall forecasting, housing price prediction, and rocket landing success rates.
 
-This repository to showcase of my skills, featuring projects that demonstrate my proficiency in data analysis, statistical modeling, and problem-solving. I am excited to embark on my journey as a data analyst and eager to tackle new challenges in the ever-evolving field of data science.
+I work primarily with **Python, R, SQL, Power BI, Tableau**, and version control tools like Git. I enjoy simplifying complex data into actionable insights and visual stories that help people make better decisions.
 
+This repository showcases selected projects that reflect my technical skill set and my ability to turn raw data into practical outcomes.  
+📄 [View My Resume (PDF)](Seokhyun_Yoon_resume_new.pdf)  
+🔗 [Visit My LinkedIn](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
 
-## Table of Contents
-- [About](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#about)
-- [Portfolio Projects](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#portfolio-projects)
+Let’s connect!
+
+---
+
+## 📁 Table of Contents
+
+- [About](#about)
+- [Portfolio Projects](#portfolio-projects)
   - Python
-    - [SpaceX Falcon 9 first stage Landing Prediction](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#SpaceX-Falcon-9-first-stage-Landing-Prediction)
+    - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction)
   - R
-    - [Housing price prediction](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#legendary-pok%C3%A9mon-analysis)
-    - [Police complaints prediction](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#Police-complaints-prediction)
-    - [Time Series Analysis of Rainfall Data](https://github.com/DoubleOne7/Data-Analysis-Portfolio-#Time-Series-Analysis-of-Rainfall-Data)
+    - [Housing Price Prediction](#housing-price-prediction)
+    - [Police Complaints Prediction](#police-complaints-prediction)
+    - [Rainfall Time Series Forecasting](#rainfall-time-series-forecasting)
+- [Education](#education)
+- [Certificates](#certificates)
+- [Contact](#contacts)
 
-- [Education](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#education)  
-- [Certificates](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#certificates)
-- [Contact](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/README.md#contacts)
-## Portfolio Projects
-In this section I will list data analytics projects briefly describing the technology stack used to solve cases.
+---
 
-### SpaceX Falcon 9 first stage Landing Prediction
-**Code:** 
-- [`Coursera Study Project Notebook`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)
-- [`Folium Interactive Map Notebook`](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)
+## 📊 Portfolio Projects
 
-**Report**
+Here are some of the projects I've completed, along with brief descriptions of the tools, goals, and results.
+
+---
+
+### 🚀 SpaceX Falcon 9 Landing Prediction
+
+**Code:**  
+- [`Study Notebook`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)  
+- [`Folium Interactive Map`](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)  
+
+**Report:**  
 - [`spacex-final.pdf`](https://github.com/DoubleOne7/coursera/blob/main/spacex-final.pdf)
 
-**Goal:** Develop machine learning algorithms for predicting the successful landing of the Falcon 9 first stage.
+**Goal:** Predict whether the first stage of the Falcon 9 rocket will successfully land after launch.
 
-**Description:** This capstone project focuses on leveraging machine learning techniques to predict whether the first stage of the Falcon 9 rocket will successfully land after launch. The successful landing of the first stage is crucial for reducing launch expenses and determining the overall cost-effectiveness of space missions. By accurately predicting landing outcomes, this project aims to provide valuable insights into launch cost estimation, influencing decision-making processes for companies entering the competitive space exploration market.
+**Description:** Applied machine learning to model landing outcomes for SpaceX rockets. This project aimed to help reduce costs and improve decision-making in commercial space launches.
 
-**Skills:** request api, data cleaning, Interactive map, data wrangling, data visualization, data analysis, correlation matrix
+**Skills:** API requests, data cleaning, mapping, visualization, correlation analysis  
+**Tech Stack:** Python, Pandas, NumPy, Seaborn, Matplotlib, SQL, BeautifulSoup, Folium
 
-**Technology:** Python, Pandas, Numpy, Seaborn, Matplotlib, SQL, bs4, Folium
+**Results:** Built a robust ML model using classification techniques that accurately predicted landing outcomes.
 
-**Results:** Through Python functions, comprehensive data analysis, visualization, and machine learning model development were conducted, resulting in a robust predictive model capable of accurately forecasting Falcon 9 first stage landing outcomes.
+---
 
+### 🏠 Housing Price Prediction
 
-###  Housing price prediction
-
-**Goal:** To make a best prediciton for the close test housing data set.
-
-**Code:** 
+**Code:**  
 - [`Housing-price-prediction.Rmd`](https://github.com/DoubleOne7/Housing-prediciton-project/blob/main/Housing-price-prediction.Rmd)
 
-**Description:** This group project focuses on leveraging machine learning techniques to predict the sale price (in USD) of residential properties in Connecticut, based on sales data encompassing 995,644 properties sold between 2019 and 2020. The dataset includes properties sold for less than $10,000,000. The training set constitutes 20% of the data, while the private leaderboard comprises 50% of the testing set. Covariates such as List_Year indicate the year of property listing, and Date_Recorded denotes the completion date of the sale. Additionally, the Address covariate contains the street name of the property, with street numbers suppressed.
+**Goal:** Predict real estate prices in Connecticut using advanced machine learning models.
 
-**Skills:** data cleaning, data analysis, data visualization, data imputation, meachine learning
+**Description:** Built a regression model on 995,000+ housing records from 2019–2020 to predict sale prices. Emphasized data cleaning, feature engineering, and model tuning.
 
-**Technology:** R, tidyverse, glmnet, Xgboost
+**Skills:** Data wrangling, imputation, modeling, EDA  
+**Tech Stack:** R, tidyverse, glmnet, XGBoost
 
-**Results:** Utilizing advanced machine learning technique, XGBoost in R, we can create a sophisticated predictive model for housing prices. By incorporating feature engineering, hyperparameter tuning, and ensemble methods, we can enhance the model's accuracy and robustness, providing accurate predictions for housing prices with high precision and flair. 
+**Results:** Achieved strong model performance using XGBoost with hyperparameter tuning and robust feature selection.
 
+---
 
-### Police complaints prediction 
+### 🚓 Police Complaints Prediction
 
-**Code:** 
-- [`Police-complaints-prediction.R`](https://github.com/jasondang01/440module2-jason-tyler-sean/blob/main/Final_Version.R)
+**Code:**  
+- [`Final_Version.R`](https://github.com/jasondang01/440module2-jason-tyler-sean/blob/main/Final_Version.R)
 
-**Description:** Police violence is a serious concern in North America and throughout the world. The Chicago Police Department (CPD) has been criticized for their potentially excessive use of deadly force. Regarding CPD, a particularly hard time in Chicago has been identified between 2000 and 2016, and after extensive FOIA (Freedom of Information Act) requests, information about CPD during this period (including formal complaints) are now in the public domain. In this module, you will predict which CPD officers had complaints filed against them in 2015 and 2016, given information from 2000 to 2014 involving prior complaints, salary, covariates, and awards.
+**Goal:** Predict which CPD officers would receive complaints in 2015–2016 using data from 2000–2014.
 
-**Skills:** data cleaning, data imputation, feature engineering, machine learning, AUC, ROC. 
+**Description:** Modeled officer misconduct likelihood based on salary, prior complaints, and service data. Explored fairness and ethical data analysis.
 
-**Technology:** R, ggplot2, dplyr, tidyr, random forest, Xgboost, pRoc
+**Skills:** Data cleaning, feature engineering, classification, ROC analysis  
+**Tech Stack:** R, ggplot2, dplyr, tidyr, randomForest, XGBoost, pROC
 
-**Results:** Utilizing advanced machine learning techniques like random forest and XGBoost in R, we can create a sophisticated predictive model for housing prices. By incorporating feature engineering, hyperparameter tuning, and ensemble methods, we can enhance the model's accuracy and robustness, providing accurate predictions for housing prices with high precision. By computing the Area Under the Curve (AUC) and Receiver Operating Characteristic (ROC) metrics, we validate the model's performance, showcasing its ability to accurately predict police complaint occurrences with remarkable precision. 
+**Results:** Built accurate classifiers using Random Forest and XGBoost. Evaluated models with AUC and ROC metrics.
 
-### Time Series Analysis of Rainfall Data
+---
 
-**Goal:**  To analyze historical rainfall data for Perth, Australia, using time series analysis techniques
+### 🌧️ Rainfall Time Series Forecasting
 
-**Code:** 
-- [`Time-Series-Analysis-of-Rainfall-Data.Rmd`](https://github.com/bba32/stat485/blob/main/Rainfall%20Final.Rmd)
+**Code:**  
+- [`Rainfall Final.Rmd`](https://github.com/bba32/stat485/blob/main/Rainfall%20Final.Rmd)
 
-**report** 
-- [`485 Project Report Official.pdf`](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/485%20Project%20Report%20Official.pdf)
+**Report:**  
+- [`Project Report (PDF)`](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/485%20Project%20Report%20Official.pdf)
 
-**Description:** This group project involves the analysis of historical rainfall data for Perth, Australia, using time series analysis techniques. The main objectives are to identify patterns and trends in monthly average rainfall, select the most suitable ARIMA model for forecasting future rainfall, generate a 12-month precipitation forecast, and validate the forecast accuracy against actual data. By leveraging time series analysis, the project aims to provide valuable insights into Perth's rainfall patterns and develop a reliable forecasting model to support decision-making in various sectors such as water resource management and urban planning.
+**Goal:** Forecast monthly rainfall in Perth, Australia using time series techniques.
 
-**Skills:** data cleaning, data analysis, data visualization, time series analysis, model selection, forecasting
+**Description:** Analyzed decades of rainfall data to build ARIMA-based forecasts. Focused on seasonal trends and long-term planning implications.
 
-**Technology:** dplyr, tidyr, TSA, forecast. 
+**Skills:** Time series modeling, residual diagnostics, visualization, forecasting  
+**Tech Stack:** R, dplyr, tidyr, TSA, forecast
 
-**Results:** Utilizing advanced time series analysis methods such as ARIMA modeling in R, we can develop a sophisticated forecasting model for monthly rainfall in Perth. By leveraging techniques like Box-Jenkins method and dynamics modeling, along with careful model selection and validation, we ensure the accuracy and reliability of our forecasts. Furthermore, by computing evaluation metrics like Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE), we validate the model's performance and demonstrate its capability to provide precise forecasts of rainfall patterns in the region.
+**Results:** Selected and validated ARIMA models using MAE and RMSE metrics. Delivered 12-month forecasts with 95% prediction intervals.
 
-## Education
-Simon Fraser University, Burnaby: 
-Bachelor of Science - Statistics,
-May 2018 - Dec 2023
+---
 
-## Certificates
-The best way to showcase skills is by doing and sharing your job done but sometimes certificates appear to be as an indirect result. Here's a list of the ones I have (in reverse-chronological order, with the date of completion in brackets):
-- [IBM Data Science Professional](https://www.coursera.org/account/accomplishments/specialization/XQD6FNV9Q5FB) (Dec 2023) (Coursera - IBM)
-- [Tableau](https://www.linkedin.com/learning/certificates/814d91fd0c6ab19bb16c9d29fd23fb3a7915ad908637ed0b5ba19f5684ac1dc5) (Jan 2023) (Linkedin Learning)
+## 🎓 Education
 
-## Contacts
-- LinkedIn: [@Seokhyun_Yoon](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
-- Email: 96ssamba@gmail.com
+**Simon Fraser University** — Burnaby, BC  
+Bachelor of Science in Statistics  
+*May 2018 – December 2023*
+
+---
+
+## 📜 Certificates
+
+While real projects are the best proof of skills, I’ve also completed these certifications:
+
+- [IBM Data Science Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/XQD6FNV9Q5FB) (Dec 2023)  
+- [Tableau for Data Analytics – LinkedIn Learning](https://www.linkedin.com/learning/certificates/814d91fd0c6ab19bb16c9d29fd23fb3a7915ad908637ed0b5ba19f5684ac1dc5) (Jan 2023)
+
+---
+
+## 📬 Contact
+
+- 📧 Email: [96ssamba@gmail.com](mailto:96ssamba@gmail.com)  
+- 💼 LinkedIn: [@Seokhyun_Yoon](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
