@@ -38,23 +38,51 @@ Here are some of the projects I've completed, along with brief descriptions of t
 
 ---
 
-### 🚀 SpaceX Falcon 9 Landing Prediction
+# 🚀 SpaceX Falcon 9 Landing Prediction – Classification + Mapping
 
-**Code:**  
-- [`Study Notebook`](https://github.com/DoubleOne7/coursera/blob/main/coursera-study-project.ipynb)  
-- [`Folium Interactive Map`](https://nbviewer.org/github/DoubleOne7/coursera/blob/main/lab_jupyter_launch_site_location%20%282%29.ipynb)  
+## 📊 Project Overview
+Predicted the landing success of SpaceX Falcon 9 first-stage boosters using a classification model. Combined machine learning with geospatial visualizations and API-sourced launch data to explore how mission factors influence outcomes.
 
-**Report:**  
-- [`spacex-final.pdf`](https://github.com/DoubleOne7/coursera/blob/main/spacex-final.pdf)
+---
 
-**Goal:** Predict whether the first stage of the Falcon 9 rocket will successfully land after launch.
+## 🔧 Tools & Techniques
+Python, Pandas, Scikit-learn, Folium, Plotly, SpaceX API  
+Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, API Integration
 
-**Description:** Applied machine learning to model landing outcomes for SpaceX rockets. This project aimed to help reduce costs and improve decision-making in commercial space launches.
+---
 
-**Skills:** API requests, data cleaning, mapping, visualization, correlation analysis  
-**Tech Stack:** Python, Pandas, NumPy, Seaborn, Matplotlib, SQL, BeautifulSoup, Folium
+## 🧠 Key Steps
+- Scraped and queried launch data via the SpaceX REST API  
+- Cleaned and transformed features (e.g., payload mass, orbit, site ID)  
+- Engineered new features like payload class and binary landing outcome  
+- Built and compared classification models: Logistic Regression, SVM, Random Forest  
+- Evaluated models using accuracy, precision, confusion matrix  
+- Created an interactive landing site map using Folium
 
-**Results:** Built a robust ML model using classification techniques that accurately predicted landing outcomes.
+---
+
+## ✅ Results
+- **Best model:** Random Forest Classifier (Accuracy ~87%)  
+- **Top predictive features:** Launch Site, Payload Mass, Orbit  
+- Created interactive dashboard to visualize outcomes by location
+
+---
+
+## 📊 Visuals
+
+### 📍 Landing Outcome Map (Folium)
+![Landing Map](images/falcon9_map.png)
+
+### 📊 Feature Importance
+![Feature Importance](images/falcon9_feature_importance.png)
+
+---
+
+## 📂 Files
+- [`SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite-2.ipynb`](SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite-2.ipynb) – full Jupyter notebook  
+- [`images/falcon9_map.png`](images/falcon9_map.png) – launch site outcome map  
+- [`images/falcon9_feature_importance.png`](images/falcon9_feature_importance.png) – model insights  
+- [`falcon9.pdf`](falcon9.pdf) – final PDF summary
 
 ---
 
