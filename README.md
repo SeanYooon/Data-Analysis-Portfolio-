@@ -170,6 +170,10 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 ---
 
 ## 📊 Visuals
+| Forecast Plot                                | Residual ACF          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
+
 ![Forecast Plot](images/Rplot.png)
 ![Residual ACF](images/rainfallacf.png)
 
