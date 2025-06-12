@@ -58,20 +58,34 @@ Here are some of the projects I've completed, along with brief descriptions of t
 
 ---
 
-### 🏠 Housing Price Prediction
+# 🏠 Housing Price Prediction – Connecticut Home Sales (2019–2020)
 
-**Code:**  
-- [`Housing-price-prediction.Rmd`](https://github.com/DoubleOne7/Housing-prediciton-project/blob/main/Housing-price-prediction.Rmd)
+## 📊 Project Overview
+Predicted residential housing prices in Connecticut using a dataset of 995,000+ property sales. Built a regression model using XGBoost, with focus on data cleaning, feature engineering, and model tuning.
 
-**Goal:** Predict real estate prices in Connecticut using advanced machine learning models.
+## 🔧 Tools & Technologies
+R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 
-**Description:** Built a regression model on 995,000+ housing records from 2019–2020 to predict sale prices. Emphasized data cleaning, feature engineering, and model tuning.
+## 🧠 Key Steps
+- Cleaned and prepared ~1M records from 2019–2020
+- Created new time-based and interaction features
+- Handled missing values through median/monthly imputation
+- Applied log transformation to reduce skew
+- Tuned XGBoost with randomized search + early stopping
 
-**Skills:** Data wrangling, imputation, modeling, EDA  
-**Tech Stack:** R, tidyverse, glmnet, XGBoost
+## 📈 Results
+- **Validation RMSE:** 1.15  
+- **Validation R²:** 0.26  
+- Top features: Assessed value, Town (Greenwich), interaction terms
 
-**Results:** Achieved strong model performance using XGBoost with hyperparameter tuning and robust feature selection.
+## 📊 Visuals
+![Actual vs Predicted](images/actual_vs_predicted.png)  
+![Feature Importance](images/feature_importance.png)
 
+## 📂 Files
+- `Housing-price-prediction.Rmd` – full model notebook
+- `data/` – cleaned CSVs
+- `images/` – result plots
 ---
 
 ### 🚓 Police Complaints Prediction
