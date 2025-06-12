@@ -118,6 +118,21 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 - `Housing-price-prediction.Rmd` – full model notebook
 - `data/` – cleaned CSVs
 - `images/` – result plots
+
+## 📂 Files
+- [`Housing-price-prediction.Rmd`](/files/Housing-price-prediction.Rmd) – full notebook
+- [`testing_data.csv`](data/Xte.csv) – Test feature set (for prediction)
+- [`testing_data.csv`](data/Xtr.csv) – Training feature set
+- [`testing_data.csv`](data/Ytr.csv) – Training labels (house prices)
+- [`pred0.csv`](data/pred0.csv) – Output predictions on `Xte`
+- 
+- 
+- 
+- [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
+- [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
+- - [`Rainfall_Report.pdf`](files/485 Project Report Official.pdf)
+
+
 ---
 
 ### 🚓 Police Complaints Prediction
