@@ -155,6 +155,8 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - Selected SARIMA(1,0,0)x(0,1,1)[12] based on lowest AIC
 - Forecasted 14 future months (months 107–120)
 - Validated predictions against real airport rainfall data
+- Sourced rainfall data from the Australian Bureau of Meteorology (BOM) official dataset
+- Compared SARIMA model against a dynamic regression benchmark with external covariates
 
 ---
 
