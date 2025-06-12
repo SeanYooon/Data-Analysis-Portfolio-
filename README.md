@@ -107,8 +107,12 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 - Top features: Assessed value, Town (Greenwich), interaction terms
 
 ## 📊 Visuals
-![Actual vs Predicted](images/housing-importance.png)  
-![Feature Importance](images/housing-log.png)
+
+| Actual vs Predicted                               | Feature Importance          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Actual vs Predicted](images/housing-importance.png)   | ![Feature Importance](images/housing-log.png) |
+
+
 
 ## 📂 Files
 - `Housing-price-prediction.Rmd` – full model notebook
@@ -174,8 +178,6 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 |-------------------------------------------------------|--------------------------------------------|
 |![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
 
-![Forecast Plot](images/Rplot.png)
-![Residual ACF](images/rainfallacf.png)
 
 ---
 
