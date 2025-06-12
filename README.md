@@ -107,8 +107,8 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 - Top features: Assessed value, Town (Greenwich), interaction terms
 
 ## 📊 Visuals
-![Actual vs Predicted](images/actual_vs_predicted.png)  
-![Feature Importance](images/feature_importance.png)
+![Actual vs Predicted](images/housing-importance.png)  
+![Feature Importance](images/housing-log.png)
 
 ## 📂 Files
 - `Housing-price-prediction.Rmd` – full model notebook
