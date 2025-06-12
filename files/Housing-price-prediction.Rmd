@@ -1,0 +1,419 @@
+---
+title: "Housing price prediction"
+output: pdf_document
+date: "2024-02-14"
+---
+
+**Predicting Housing Prices in Connecticut**
+\n
+
+In collaboration with a team, I worked on a project aimed at predicting the affordability of housing in Connecticut, a critical concern in North America. Our dataset comprised sales information for 995,644 residential properties sold in 2019 and 2020.
+
+The objective of the project was to develop a predictive model to estimate the sale price of residential properties. We focused on properties sold for less than $10,000,000, which constituted our target range. Leveraging machine learning techniques and statistical analysis, we aimed to provide valuable insights into housing affordability trends in Connecticut.
+
+Our team tackled this challenge by utilizing a portion of the data as a training set, which constituted 20% of the total dataset. We then applied our predictive model to a testing set, which included the private leaderboard, constituting 50% of the testing data.
+
+Key covariates such as List_Year and Date_Recorded were crucial in understanding the temporal dynamics of property sales, while the Address covariate provided insight into the geographical distribution of properties.
+
+By collaborating closely and leveraging our combined expertise in data analysis, statistics, and machine learning, we aimed to deliver accurate predictions of housing prices. Our ultimate goal was to contribute to the ongoing discourse on housing affordability and provide actionable insights for policymakers and stakeholders in Connecticut.
+ 
+```{r}
+getwd()
+```
+
+1. Read in the data
+```{r}
+getwd()
+```
+```{r}
+library(readr)
+library(glmnet)
+library(tidyverse)
+
+
+Xtr = read.csv("Xtr.csv")
+Xte = read.csv("Xte.csv")
+Ytr = read.csv("Ytr.csv")
+pred0 = read.csv("pred0.csv")
+
+head(Xtr)
+head(Xte)
+head(Ytr)
+head(pred0)
+```
+
+2. Data Engineering - Create Listing_Month and Year_Month
+```{r}
+
+Xtr$Date_Recorded = as.Date(Xtr$Date_Recorded, format = "%m/%d/%Y")
+Xtr$List_Month = months(Xtr$Date_Recorded)
+Xte$Date_Recorded = as.Date(Xte$Date_Recorded, format = "%m/%d/%Y")
+Xte$List_Month = months(Xte$Date_Recorded)
+
+Xtr$Year_Month = paste(Xtr$List_Year,"-",Xtr$List_Month)
+Xte$Year_Month = paste(Xte$List_Year,"-",Xte$List_Month)
+
+head(Xtr)
+head(Xte)
+```
+
+3. Data Cleaning
+
+Imputation by filling in median by year and month for Assessed Value because data is skewed by outliers
+```{r}
+years_months = c(Xtr$Year_Month, Xte$Year_Month)
+values = c(Xtr$Assessed_Value, Xte$Assessed_Value)
+for (year_month in unique(years_months)) {
+  mu = median(values[years_months == year_month], na.rm = T)
+  mask = Xtr$Year_Month == year_month & is.na(Xtr$Assessed_Value)
+  Xtr$Assessed_Value[mask] = mu
+  mask = Xte$Year_Month == year_month & is.na(Xte$Assessed_Value)
+  Xte$Assessed_Value[mask] = mu
+}
+
+```
+
+Add a small constant (e.g., 0.01) to avoid NA/NaN/Inf values in log transformation
+```{r}
+const = 0.00001
+Xtr$Assessed_Value <- log(Xtr$Assessed_Value + const)
+Xte$Assessed_Value <- log(Xte$Assessed_Value + const)
+```
+
+Data Cleaning - Imputation by filling in "Unspecified" for Missing Property_Type and Residential_Type
+```{r}
+Xtr <- Xtr %>%
+  mutate(Property_Type = ifelse(Property_Type == "", "unspecified", Property_Type))
+Xte <- Xte %>%
+  mutate(Property_Type = ifelse(Property_Type == "", "unspecified", Property_Type))
+Xtr <- Xtr %>%
+  mutate(Residential_Type = ifelse(Residential_Type == "", "unspecified", Residential_Type))
+Xte <- Xte %>%
+  mutate(Residential_Type = ifelse(Residential_Type == "", "unspecified", Residential_Type))
+```
+
+Imputation by filling in 2 missing List_Month in Xte by "June" because June is the Mode
+```{r}
+Xte[is.na(Xte$List_Month), "List_Month"]<-"June"
+#Data Cleaning - Imputing 1 Unknown Town value in Xte by Bridgeport
+Xte[Xte$Town == "***Unknown***", "Town"]<-"Bridgeport"
+#Data Cleaning - Imputation by filling in 2 missing Date_Recorded years in Xte by 2021 because 2021 is the mode
+Xte[is.na(Xte$List_Year), "Date_Recorded"]<-2021
+```
+
+Adding interaction effect between assessed year and list year, effect of inflation each year
+```{r}
+Xtr$Assessed_Value_List_Year <- Xtr$Assessed_Value * Xtr$List_Year
+Xte$Assessed_Value_List_Year <- Xte$Assessed_Value * Xte$List_Year
+```
+
+Transform month back to numeric
+```{r}
+month_to_numeric <- c("January" = 1, "February" = 2, "March" = 3, "April" = 4, "May" = 5, "June" = 6,
+                      "July" = 7, "August" = 8, "September" = 9, "October" = 10, "November" = 11, "December" = 12)
+Xtr$List_Month <- month_to_numeric[Xtr$List_Month]
+Xte$List_Month <- month_to_numeric[Xte$List_Month]
+Xtr$Assessed_Value_List_Month <- Xtr$Assessed_Value * Xtr$List_Month
+Xte$Assessed_Value_List_Month <- Xte$Assessed_Value * Xte$List_Month
+```
+
+Adding interactin between Year and Month
+```{r}
+Xtr$List_Year_List_Month <- Xtr$List_Year * Xtr$List_Month
+Xte$List_Year_List_Month <- Xte$List_Year * Xte$List_Month
+
+```
+
+4. Prediction - XGboost
+
+Convert the columns to factors (if not already)
+```{r}
+Xtr = Xtr[, c("Assessed_Value","Property_Type", "List_Month", "Town", "List_Year", "Residential_Type", "Assessed_Value_List_Year",
+              "Assessed_Value_List_Month", "List_Year_List_Month")]
+Xte = Xte[, c("Assessed_Value","Property_Type", "List_Month","Town", "List_Year", "Residential_Type","Assessed_Value_List_Year",
+              "Assessed_Value_List_Month", "List_Year_List_Month")]
+
+non_numeric_columns <- c("Property_Type", "Town", "Residential_Type")
+
+Xtr[, non_numeric_columns] <- lapply(Xtr[, non_numeric_columns], as.factor)
+Xte[, non_numeric_columns] <- lapply(Xte[, non_numeric_columns], as.factor)
+```
+
+
+Perform one-hot encoding manually
+```{r}
+Xtr <- cbind(Xtr, model.matrix(~ 0 + Property_Type  + Town + Residential_Type, data = Xtr))
+Xte <- cbind(Xte, model.matrix(~ 0 + Property_Type  + Town + Residential_Type, data = Xte))
+```
+
+Remove the original non-numeric columns
+```{r}
+library(xgboost)
+Xtr <- Xtr[, -which(names(Xtr) %in% non_numeric_columns)]
+Xte <- Xte[, -which(names(Xte) %in% non_numeric_columns)]
+
+dtrain <- xgb.DMatrix(data = as.matrix(Xtr), label = Ytr$Sale_Amount)
+dtest <- xgb.DMatrix(data = as.matrix(Xte))
+```
+
+5. finding best tuning parameters
+
+```{r message=TRUE, warning=FALSE, results='markup'}
+library(xgboost)
+library(dplyr)
+library(doSNOW)
+library(foreach)
+
+# 1. Set up parallel backend (reserve 3 cores)
+cores <- parallel::detectCores() - 3
+cl <- makeCluster(cores)
+registerDoSNOW(cl)
+
+# 2. Create and sample parameter grid
+full_grid <- expand.grid(
+  nrounds = c(80, 100,120),
+  max_depth = c(4, 5,6),
+  eta = c(0.05, 0.1,0.2),
+  gamma = c(0.1, 0.2,0.3),
+  colsample_bytree = c(0.5, 1,2),
+  min_child_weight = c(1),
+  subsample = c(0.5, 1)
+)
+
+set.seed(2025)
+param_grid <- full_grid %>% slice_sample(n = 15)
+n_tasks <- nrow(param_grid)
+
+# 3. Set up progress bar
+pb <- txtProgressBar(min = 0, max = n_tasks, style = 3)
+progress <- function(n) setTxtProgressBar(pb, n)
+opts <- list(progress = progress)
+
+# 4. Run parallel hyperparameter tuning
+results <- foreach(i = 1:n_tasks,
+                   .combine = bind_rows,
+                   .packages = c("xgboost", "dplyr"),
+                   .options.snow = opts) %dopar% {
+  current <- param_grid[i, ]
+  
+  # Local copy of DMatrix (safe for parallel)
+  dtrain_local <- xgb.DMatrix(data = as.matrix(Xtr), label = Ytr$Sale_Amount)
+  
+  # Define model parameters
+  params <- list(
+    objective = "reg:squarederror",
+    max_depth = current$max_depth,
+    eta = current$eta,
+    gamma = current$gamma,
+    colsample_bytree = current$colsample_bytree,
+    min_child_weight = current$min_child_weight,
+    subsample = current$subsample
+  )
+  
+  # Run cross-validation
+  cv <- xgb.cv(
+    params = params,
+    data = dtrain_local,
+    nrounds = current$nrounds,
+    nfold = 5,
+    metrics = "rmse",
+    verbose = 0,
+    early_stopping_rounds = 10,
+    maximize = FALSE
+  )
+  
+  result <- cbind(current,
+                  best_iteration = cv$best_iteration,
+                  best_rmse = min(cv$evaluation_log$test_rmse_mean),
+                  combo_id = i)
+  return(result)
+}
+
+# 5. Clean up
+stopCluster(cl)
+close(pb)
+cat("✅ Tuning complete.\n")
+```
+
+```{r}
+# 6. Show best result
+#best_result <- results %>% arrange(best_rmse) %>% slice(1)
+#print(best_result)
+
+library(tibble)  # if not already loaded
+best_result <- results %>% arrange(best_rmse) %>% dplyr::slice(1)
+
+#> best_result
+# A tibble: 1 × 10
+#  nrounds max_depth   eta gamma colsample_bytree
+#    <dbl>     <dbl> <dbl> <dbl>            <dbl>
+#1     100         5   0.1   0.2                1
+
+best_params <- list(
+  eta = 0.1,
+  max_depth = 5,
+  gamma = 0.2,
+  colsample_bytree = 1,
+  min_child_weight = 1,
+  subsample = 1,
+  nrounds = 100
+)
+
+best_result = as_tibble(best_params)
+```
+
+6. Specify XGBoost Parameters
+```{r}
+#params <- list(
+#  objective = "reg:squarederror",  # Regression task
+#  booster = "gbtree",             # Tree-based model
+#  eta = 0.1,                      # Learning rate
+#  max_depth = 7                  # Maximum depth of trees
+#)
+
+
+# Convert the best params to a list for xgboost
+params <- list(
+  objective = "reg:squarederror",
+  booster = "gbtree",
+  eta = best_result$eta,
+  max_depth = best_result$max_depth,
+  gamma = best_result$gamma,
+  colsample_bytree = best_result$colsample_bytree,
+  min_child_weight = best_result$min_child_weight,
+  subsample = best_result$subsample
+)
+
+best_nrounds <- best_result$best_iteration
+```
+
+7. Train the XGBoost Model
+```{r}
+library(xgboost)
+final_model <- xgboost(
+  params = params,
+  data = dtrain,
+  nrounds = best_nrounds,
+  verbose = 1
+)
+```
+
+8. Make Predictions
+```{r}
+predictions <- predict(final_model, dtest)
+```
+
+9. Save Predictions
+```{r}
+pred = pred0
+pred$Sale_Amount <- predictions
+write.table(pred, file = "pred.csv", quote = FALSE, row.names = FALSE, sep = ",")
+```
+
+```{r}
+# Feature Importance Bar Chart
+importance <- xgb.importance(model = final_model)
+xgb.plot.importance(importance, top_n = 3)
+```
+
+```{r}
+#Prediction vs Actual Plot
+plot(Ytr$Sale_Amount, predict(final_model, dtrain), 
+     xlab = "Actual", ylab = "Predicted",
+     main = "Actual vs Predicted Sale Price")
+abline(0, 1, col = "red")
+
+```
+
+
+```{r}
+plot(log(Ytr$Sale_Amount), 
+     log(predict(final_model, dtrain)), 
+     xlab = "Log(Actual Sale Price)", 
+     ylab = "Log(Predicted Sale Price)", 
+     main = "Log-Transformed Actual vs Predicted Sale Price",pch = ".", cex = 
+     )
+abline(0, 1, col = "red")
+
+```
+
+# revised version of randomized search for xgboost hyperparameter tuning
+
+
+```{r}
+# 📦 Load required libraries
+library(xgboost)
+library(dplyr)
+
+# 🧪 Split training and validation data
+set.seed(42)
+val_idx <- sample(1:nrow(x_matrix), 0.2 * nrow(x_matrix))
+train_idx <- setdiff(1:nrow(x_matrix), val_idx)
+
+x_train <- x_matrix[train_idx, ]
+y_train <- y_vector[train_idx]
+x_val <- x_matrix[val_idx, ]
+y_val <- y_vector[val_idx]
+
+dtrain <- xgb.DMatrix(data = x_train, label = y_train)
+dval <- xgb.DMatrix(data = x_val, label = y_val)
+
+# 🎯 Create large parameter grid
+full_grid <- expand.grid(
+  eta = c(0.01, 0.05, 0.1),
+  max_depth = c(4, 6, 8, 10),
+  subsample = c(0.6, 0.8, 1.0),
+  colsample_bytree = c(0.6, 0.8, 1.0),
+  min_child_weight = c(1, 3, 5),
+  gamma = c(0, 1, 5)
+)
+
+# 🎲 Randomly sample 15 combinations
+set.seed(123)
+param_grid <- full_grid %>% slice_sample(n = 15)
+
+# 🏁 Run random search
+results <- list()
+for (i in 1:nrow(param_grid)) {
+  params <- list(
+    objective = "reg:squarederror",
+    eval_metric = "rmse",
+    eta = param_grid$eta[i],
+    max_depth = param_grid$max_depth[i],
+    subsample = param_grid$subsample[i],
+    colsample_bytree = param_grid$colsample_bytree[i],
+    min_child_weight = param_grid$min_child_weight[i],
+    gamma = param_grid$gamma[i],
+    nthread = parallel::detectCores() - 1
+  )
+  
+  cat("\nRunning model", i, "with params:\n")
+  print(params)
+  
+  model <- xgb.train(
+    params = params,
+    data = dtrain,
+    nrounds = 1000,
+    watchlist = list(val = dval),
+    early_stopping_rounds = 20,
+    print_every_n = 50,
+    verbose = 0
+  )
+  
+  preds <- predict(model, dval)
+  rmse <- sqrt(mean((y_val - preds)^2))
+  r2 <- 1 - sum((y_val - preds)^2) / sum((y_val - mean(y_val))^2)
+  
+  results[[i]] <- cbind(param_grid[i, ], rmse = rmse, r2 = r2, best_iter = model$best_iteration)
+}
+
+# 🧾 Combine and sort results
+results_df <- do.call(rbind, results)
+results_df <- results_df[order(results_df$rmse), ]
+
+cat("\n✅ Top 5 parameter sets by RMSE:\n")
+print(head(results_df, 5))
+
+```
+
+
