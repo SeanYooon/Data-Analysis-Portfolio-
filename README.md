@@ -104,23 +104,52 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 
 ---
 
-### 🌧️ Rainfall Time Series Forecasting
+# 🌧️ Rainfall Forecasting – Time Series Analysis (Perth, Australia)
 
-**Code:**  
-- [`Rainfall Final.Rmd`](https://github.com/bba32/stat485/blob/main/Rainfall%20Final.Rmd)
+## 📊 Project Overview
+Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 months of historical weather data. Applied time series modeling techniques (Box-Jenkins methodology) to capture seasonality and make future projections.
 
-**Report:**  
-- [`Project Report (PDF)`](https://github.com/DoubleOne7/Data-Analysis-Portfolio-/blob/main/485%20Project%20Report%20Official.pdf)
+---
 
-**Goal:** Forecast monthly rainfall in Perth, Australia using time series techniques.
+## 🔧 Tools & Techniques
+- R, `forecast`, `tseries`, `ggplot2`
+- SARIMA modeling
+- Box-Jenkins methodology
+- Residual diagnostics (ACF/PACF)
+- Forecast validation against real data
 
-**Description:** Analyzed decades of rainfall data to build ARIMA-based forecasts. Focused on seasonal trends and long-term planning implications.
+---
 
-**Skills:** Time series modeling, residual diagnostics, visualization, forecasting  
-**Tech Stack:** R, dplyr, tidyr, TSA, forecast
+## 🧠 Key Steps
+- Loaded and cleaned 106 months of historical rainfall data
+- Conducted stationarity tests and seasonality checks
+- Ran a grid search over SARIMA configurations with AIC optimization
+- Selected SARIMA(1,0,0)x(0,1,1)[12] based on lowest AIC
+- Forecasted 14 future months (months 107–120)
+- Validated predictions against real airport rainfall data
 
-**Results:** Selected and validated ARIMA models using MAE and RMSE metrics. Delivered 12-month forecasts with 95% prediction intervals.
+---
 
+## 📈 Results
+- **Model used:** SARIMA(1,0,0)x(0,1,1)[12]
+- **Forecasted range:** Months 107–120
+- **RMSE:** 1.095  
+- **MAE:** 0.863  
+- **95% CI coverage:** Forecasts closely followed actual values
+
+---
+
+## 📊 Visuals
+![Forecast Plot](images/rainfall_forecast.pdf)
+![Residual ACF](images/residual_acf.png)
+
+---
+
+## 📂 Files
+- [`rainfall_forecasting.Rmd`](rainfall_forecasting.Rmd) – full notebook
+- [`data/rainfall.csv`](data/rainfall.csv) – historical rainfall data  
+- [`images/rainfall_forecast.png`](images/rainfall_forecast.png) – forecast plot  
+- [`images/residual_acf.png`](images/residual_acf.png) – residual autocorrelation chart
 ---
 
 ## 🎓 Education
