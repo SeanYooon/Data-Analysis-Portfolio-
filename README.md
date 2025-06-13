@@ -8,7 +8,7 @@ I’ve developed hands-on projects applying predictive modeling, time series ana
 
 I work primarily with **Python, R, SQL, Power BI, Tableau**, and version control tools like Git. I enjoy simplifying complex data into actionable insights and visual stories that help people make better decisions.
 
-This repository showcases selected projects that reflect my technical skill set and my ability to turn raw data into practical outcomes.  
+This repository showcases selected projects reflecting my technical skill set and ability to turn raw data into practical outcomes.  
 📄 [View My Resume (PDF)]([Sean Resume.pdf](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/600ea4aff841bf852fe868ec03f4e31772f46f97/Sean%20Resume.pdf))  
 🔗 [Visit My LinkedIn](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
 
@@ -34,7 +34,7 @@ Let’s connect!
 
 ## 📊 Portfolio Projects
 
-Here are some of the projects I've completed, along with brief descriptions of the tools, goals, and results.
+Here are some projects I've completed, along with brief descriptions of the tools, goals, and results.
 
 ---
 
@@ -64,7 +64,7 @@ Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, A
 ## ✅ Results
 - **Best model:** Random Forest Classifier (Accuracy ~87%)  
 - **Top predictive features:** Launch Site, Payload Mass, Orbit  
-- Created interactive dashboard to visualize outcomes by location
+- Created an interactive dashboard to visualize outcomes by location
 
 ---
 
@@ -119,7 +119,7 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 - [`testing_data.csv`](data/Xtr.csv) – Training feature set
 - [`testing_data.csv`](data/Ytr.csv) – Training labels (house prices)
 - [`pred0.csv`](data/pred0.csv) – Output predictions on `Xte`
-- [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf)
+- [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall Project Report
 
 
 ---
