@@ -70,11 +70,11 @@ Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, A
 
 ## 📊 Visuals
 
-### 📍 Landing Outcome Map (Folium)
-![Landing Map](images/falcon9_map.png)
+| Landing Outcome Map (Folium)                              | Feature Importance          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
 
-### 📊 Feature Importance
-![Feature Importance](images/falcon9_feature_importance.png)
+
 
 ---
 
