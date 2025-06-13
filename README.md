@@ -79,10 +79,8 @@ Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, A
 ---
 
 ## 📂 Files
-- [`SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite-2.ipynb`](SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite-2.ipynb) – full Jupyter notebook  
-- [`images/falcon9_map.png`](images/falcon9_map.png) – launch site outcome map  
-- [`images/falcon9_feature_importance.png`](images/falcon9_feature_importance.png) – model insights  
-- [`falcon9.pdf`](falcon9.pdf) – final PDF summary
+- [`SpaceX_Machine_Learning_Prediction.ipynb`](files/SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite.ipynb) – full Jupyter notebook  
+- [`falcon9.pdf`](files/spacex-final.pdf) – final PDF summary
 
 ---
 
