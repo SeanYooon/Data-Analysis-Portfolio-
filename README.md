@@ -190,7 +190,7 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - [`IDCJAC0009_009021_1800_Data.csv`](data/rainfall.csv) – historical rainfall data  
 - [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
 - [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
-- [`Rainfall_Report.pdf`](files/485 Project Report Official.pdf) - Rainfall report 
+- [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
 ---
 
 ## 🎓 Education
