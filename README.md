@@ -36,14 +36,12 @@ Let’s connect!
 
 Here are some projects I've completed, along with brief descriptions of the tools, goals, and results.
 
----
 
 # 🚀 SpaceX Falcon 9 Landing Prediction – Classification + Mapping
 
 ## 📊 Project Overview
 Predicted the landing success of SpaceX Falcon 9 first-stage boosters using a classification model. Combined machine learning with geospatial visualizations and API-sourced launch data to explore how mission factors influence outcomes.
 
----
 
 ## 🔧 Tools & Techniques
 Python, Pandas, Scikit-learn, Folium, Plotly, SpaceX API  
@@ -59,14 +57,12 @@ Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, A
 - Evaluated models using accuracy, precision, confusion matrix  
 - Created an interactive landing site map using Folium
 
----
 
 ## ✅ Results
 - **Best model:** Random Forest Classifier (Accuracy ~87%)  
 - **Top predictive features:** Launch Site, Payload Mass, Orbit  
 - Created an interactive dashboard to visualize outcomes by location
 
----
 
 ## 📊 Visuals
 
@@ -76,7 +72,6 @@ Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, A
 
 
 
----
 
 ## 📂 Files
 - [`SpaceX_Machine_Learning_Prediction.ipynb`](files/SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite.ipynb) – full Jupyter notebook  
@@ -143,16 +138,12 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 ## 📊 Project Overview
 Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 months of historical weather data. Applied time series modeling techniques (Box-Jenkins methodology) to capture seasonality and make future projections.
 
----
-
 ## 🔧 Tools & Techniques
 - R, `forecast`, `tseries`, `ggplot2`
 - SARIMA modeling
 - Box-Jenkins methodology
 - Residual diagnostics (ACF/PACF)
 - Forecast validation against real data
-
----
 
 ## 🧠 Key Steps
 - Loaded and cleaned 106 months of historical rainfall data
@@ -164,8 +155,6 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - Sourced rainfall data from the Australian Bureau of Meteorology (BOM) official dataset
 - Compared SARIMA model against a dynamic regression benchmark with external covariates
 
----
-
 ## 📈 Results
 - **Model used:** SARIMA(1,0,0)x(0,1,1)[12]
 - **Forecasted range:** Months 107–120
@@ -173,15 +162,10 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - **MAE:** 0.863  
 - **95% CI coverage:** Forecasts closely followed actual values
 
----
-
 ## 📊 Visuals
 | Forecast Plot                                | Residual ACF          |
 |-------------------------------------------------------|--------------------------------------------|
 |![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
-
-
----
 
 ## 📂 Files
 - [`Rainfall.Rmd`](rainfall_forecasting.Rmd) – full notebook
@@ -189,12 +173,11 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
 - [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
 - [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
+
 ---
 ## 📊 Customer Churn Analysis & Prediction Dashboard
 
 This project simulates a full analytics pipeline to analyze customer churn behavior using OLAP-style exploration, predictive modeling with PyTorch, and an interactive Tableau dashboard.
-
----
 
 ### 🚀 Overview
 
@@ -205,15 +188,11 @@ This project aims to identify key drivers of customer churn in a telecom company
 - Predictive churn classification using a neural network (PyTorch)  
 - Key KPIs and trends visualized using Tableau  
 
----
-
 ### 🧰 Tools Used
 
 - **Python** (pandas, PyTorch, scikit-learn, SMOTE)  
 - **Tableau Public** for dashboards  
 - **GitHub** for version control and documentation  
-
----
 
 ### 🔍 OLAP-Style Exploration Highlights
 
@@ -233,8 +212,6 @@ This project aims to identify key drivers of customer churn in a telecom company
   Grouped customers into pricing tiers: `Low`, `Medium`, `High`.  
   → Higher monthly charges correlated with higher churn.
 
----
-
 ### 🤖 Predictive Modeling
 
 The churn classification model was built in PyTorch and achieved:
@@ -242,8 +219,6 @@ The churn classification model was built in PyTorch and achieved:
 - **Accuracy:** ~79%  
 - **F1-score for churners:** ~0.58  
 - Applied class imbalance handling using SMOTE and weighted loss
-
----
 
 ### 📈 Tableau Dashboard
 
@@ -253,23 +228,15 @@ The dashboard summarizes churn performance and customer segmentation using KPI c
 |----------------|---------------------------|
 | ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
 
-| Churn by Gender | Churn by Contract Type |
-|------------------|------------------------|
-| ![Gender](images/telco4.png) | ![Contract](images/telco4.png) |
-
----
 ### 📂 Files  
 - [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
 - [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
 - [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn (1).csv) – Dataset 
 - [`README.md`]([Customer-Churn-Analysis/README.md](https://github.com/SeanYooon/telco-churn-analysis)) – Project details  
----
 
 ### 📚 Data Source
 
 - [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-
----
 
 ### 🔗 View Project
 
