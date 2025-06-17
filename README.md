@@ -230,7 +230,7 @@ The dashboard summarizes churn performance and customer segmentation using KPI c
 - [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
 - [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
 - [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
-- [`README.md`]([Customer-Churn-Analysis/README.md](https://github.com/SeanYooon/telco-churn-analysis)) – Project details  
+
 
 ### 📚 Data Source
 
