@@ -267,7 +267,7 @@ The dashboard summarizes churn performance and customer segmentation using KPI c
 
 ### 🔗 View Project
 
-GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/Data-Analysis-Portfolio-/tree/main/Customer-Churn-Analysis)
+GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/telco-churn-analysis/blob/main/README.md)
 
 ---
 
