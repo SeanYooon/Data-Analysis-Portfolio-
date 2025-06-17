@@ -47,8 +47,6 @@ Predicted the landing success of SpaceX Falcon 9 first-stage boosters using a cl
 Python, Pandas, Scikit-learn, Folium, Plotly, SpaceX API  
 Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, API Integration
 
----
-
 ## 🧠 Key Steps
 - Scraped and queried launch data via the SpaceX REST API  
 - Cleaned and transformed features (e.g., payload mass, orbit, site ID)  
@@ -231,7 +229,7 @@ The dashboard summarizes churn performance and customer segmentation using KPI c
 ### 📂 Files  
 - [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
 - [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
-- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn (1).csv) – Dataset 
+- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
 - [`README.md`]([Customer-Churn-Analysis/README.md](https://github.com/SeanYooon/telco-churn-analysis)) – Project details  
 
 ### 📚 Data Source
