@@ -251,12 +251,18 @@ The dashboard summarizes churn performance and customer segmentation using KPI c
 
 | KPI: Churn Rate | Churn by Internet Service |
 |----------------|---------------------------|
-| ![KPI Churn](tableau_screenshots/KPI_churn_rate.png) | ![Internet Type](tableau_screenshots/churn_by_internet_type.png) |
+| ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
 
 | Churn by Gender | Churn by Contract Type |
 |------------------|------------------------|
-| ![Gender](tableau_screenshots/churn_by_gender.png) | ![Contract](tableau_screenshots/churn_by_contract.png) |
+| ![Gender](images/telco4.png) | ![Contract](images/telco4.png) |
 
+---
+### 📂 Files  
+- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
+- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
+- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn (1).csv) – Dataset 
+- [`README.md`]([Customer-Churn-Analysis/README.md](https://github.com/SeanYooon/telco-churn-analysis)) – Project details  
 ---
 
 ### 📚 Data Source
