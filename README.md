@@ -190,6 +190,86 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
 - [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
 ---
+## 📊 Customer Churn Analysis & Prediction Dashboard
+
+This project simulates a full analytics pipeline to analyze customer churn behavior using OLAP-style exploration, predictive modeling with PyTorch, and an interactive Tableau dashboard.
+
+---
+
+### 🚀 Overview
+
+This project aims to identify key drivers of customer churn in a telecom company and provide business-friendly insights using statistical analysis and machine learning. The project demonstrates:
+
+- Data cleaning and warehouse-style dimensional modeling  
+- OLAP exploration (churn rates by contract, internet service, tenure, etc.)  
+- Predictive churn classification using a neural network (PyTorch)  
+- Key KPIs and trends visualized using Tableau  
+
+---
+
+### 🧰 Tools Used
+
+- **Python** (pandas, PyTorch, scikit-learn, SMOTE)  
+- **Tableau Public** for dashboards  
+- **GitHub** for version control and documentation  
+
+---
+
+### 🔍 OLAP-Style Exploration Highlights
+
+- **Churn Rate by Contract Type**  
+  Compared churn rates across `Month-to-month`, `One year`, and `Two year` contracts.  
+  → Found that short-term (Month-to-month) customers churned the most.
+
+- **Churn by Internet Service**  
+  Analyzed churn by service type: `DSL`, `Fiber optic`, or `No internet`.  
+  → Fiber optic users had the highest churn rate.
+
+- **Churn by Tenure Group**  
+  Created tenure buckets: `0–12m`, `13–24m`, `25–48m`, `49–72m`.  
+  → Longer-tenure customers churned significantly less.
+
+- **Monthly Charges Bucket Analysis**  
+  Grouped customers into pricing tiers: `Low`, `Medium`, `High`.  
+  → Higher monthly charges correlated with higher churn.
+
+---
+
+### 🤖 Predictive Modeling
+
+The churn classification model was built in PyTorch and achieved:
+
+- **Accuracy:** ~79%  
+- **F1-score for churners:** ~0.58  
+- Applied class imbalance handling using SMOTE and weighted loss
+
+---
+
+### 📈 Tableau Dashboard
+
+The dashboard summarizes churn performance and customer segmentation using KPI cards and bar charts.
+
+| KPI: Churn Rate | Churn by Internet Service |
+|----------------|---------------------------|
+| ![KPI Churn](tableau_screenshots/KPI_churn_rate.png) | ![Internet Type](tableau_screenshots/churn_by_internet_type.png) |
+
+| Churn by Gender | Churn by Contract Type |
+|------------------|------------------------|
+| ![Gender](tableau_screenshots/churn_by_gender.png) | ![Contract](tableau_screenshots/churn_by_contract.png) |
+
+---
+
+### 📚 Data Source
+
+- [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
+---
+
+### 🔗 View Project
+
+GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/Data-Analysis-Portfolio-/tree/main/Customer-Churn-Analysis)
+
+---
 
 ## 🎓 Education
 
