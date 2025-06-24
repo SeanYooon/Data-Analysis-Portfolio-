@@ -28,9 +28,9 @@ Let’s connect!
     - [Housing Price Prediction](#housing-price-prediction--connecticut-home-sales-20192020)
     - [Police Complaints Prediction](#police-complaints-prediction)
     - [Rainfall Time Series Forecasting](#rainfall-forecasting--time-series-analysis-perth-australia)
-- [Education](#education)
-- [Certificates](#certificates)
-- [Contact](#contact)
+- [Education](#-education)
+- [Certificates](#-certificates)
+- [Contact](#-contact)
 
 ---
 
