@@ -21,7 +21,7 @@ Let’s connect!
 - [About](#about)
 - [Portfolio Projects](#portfolio-projects)
   - Python
-    - [SpaceX Falcon 9 Landing Prediction](#SpaceX-Falcon-9-Landing-Prediction-Classification-&-Mapping)
+    - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction--classification--mapping)
     - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction)
   - R
     - [Housing Price Prediction](#housing-price-prediction)
@@ -164,6 +164,75 @@ The model is highly interpretable, accurate, and ready for use in ad performance
 
 
 ---
+## Customer Churn Analysis & Prediction Dashboard
+
+This project simulates a full analytics pipeline to analyze customer churn behavior using OLAP-style exploration, predictive modeling with PyTorch, and an interactive Tableau dashboard.
+
+### 🚀 Overview
+
+This project aims to identify key drivers of customer churn in a telecom company and provide business-friendly insights using statistical analysis and machine learning. The project demonstrates:
+
+- Data cleaning and warehouse-style dimensional modeling  
+- OLAP exploration (churn rates by contract, internet service, tenure, etc.)  
+- Predictive churn classification using a neural network (PyTorch)  
+- Key KPIs and trends visualized using Tableau  
+
+### 🧰 Tools Used
+
+- **Python** (pandas, PyTorch, scikit-learn, SMOTE)  
+- **Tableau Public** for dashboards  
+- **GitHub** for version control and documentation  
+
+### 🔍 OLAP-Style Exploration Highlights
+
+- **Churn Rate by Contract Type**  
+  Compared churn rates across `Month-to-month`, `One year`, and `Two year` contracts.  
+  → Found that short-term (Month-to-month) customers churned the most.
+
+- **Churn by Internet Service**  
+  Analyzed churn by service type: `DSL`, `Fiber optic`, or `No internet`.  
+  → Fiber optic users had the highest churn rate.
+
+- **Churn by Tenure Group**  
+  Created tenure buckets: `0–12m`, `13–24m`, `25–48m`, `49–72m`.  
+  → Longer-tenure customers churned significantly less.
+
+- **Monthly Charges Bucket Analysis**  
+  Grouped customers into pricing tiers: `Low`, `Medium`, `High`.  
+  → Higher monthly charges correlated with higher churn.
+
+### 🤖 Predictive Modeling
+
+The churn classification model was built in PyTorch and achieved:
+
+- **Accuracy:** ~79%  
+- **F1-score for churners:** ~0.58  
+- Applied class imbalance handling using SMOTE and weighted loss
+
+### 📈 Tableau Dashboard
+
+The dashboard summarizes churn performance and customer segmentation using KPI cards and bar charts.
+
+| KPI: Churn Rate | Churn by Internet Service |
+|----------------|---------------------------|
+| ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
+
+### 📂 Files  
+- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
+- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
+- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
+
+
+### 📚 Data Source
+
+- [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
+### 🔗 View Project
+
+GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/telco-churn-analysis/blob/main/README.md)
+
+---
+
 
 ## Housing Price Prediction – Connecticut Home Sales (2019–2020)
 
@@ -259,74 +328,6 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
 - [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
 - [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
-
----
-## Customer Churn Analysis & Prediction Dashboard
-
-This project simulates a full analytics pipeline to analyze customer churn behavior using OLAP-style exploration, predictive modeling with PyTorch, and an interactive Tableau dashboard.
-
-### 🚀 Overview
-
-This project aims to identify key drivers of customer churn in a telecom company and provide business-friendly insights using statistical analysis and machine learning. The project demonstrates:
-
-- Data cleaning and warehouse-style dimensional modeling  
-- OLAP exploration (churn rates by contract, internet service, tenure, etc.)  
-- Predictive churn classification using a neural network (PyTorch)  
-- Key KPIs and trends visualized using Tableau  
-
-### 🧰 Tools Used
-
-- **Python** (pandas, PyTorch, scikit-learn, SMOTE)  
-- **Tableau Public** for dashboards  
-- **GitHub** for version control and documentation  
-
-### 🔍 OLAP-Style Exploration Highlights
-
-- **Churn Rate by Contract Type**  
-  Compared churn rates across `Month-to-month`, `One year`, and `Two year` contracts.  
-  → Found that short-term (Month-to-month) customers churned the most.
-
-- **Churn by Internet Service**  
-  Analyzed churn by service type: `DSL`, `Fiber optic`, or `No internet`.  
-  → Fiber optic users had the highest churn rate.
-
-- **Churn by Tenure Group**  
-  Created tenure buckets: `0–12m`, `13–24m`, `25–48m`, `49–72m`.  
-  → Longer-tenure customers churned significantly less.
-
-- **Monthly Charges Bucket Analysis**  
-  Grouped customers into pricing tiers: `Low`, `Medium`, `High`.  
-  → Higher monthly charges correlated with higher churn.
-
-### 🤖 Predictive Modeling
-
-The churn classification model was built in PyTorch and achieved:
-
-- **Accuracy:** ~79%  
-- **F1-score for churners:** ~0.58  
-- Applied class imbalance handling using SMOTE and weighted loss
-
-### 📈 Tableau Dashboard
-
-The dashboard summarizes churn performance and customer segmentation using KPI cards and bar charts.
-
-| KPI: Churn Rate | Churn by Internet Service |
-|----------------|---------------------------|
-| ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
-
-### 📂 Files  
-- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
-- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
-- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
-
-
-### 📚 Data Source
-
-- [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-
-### 🔗 View Project
-
-GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/telco-churn-analysis/blob/main/README.md)
 
 ---
 
