@@ -77,6 +77,93 @@ Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, A
 - [`falcon9.pdf`](files/spacex-final.pdf) – final PDF summary
 
 ---
+## 📈 Marketing Campaign ROAS Prediction – Regression & Feature Optimization
+
+## 📊 Project Overview
+Built an XGBoost regression model to predict Return on Ad Spend (ROAS) using marketing campaign data. The goal was to support budget allocation decisions by identifying which campaign factors most significantly influence ad effectiveness. Outlier handling, feature engineering, and model interpretation were key components.
+
+## 🔧 Tools & Techniques
+Python, Pandas, Scikit-learn, XGBoost, Seaborn, Matplotlib
+Regression Modeling, Outlier Detection, Feature Importance, MAE/R² Evaluation
+
+## 🧠 Key Steps
+1. **Data Preprocessing**
+   - Removed currency symbols and standardized numeric columns
+   - Converted `Duration` from text to numeric
+   - One-hot encoded categorical features such as `Channel_Used`, `Location`, and `Language`
+
+2. **Feature Engineering**
+   - Created new features:
+     - `Approved_Conversion_Rate`
+     - `Impressions_per_Dollar`
+     - `Cost_per_Approved_Conversion`
+
+3. **Outlier Handling**
+   - Detected heavy-tailed ROAS distribution using box plots and histograms
+   - Removed top 1% ROAS outliers for model robustness and better generalization
+
+4. **Modeling**
+   - Trained XGBoost Regressor with GridSearchCV tuning
+   - Evaluated model using R² and MAE metrics
+   - Compared performance **with** and **without** outlier removal
+
+
+## 📈 Results
+
+| Condition             | R² Score | MAE    |
+|-----------------------|----------|--------|
+| With Outliers         | 0.9163   | 1.1743 |
+| Without Outliers      | 0.9280   | 0.5912 |
+
+> Removing outliers significantly improved model accuracy and reduced error.
+
+
+## 📊 Visuals
+
+| Model Analysis - with outlier                              | Actual vs Predicted - with outlier          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Actual vs Predicted](![Feature Importance](roas_model_analysis.png))   | ![Feature Importance](images/actual_vs_predicted_roas.png) |
+| Model Analysis - without outlier                              | Actual vs Predicted - without outlier          |
+|![Actual vs Predicted](images/roas_model_analysis_xoutlier.png)   | ![Feature Importance](images/actual_vs_predicted_roas_xoutlier.png) |
+
+## 🔍 Feature Importance (Top 5)
+
+1. `Approved_Conversion`
+2. `Impressions_per_Dollar`
+3. `Approved_Conversion_Rate`
+4. `age`
+5. `Conversion_Rate`
+
+These features showed strong predictive power, helping to explain variations in ROAS across different campaigns.
+
+## 🧠 Insights & Business Impact
+
+- Campaigns with high `Approved_Conversion` and efficient `Impressions_per_Dollar` tend to yield higher ROAS.
+- Target age group and conversion efficiency significantly affect return.
+- Cleaning data and removing noise (outliers) can enhance business decision-making by producing more stable models.
+
+## ✅ Conclusion
+
+This project demonstrates how machine learning can support digital marketing by:
+
+- Forecasting ROAS
+- Identifying key drivers of campaign profitability
+- Reducing waste on underperforming segments
+
+The model is highly interpretable, accurate, and ready for use in ad performance dashboards or media planning tools.
+
+## 📂 Files
+- [`ad-campaign-roas-optimizer.ipynb`](ad-campaign-roas-optimizer.ipynb) – full notebook
+- [`conversion_data.csv`](files/conversion_data.csv) – orignial data
+- images/ - Visual assets used in README and notebook
+
+📚 Data Source
+**Source:** [Kaggle - Clicks and Conversion Tracking](https://www.kaggle.com/datasets/loveall/clicks-conversion-tracking)
+
+📓 [View Jupyter Notebook](ad-campaign-roas-optimizer.ipynb)
+
+
+---
 
 # 🏠 Housing Price Prediction – Connecticut Home Sales (2019–2020)
 
@@ -242,93 +329,7 @@ The dashboard summarizes churn performance and customer segmentation using KPI c
 GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/telco-churn-analysis/blob/main/README.md)
 
 ---
-## 📈 Marketing Campaign ROAS Prediction – Regression & Feature Optimization
 
-## 📊 Project Overview
-Built an XGBoost regression model to predict Return on Ad Spend (ROAS) using marketing campaign data. The goal was to support budget allocation decisions by identifying which campaign factors most significantly influence ad effectiveness. Outlier handling, feature engineering, and model interpretation were key components.
-
-## 🔧 Tools & Techniques
-Python, Pandas, Scikit-learn, XGBoost, Seaborn, Matplotlib
-Regression Modeling, Outlier Detection, Feature Importance, MAE/R² Evaluation
-
-## 🧠 Key Steps
-1. **Data Preprocessing**
-   - Removed currency symbols and standardized numeric columns
-   - Converted `Duration` from text to numeric
-   - One-hot encoded categorical features such as `Channel_Used`, `Location`, and `Language`
-
-2. **Feature Engineering**
-   - Created new features:
-     - `Approved_Conversion_Rate`
-     - `Impressions_per_Dollar`
-     - `Cost_per_Approved_Conversion`
-
-3. **Outlier Handling**
-   - Detected heavy-tailed ROAS distribution using box plots and histograms
-   - Removed top 1% ROAS outliers for model robustness and better generalization
-
-4. **Modeling**
-   - Trained XGBoost Regressor with GridSearchCV tuning
-   - Evaluated model using R² and MAE metrics
-   - Compared performance **with** and **without** outlier removal
-
-
-## 📈 Results
-
-| Condition             | R² Score | MAE    |
-|-----------------------|----------|--------|
-| With Outliers         | 0.9163   | 1.1743 |
-| Without Outliers      | 0.9280   | 0.5912 |
-
-> Removing outliers significantly improved model accuracy and reduced error.
-
-
-## 📊 Visuals
-
-| Model Analysis - with outlier                              | Actual vs Predicted - with outlier          |
-|-------------------------------------------------------|--------------------------------------------|
-|![Actual vs Predicted](![Feature Importance](roas_model_analysis.png))   | ![Feature Importance](images/actual_vs_predicted_roas.png) |
-| Model Analysis - without outlier                              | Actual vs Predicted - without outlier          |
-|![Actual vs Predicted](images/roas_model_analysis_xoutlier.png)   | ![Feature Importance](images/actual_vs_predicted_roas_xoutlier.png) |
-
-## 🔍 Feature Importance (Top 5)
-
-1. `Approved_Conversion`
-2. `Impressions_per_Dollar`
-3. `Approved_Conversion_Rate`
-4. `age`
-5. `Conversion_Rate`
-
-These features showed strong predictive power, helping to explain variations in ROAS across different campaigns.
-
-## 🧠 Insights & Business Impact
-
-- Campaigns with high `Approved_Conversion` and efficient `Impressions_per_Dollar` tend to yield higher ROAS.
-- Target age group and conversion efficiency significantly affect return.
-- Cleaning data and removing noise (outliers) can enhance business decision-making by producing more stable models.
-
-## ✅ Conclusion
-
-This project demonstrates how machine learning can support digital marketing by:
-
-- Forecasting ROAS
-- Identifying key drivers of campaign profitability
-- Reducing waste on underperforming segments
-
-The model is highly interpretable, accurate, and ready for use in ad performance dashboards or media planning tools.
-
-## 📂 Files
-- [`ad-campaign-roas-optimizer.ipynb`](ad-campaign-roas-optimizer.ipynb) – full notebook
-- [`conversion_data.csv`](files/conversion_data.csv) – orignial data
-- images/ - Visual assets used in README and notebook
-
-📚 Data Source
-**Source:** [Kaggle - Clicks and Conversion Tracking](https://www.kaggle.com/datasets/loveall/clicks-conversion-tracking)
-
-📓 [View Jupyter Notebook](ad-campaign-roas-optimizer.ipynb)
-
-
----
 
 ## 🎓 Education
 
