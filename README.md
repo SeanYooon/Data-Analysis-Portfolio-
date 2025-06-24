@@ -286,7 +286,7 @@ Regression Modeling, Outlier Detection, Feature Importance, MAE/R² Evaluation
 
 | Model Analysis - with outlier                              | Actual vs Predicted - with outlier          |
 |-------------------------------------------------------|--------------------------------------------|
-|![Actual vs Predicted](images/roas_model_analysis.png)   | ![Feature Importance](images/actual_vs_predicted_roas.png) |
+|![Actual vs Predicted](![Feature Importance](https://raw.githubusercontent.com/SeanYooon/another-repo/main/images/feature_importance.png))   | ![Feature Importance](images/actual_vs_predicted_roas.png) |
 | Model Analysis - without outlier                              | Actual vs Predicted - without outlier          |
 |![Actual vs Predicted](images/roas_model_analysis_xoutlier.png)   | ![Feature Importance](images/actual_vs_predicted_roas_xoutlier.png) |
 
