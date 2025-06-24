@@ -18,8 +18,8 @@ Let’s connect!
 
 ## 📁 Table of Contents
 
-- [About](#about)
-- [Portfolio Projects](#portfolio-projects)
+- [About Me](/#-about-me)
+- Portfolio Projects
   - Python
     - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction---classification--mapping)
     - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction--regression--feature-optimization)
