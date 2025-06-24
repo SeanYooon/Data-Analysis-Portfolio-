@@ -21,7 +21,7 @@ Let’s connect!
 - [About](#about)
 - [Portfolio Projects](#portfolio-projects)
   - Python
-    - [SpaceX Falcon 9 Landing Prediction](#SpaceX-Falcon-9-Landing-Prediction–Classification-+-Mapping)
+    - [SpaceX Falcon 9 Landing Prediction](#SpaceX-Falcon-9-Landing-Prediction)
     - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction)
   - R
     - [Housing Price Prediction](#housing-price-prediction)
@@ -38,7 +38,8 @@ Let’s connect!
 Here are some projects I've completed, along with brief descriptions of the tools, goals, and results.
 
 
-## SpaceX Falcon 9 Landing Prediction – Classification + Mapping
+## SpaceX Falcon 9 Landing Prediction 
+  ##– Classification + Mapping
 
 ## 📊 Project Overview
 Predicted the landing success of SpaceX Falcon 9 first-stage boosters using a classification model. Combined machine learning with geospatial visualizations and API-sourced launch data to explore how mission factors influence outcomes.
