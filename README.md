@@ -29,7 +29,7 @@ Let’s connect!
     - [Rainfall Time Series Forecasting](#rainfall-time-series-forecasting)
 - [Education](#education)
 - [Certificates](#certificates)
-- [Contact](#contacts)
+- [Contact](#contact)
 
 ---
 
