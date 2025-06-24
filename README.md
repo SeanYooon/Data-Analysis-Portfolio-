@@ -21,7 +21,7 @@ Let’s connect!
 - [About](#about)
 - [Portfolio Projects](#portfolio-projects)
   - Python
-    - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction--classification--mapping)
+    - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction---classification--mapping)
     - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction)
   - R
     - [Housing Price Prediction](#housing-price-prediction)
