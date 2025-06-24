@@ -38,7 +38,7 @@ Let’s connect!
 Here are some projects I've completed, along with brief descriptions of the tools, goals, and results.
 
 
-# 🚀 SpaceX Falcon 9 Landing Prediction – Classification + Mapping
+## SpaceX Falcon 9 Landing Prediction – Classification + Mapping
 
 ## 📊 Project Overview
 Predicted the landing success of SpaceX Falcon 9 first-stage boosters using a classification model. Combined machine learning with geospatial visualizations and API-sourced launch data to explore how mission factors influence outcomes.
@@ -77,7 +77,7 @@ Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, A
 - [`falcon9.pdf`](files/spacex-final.pdf) – final PDF summary
 
 ---
-## 📈 Marketing Campaign ROAS Prediction – Regression & Feature Optimization
+## Marketing Campaign ROAS Prediction – Regression & Feature Optimization
 
 ## 📊 Project Overview
 Built an XGBoost regression model to predict Return on Ad Spend (ROAS) using marketing campaign data. The goal was to support budget allocation decisions by identifying which campaign factors most significantly influence ad effectiveness. Outlier handling, feature engineering, and model interpretation were key components.
@@ -165,7 +165,7 @@ The model is highly interpretable, accurate, and ready for use in ad performance
 
 ---
 
-# 🏠 Housing Price Prediction – Connecticut Home Sales (2019–2020)
+## Housing Price Prediction – Connecticut Home Sales (2019–2020)
 
 ## 📊 Project Overview
 Predicted residential housing prices in Connecticut using a dataset of 995,000+ property sales. Built a regression model using XGBoost, with focus on data cleaning, feature engineering, and model tuning.
@@ -203,7 +203,7 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 
 ---
 
-### 🚓 Police Complaints Prediction
+## Police Complaints Prediction
 
 **Code:**  
 - [`Final_Version.R`](https://github.com/jasondang01/440module2-jason-tyler-sean/blob/main/Final_Version.R)
@@ -219,7 +219,7 @@ R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
 
 ---
 
-# 🌧️ Rainfall Forecasting – Time Series Analysis (Perth, Australia)
+## Rainfall Forecasting – Time Series Analysis (Perth, Australia)
 
 ## 📊 Project Overview
 Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 months of historical weather data. Applied time series modeling techniques (Box-Jenkins methodology) to capture seasonality and make future projections.
@@ -261,7 +261,7 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
 
 ---
-## 📊 Customer Churn Analysis & Prediction Dashboard
+## Customer Churn Analysis & Prediction Dashboard
 
 This project simulates a full analytics pipeline to analyze customer churn behavior using OLAP-style exploration, predictive modeling with PyTorch, and an interactive Tableau dashboard.
 
