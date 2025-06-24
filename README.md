@@ -21,13 +21,13 @@ Let’s connect!
 - [About](#about)
 - [Portfolio Projects](#portfolio-projects)
   - Python
-    - [SpaceX Falcon 9 Landing Prediction](#-spacex-falcon-9-landing-prediction---classification--mapping)
-    - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction)
-    - [Customer Churn Analysis & Prediction Dashboard](
+    - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction---classification--mapping)
+    - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction--regression--feature-optimization)
+    - [Customer Churn Analysis & Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
   - R
-    - [Housing Price Prediction](#housing-price-prediction)
+    - [Housing Price Prediction](#housing-price-prediction--connecticut-home-sales-20192020)
     - [Police Complaints Prediction](#police-complaints-prediction)
-    - [Rainfall Time Series Forecasting](#rainfall-time-series-forecasting)
+    - [Rainfall Time Series Forecasting](#rainfall-forecasting--time-series-analysis-perth-australia)
 - [Education](#education)
 - [Certificates](#certificates)
 - [Contact](#contact)
@@ -39,7 +39,7 @@ Let’s connect!
 Here are some projects I've completed and brief descriptions of the tools, goals, and results.
 
 
-## 🚀 SpaceX Falcon 9 Landing Prediction - Classification & Mapping
+## SpaceX Falcon 9 Landing Prediction - Classification & Mapping
 
 ## 📊 Project Overview
 Predicted the landing success of SpaceX Falcon 9 first-stage boosters using a classification model. Combined machine learning with geospatial visualizations and API-sourced launch data to explore how mission factors influence outcomes.
