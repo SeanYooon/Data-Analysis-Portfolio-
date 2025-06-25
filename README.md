@@ -331,6 +331,91 @@ Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 
 - [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
 
 ---
+## Insurance Data Analyst Excel Project
+
+This is a comprehensive Excel-based data analysis project simulating a **Group Benefits cost analysis** for Sun Life Financial. It demonstrates advanced Excel skills, business insight generation, and professional dashboard design tailored to real-world insurance data.
+
+## 📊 Project Summary
+
+This project uses the [Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) to create a dynamic and interactive **benefits cost analysis tool**. The goal is to emulate the responsibilities of a data analyst at Sun Life, including:
+
+- Advanced data transformation and validation
+- Use of **VLOOKUP**, **nested formulas**, and **logical functions**
+- **Pivot table** creation for demographic and regional insights
+- **VBA automation** for summary generation and risk segmentation
+- **Executive-level dashboard** with KPIs and visualizations
+
+
+## ✅ Features & Deliverables
+
+### 📂 File Structure
+- `Raw_Data`: Cleaned and structured dataset (1,338 records × 7 columns)
+- `Lookup_Tables`: Age ranges, regional multipliers, and family size premiums
+- `Pivot_Analysis`: 3 interactive pivot tables for deep insights
+- `Dashboard`: Executive view with KPIs, charts, and slicers
+- `VBA_Calculation`: Macros to automate cost summaries and risk segmentation
+- `Documentation`: (Optional) Overview of methodology and assumptions
+
+
+
+## 💡 Business Insights Extracted
+
+- **Smokers account for a disproportionate share** of high-cost claims
+- **Regional cost multipliers** reveal up to 25% pricing variance
+- **Larger families incur 60% higher premiums** due to dependents
+- **Older age groups** correlate with higher risk levels
+
+
+## 🧠 Excel Skills Demonstrated
+
+| Skillset               | Tools Used                                      |
+|------------------------|--------------------------------------------------|
+| **Formulas**           | VLOOKUP, IF, nested formulas, COUNTIFS, etc.    |
+| **Pivot Tables**       | Filters, slicers, grouping, calculated fields   |
+| **Data Visualization** | Histogram, column chart, conditional formatting |
+| **VBA Macros**         | Cost summary automation, risk segmentation      |
+| **Dashboard Design**   | KPI cards, slicers, formatting, layout          |
+
+
+
+## 📈 KPI Metrics
+
+- **Average Annual Cost**
+- **Total Covered Lives**
+- **High-Risk Members (Smokers > $20,000)**
+- **Cost per Member**
+
+All are dynamically calculated and displayed on the dashboard for executive decision-making.
+
+
+
+## 🧾 Tools & Technologies
+
+- Microsoft Excel (Mac version)
+- Excel VBA (for automation)
+- Pivot Tables & Charts
+- Conditional Formatting
+- CSV to XLSM transformation
+
+
+
+## 🗂️ File Info
+
+- File Name: `insurance.xlsm`
+- Format: Excel macro-enabled workbook
+- Size: ~2–3 MB
+- Macros: 2 working macros with buttons
+
+
+## 🏁 Final Thoughts
+
+This project highlights both **technical Excel mastery** and **strategic thinking** required in a business analyst role. It aligns with the core competencies outlined in **Sun Life’s Data Analyst job descriptions** and serves as a strong portfolio piece for insurance, healthcare, or benefits-focused roles.
+
+
+## 📎 Dataset Credit
+
+- Source: [Kaggle – Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)
+---
 
 
 ## 🎓 Education
