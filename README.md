@@ -442,10 +442,10 @@ This project analyzes healthcare expenditure across Canadian provinces from 2000
 - YoY Growth Trend: National spending growth is trending downward, despite a sharp COVID-related increase in 2020. In contrast, Quebec shows a slightly increasing growth trend.
 - Spending Breakdown:
 Across provinces, health spending consistently follows the order:
-1. Hospitals
-2. Other (Public Health, Administration, Institutions)
-3. Drugs
-4. Physicians
+	1. Hospitals
+	2. Other (Public Health, Administration, Institutions)
+	3. Drugs
+	4. Physicians
 - Regional Comparison: Provinces with smaller populations (e.g., Yukon, PEI) have the highest per capita spending. Quebec ranks second in total expenditure but aligns closely with the national average in per capita terms.
 - Total Spending Increase: From 2000 to 2022, no province experienced a decline in total health expenditure.
 
@@ -454,12 +454,6 @@ Across provinces, health spending consistently follows the order:
 |-------------------------------------------------------|--------------------------------------------|
 |![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
 
-## 📈 Explore the Dashboard
-
-Visit the interactive report to explore:
-	-	💡 Pie charts comparing category breakdown by province
-	-	📉 YoY growth rate by province and national average
-	-	🎛️ Filterable views by province and category for deeper insights
 
 ---
 ## 🎓 Education
