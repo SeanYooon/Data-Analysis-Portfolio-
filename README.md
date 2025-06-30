@@ -29,7 +29,7 @@ Let’s connect!
     - [Police Complaints Prediction](#police-complaints-prediction)
     - [Rainfall Time Series Forecasting](#rainfall-forecasting--time-series-analysis-perth-australia)
   - Tableau
-    - [Canada Health Spending by Province (2000–2022)]()
+    - [Canada Health Spending by Province (2000–2022)](#-canada-health-spending-by-province-20002022)
 - [Education](#-education)
 - [Certificates](#-certificates)
 - [Contact](#-contact)
