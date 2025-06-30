@@ -28,6 +28,8 @@ Let’s connect!
     - [Housing Price Prediction](#housing-price-prediction--connecticut-home-sales-20192020)
     - [Police Complaints Prediction](#police-complaints-prediction)
     - [Rainfall Time Series Forecasting](#rainfall-forecasting--time-series-analysis-perth-australia)
+  - Tableau
+    - [Canada Health Spending by Province (2000–2022)]()
 - [Education](#-education)
 - [Certificates](#-certificates)
 - [Contact](#-contact)
@@ -416,8 +418,60 @@ This project highlights both **technical Excel mastery** and **strategic thinkin
 
 - Source: [Kaggle – Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)
 ---
+## 📊 Canada Health Spending by Province (2000–2022)
+
+🔗 [View the Interactive Tableau Report](https://public.tableau.com/views/CanadaHealthSpendingbyProvince20002022/Sheet92?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+📂 Source: [CIHI – National Health Expenditure Trends](https://www.cihi.ca/en/national-health-expenditure-trends)
 
 
+## 📌 Overview
+
+This project analyzes healthcare spending across Canadian provinces from 2000 to 2022 using official CIHI data. The goal is to visualize trends in budget allocation, per capita distribution, and year-over-year growth to uncover regional disparities and identify long-term patterns. Understanding these insights is critical for policymakers, insurers, and businesses seeking cost management strategies and equitable resource planning.
+
+
+
+## ⚙️ Tools & Techniques
+	•	Data Cleaning & Wrangling:
+Combined multiple datasets (spending, population, province) and performed data transformations in Excel and Tableau. Calculated per capita spending and grouped spending categories into simplified classifications (Hospitals, Drugs, Physicians, Other).
+	•	Visualization Platform:
+Tableau Public (pie charts, time-series graphs, calculated fields, and filters)
+	•	Key Metrics & Calculations:
+	•	Per Capita Spending
+(SUM([Spending M]) * 1,000,000) / (SUM([Population K]) * 1,000)
+	•	Year-over-Year Growth Rate
+(SUM([Spending M]) - LOOKUP(SUM([Spending M]), -1)) / ABS(LOOKUP(SUM([Spending M]), -1))
+
+
+
+🔍 Key Insights
+	•	Declining Growth Trend:
+Although there was a sharp increase in 2020 (COVID-19), the national YoY growth rate in health spending has steadily declined since 2000. Quebec, however, shows a slightly increasing growth trend in recent years.
+	•	Spending by Category:
+Across provinces, healthcare budgets are consistently distributed as:
+	1.	Hospitals
+	2.	Other Institutions, Public Health, and Administration
+	3.	Drugs
+	4.	Physicians
+	•	Regional Variations:
+Smaller provinces like PEI and Yukon show significantly higher per capita spending due to their small populations. Larger provinces like Ontario and Quebec spend more in total but are aligned with the national per capita average.
+	•	Quebec’s Position:
+Quebec ranks second in total healthcare spending after Ontario. Its per capita spending aligns closely with the Canadian average, indicating balanced budget allocation relative to population.
+	•	Consistent Growth in Spending:
+Total healthcare spending has increased every year from 2000 to 2022 — no year shows a decline.
+
+## 📊 Visuals
+| Forecast Plot                                | Residual ACF          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
+
+## 📈 Explore the Dashboard
+
+Visit the interactive report to explore:
+	•	💡 Pie charts comparing category breakdown by province
+	•	📉 YoY growth rate by province and national average
+	•	🎛️ Filterable views by province and category for deeper insights
+
+---
 ## 🎓 Education
 
 **Simon Fraser University** — Burnaby, BC  
