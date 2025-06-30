@@ -24,7 +24,7 @@ Let’s connect!
     - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction---classification--mapping)
     - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction--regression--feature-optimization)
     - [Customer Churn Analysis & Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
-    - [Ad Campaign Performance & ROAS Analysis](#customer-churn-analysis--prediction-dashboard)
+    - [Ad Campaign Performance & ROAS Analysis](#ad-campaign-performance--roas-analysis)
   - R
     - [Housing Price Prediction](#housing-price-prediction--connecticut-home-sales-20192020)
     - [Police Complaints Prediction](#police-complaints-prediction)
