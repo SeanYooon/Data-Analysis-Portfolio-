@@ -424,40 +424,34 @@ This project highlights both **technical Excel mastery** and **strategic thinkin
 📂 Source: [CIHI – National Health Expenditure Trends](https://www.cihi.ca/en/national-health-expenditure-trends)
 
 
-## 📌 Overview
+🧾 Overview
 
-This project analyzes healthcare spending across Canadian provinces from 2000 to 2022 using official CIHI data. The goal is to visualize trends in budget allocation, per capita distribution, and year-over-year growth to uncover regional disparities and identify long-term patterns. Understanding these insights is critical for policymakers, insurers, and businesses seeking cost management strategies and equitable resource planning.
+This project analyzes healthcare expenditure across Canadian provinces from 2000 to 2022. Using population and health spending data, I calculated per capita spending and year-over-year growth rates. The resulting Tableau dashboard offers interactive insights into national and regional trends in health funding.
 
-
-
-## ⚙️ Tools & Techniques
-	•	Data Cleaning & Wrangling:
-Combined multiple datasets (spending, population, province) and performed data transformations in Excel and Tableau. Calculated per capita spending and grouped spending categories into simplified classifications (Hospitals, Drugs, Physicians, Other).
-	•	Visualization Platform:
-Tableau Public (pie charts, time-series graphs, calculated fields, and filters)
-	•	Key Metrics & Calculations:
-	•	Per Capita Spending
+⚙️ Key Steps
+	•	Cleaned and merged spending, population, and province-level data
+	•	Created simplified spending categories for visualization clarity
+	•	Calculated key metrics including:
+	•	Per Capita Spending:
 (SUM([Spending M]) * 1,000,000) / (SUM([Population K]) * 1,000)
-	•	Year-over-Year Growth Rate
+	•	YoY Growth Rate:
 (SUM([Spending M]) - LOOKUP(SUM([Spending M]), -1)) / ABS(LOOKUP(SUM([Spending M]), -1))
+	•	Built pie charts and trend lines in Tableau
+	•	Enabled dynamic filters by province and spending type
 
-
-
-🔍 Key Insights
-	•	Declining Growth Trend:
-Although there was a sharp increase in 2020 (COVID-19), the national YoY growth rate in health spending has steadily declined since 2000. Quebec, however, shows a slightly increasing growth trend in recent years.
-	•	Spending by Category:
-Across provinces, healthcare budgets are consistently distributed as:
+🔍 Key Findings
+	•	YoY Growth Trend:
+National spending growth is trending downward, despite a sharp COVID-related increase in 2020. In contrast, Quebec shows a slightly increasing growth trend.
+	•	Spending Breakdown:
+Across provinces, health spending consistently follows the order:
 	1.	Hospitals
-	2.	Other Institutions, Public Health, and Administration
+	2.	Other (Public Health, Administration, Institutions)
 	3.	Drugs
 	4.	Physicians
-	•	Regional Variations:
-Smaller provinces like PEI and Yukon show significantly higher per capita spending due to their small populations. Larger provinces like Ontario and Quebec spend more in total but are aligned with the national per capita average.
-	•	Quebec’s Position:
-Quebec ranks second in total healthcare spending after Ontario. Its per capita spending aligns closely with the Canadian average, indicating balanced budget allocation relative to population.
-	•	Consistent Growth in Spending:
-Total healthcare spending has increased every year from 2000 to 2022 — no year shows a decline.
+	•	Regional Comparison:
+Provinces with smaller populations (e.g., Yukon, PEI) have the highest per capita spending. Quebec ranks second in total expenditure but aligns closely with the national average in per capita terms.
+	•	Total Spending Increase:
+From 2000 to 2022, no province experienced a decline in total health expenditure.
 
 ## 📊 Visuals
 | Forecast Plot                                | Residual ACF          |
