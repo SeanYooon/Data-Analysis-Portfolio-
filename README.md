@@ -236,6 +236,50 @@ GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/telco-churn
 
 ---
 
+# Ad Campaign Performance & ROAS Analysis
+
+## Project Overview
+Analyzed three ad campaigns (IDs: 916, 936, 1178) across key metrics (ROAS, CPC, Approved Conversions). Conducted statistical comparisons and built an XGBoost regression model to uncover performance drivers.
+
+
+## 🎯 Business Problem
+- **Question:** Which campaign strategy delivers the best ROAS?
+- Advertise with purpose: identifying cost-efficient campaigns and uncovering optimization opportunities.
+
+
+## 🧠 Analytical Approach
+
+1. **A/B Testing (Pairwise t-tests)**  
+   - Compared all campaign pairs for ROAS, CPC, and Approved Conversions  
+   - Found Campaign 1178 significantly different (less efficient), while 916 and 936 performed similarly
+
+2. **Predictive Modeling**  
+   - Trained XGBoost regression to predict ROAS  
+   - Evaluated model with MAE = 1.17, R² = 0.92  
+   - Identified top drivers: Approved_Conversion, Impressions_per_Dollar, Approved_Conversion_Rate
+
+## 📊 Key Visuals
+
+- **Campaign Comparison**  
+  ![ROAS, CPC, Approved Conversion by Campaign](images/campaign_bar_chart.png)
+
+## 🧮 Results & Insights
+- Campaign 1178 shows **higher conversions but is the least efficient**
+- Campaigns 916 & 936 deliver **strong returns and low cost**
+- Model confirms **Approved Conversion** and **efficiency metrics** drive ROAS
+
+## 💡 Recommendations
+1. **Prioritize Budget**: Shift ~70% to Campaigns 916 and 936
+2. **Audit Campaign 1178**: Evaluate targeting and creatives; pause if not ROAS-aligned
+3. **Continue Experimentation**: Run new A/B tests across segments and creatives
+
+## 📄 Full Report (PDF)
+
+For a complete business analysis, including A/B testing results, modeling methodology, visualizations, and actionable recommendations, view the full report:
+- [`Ad_Campaign_ROAS_Report.pdf`](files/Ad_Campaign_ROAS_Report.pdf) - Rainfall Project Report
+
+---
+
 
 ## Housing Price Prediction – Connecticut Home Sales (2019–2020)
 
