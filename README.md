@@ -24,6 +24,7 @@ Let’s connect!
     - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction---classification--mapping)
     - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction--regression--feature-optimization)
     - [Customer Churn Analysis & Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
+    - [Ad Campaign Performance & ROAS Analysis](#customer-churn-analysis--prediction-dashboard)
   - R
     - [Housing Price Prediction](#housing-price-prediction--connecticut-home-sales-20192020)
     - [Police Complaints Prediction](#police-complaints-prediction)
@@ -171,7 +172,7 @@ The model is highly interpretable, accurate, and ready for use in ad performance
 
 This project simulates a full analytics pipeline to analyze customer churn behavior using OLAP-style exploration, predictive modeling with PyTorch, and an interactive Tableau dashboard.
 
-### 🚀 Overview
+## 🚀 Overview
 
 This project aims to identify key drivers of customer churn in a telecom company and provide business-friendly insights using statistical analysis and machine learning. The project demonstrates:
 
@@ -180,13 +181,13 @@ This project aims to identify key drivers of customer churn in a telecom company
 - Predictive churn classification using a neural network (PyTorch)  
 - Key KPIs and trends visualized using Tableau  
 
-### 🧰 Tools Used
+## 🧰 Tools Used
 
 - **Python** (pandas, PyTorch, scikit-learn, SMOTE)  
 - **Tableau Public** for dashboards  
 - **GitHub** for version control and documentation  
 
-### 🔍 OLAP-Style Exploration Highlights
+## 🔍 OLAP-Style Exploration Highlights
 
 - **Churn Rate by Contract Type**  
   Compared churn rates across `Month-to-month`, `One year`, and `Two year` contracts.  
@@ -204,7 +205,7 @@ This project aims to identify key drivers of customer churn in a telecom company
   Grouped customers into pricing tiers: `Low`, `Medium`, `High`.  
   → Higher monthly charges correlated with higher churn.
 
-### 🤖 Predictive Modeling
+## 🤖 Predictive Modeling
 
 The churn classification model was built in PyTorch and achieved:
 
@@ -212,7 +213,7 @@ The churn classification model was built in PyTorch and achieved:
 - **F1-score for churners:** ~0.58  
 - Applied class imbalance handling using SMOTE and weighted loss
 
-### 📈 Tableau Dashboard
+## 📈 Tableau Dashboard
 
 The dashboard summarizes churn performance and customer segmentation using KPI cards and bar charts.
 
@@ -220,23 +221,23 @@ The dashboard summarizes churn performance and customer segmentation using KPI c
 |----------------|---------------------------|
 | ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
 
-### 📂 Files  
+## 📂 Files  
 - [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
 - [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
 - [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
 
 
-### 📚 Data Source
+## 📚 Data Source
 
 - [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
-### 🔗 View Project
+## 🔗 View Project
 
 GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/telco-churn-analysis/blob/main/README.md)
 
 ---
 
-# Ad Campaign Performance & ROAS Analysis
+## Ad Campaign Performance & ROAS Analysis
 
 ## Project Overview
 Analyzed three ad campaigns (IDs: 916, 936, 1178) across key metrics (ROAS, CPC, Approved Conversions). Conducted statistical comparisons and built an XGBoost regression model to uncover performance drivers.
@@ -276,7 +277,7 @@ Analyzed three ad campaigns (IDs: 916, 936, 1178) across key metrics (ROAS, CPC,
 ## 📄 Full Report (PDF)
 
 For a complete business analysis, including A/B testing results, modeling methodology, visualizations, and actionable recommendations, view the full report:
-- [`Ad_Campaign_ROAS_Report.pdf`](files/Ad_Campaign_ROAS_Report.pdf) - Rainfall Project Report
+- [`Ad_Campaign_ROAS_Report.pdf`](files/Ad_Campaign_ROAS_Report.pdf) 
 
 ---
 
