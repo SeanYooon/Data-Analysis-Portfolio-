@@ -264,6 +264,10 @@ Analyzed three ad campaigns (IDs: 916, 936, 1178) across key metrics (ROAS, CPC,
 - **Campaign Comparison**  
   ![ROAS, CPC, Approved Conversion by Campaign](images/campaign_bar_chart.png)
 
+  | ROAS, CPC, Approved Conversion by Campaign                 | Report          |
+|-------------------------------------------------------|--------------------------------------------|
+|![ROAS, CPC, Approved Conversion by Campaign](images/campaign_bar_chart.png))  | !(images/report.png-1.png) |
+
 ## 🧮 Results & Insights
 - Campaign 1178 shows **higher conversions but is the least efficient**
 - Campaigns 916 & 936 deliver **strong returns and low cost**
