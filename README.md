@@ -450,9 +450,9 @@ Across provinces, health spending consistently follows the order:
 - Total Spending Increase: From 2000 to 2022, no province experienced a decline in total health expenditure.
 
 ## 📊 Visuals
-| Forecast Plot                                | Residual ACF          |
+| Stacked Bar + Dot Line – Spending by Category and Total Trend                              | Line Chart – YoY Growth Rate (Canada vs Quebec vs BC)         |
 |-------------------------------------------------------|--------------------------------------------|
-|![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
+|![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
 
 
 ---
