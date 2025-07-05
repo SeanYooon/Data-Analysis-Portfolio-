@@ -25,6 +25,7 @@ Let’s connect!
     - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction--regression--feature-optimization)
     - [Customer Churn Analysis & Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
     - [Ad Campaign Performance & ROAS Analysis](#ad-campaign-performance--roas-analysis)
+    - [Credit risk prediction - scoring banking grade ML pipeline](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
   - R
     - [Housing Price Prediction](#housing-price-prediction--connecticut-home-sales-20192020)
     - [Police Complaints Prediction](#police-complaints-prediction)
