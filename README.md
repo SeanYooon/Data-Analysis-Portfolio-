@@ -182,6 +182,27 @@ This project aims to identify key drivers of customer churn in a telecom company
 - Predictive churn classification using a neural network (PyTorch)  
 - Key KPIs and trends visualized using Tableau  
 
+## 🏗️ Technical Architecture & Data Warehouse Approach
+
+### Dimensional Model Design
+- **Fact Table**: `customer_activity` - Core metrics (tenure, monthly_charges, total_charges, churn_flag)
+- **Dimension Tables**: 
+  - `customer_demographics` - Gender, age, partner status, dependents
+  - `service_details` - Phone, internet, streaming services, tech support  
+  - `contract_info` - Contract type, payment method, billing preferences
+
+### OLAP-Style Analysis Framework (Month-to-month: 42.7%, One year: 11.3%, Two year: 2.8%)
+- Service complexity impact on retention patterns
+- Demographics-based risk segmentation and cohort analysis
+- Tenure group performance with statistical significance testing
+
+### Healthcare Analytics Application
+This dimensional modeling approach directly transfers to:
+- Patient retention analysis across service lines and departments
+- Population health KPI reporting with demographic drill-downs
+- Clinical outcome tracking by patient characteristics and treatment complexity
+- Healthcare utilization pattern analysis and resource optimization
+
 ## 🧰 Tools Used
 
 - **Python** (pandas, PyTorch, scikit-learn, SMOTE)  
