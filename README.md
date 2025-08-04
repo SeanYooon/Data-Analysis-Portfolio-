@@ -594,6 +594,49 @@ Across provinces, health spending consistently follows the order:
 |-------------------------------------------------------|--------------------------------------------|
 |![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
 
+## 📊 Work Order Portfolio Analysis for Facility Management
+
+🔗 [View the Interactive Tableau Report](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3)  
+📂 Source: Internal Facility Management Work Order Data (2002–2021)(https://data.mendeley.com/datasets/cb8d2nsjss/1)  
+
+---
+
+## 🧾 Overview
+
+This project delivers a comprehensive analysis of 3.7 million maintenance work orders across a 12-university real estate portfolio. Using SQL, Python, and Tableau, I built executive dashboards, performance scorecards, and operational insights that benchmark site performance, identify cost optimization opportunities, and drive strategic facility management decisions.
+
+---
+
+## ⚙️ Key Steps
+
+- **Data Compilation:** Cleaned and merged work order, building, and weather data covering 3,573 buildings and 19 years of history  
+- **KPI Development:** Calculated Total Work Orders, Total Maintenance Spend, Avg Cost per Work Order, and Planned Maintenance Rate  
+- **Performance Benchmarking:** Created University-level and System-level cost comparisons using fixed LOD calculations in Tableau  
+- **Operational Analytics:** Developed charts for Work Order Volume, Cost Distribution, System Investment, and Resolution Efficiency  
+- **Business Insights:** Identified high‐cost outliers, calculated potential savings, and formulated strategic recommendations  
+- **Automation:** Built Python scripts and GitHub Actions pipelines to refresh the dashboard every 30 minutes with 99.9% data accuracy  
+
+---
+
+## 🔍 Key Findings
+
+- **Portfolio Scale:** Managed 3.7 million work orders totaling \$563 million in maintenance investment  
+- **Performance Variance:** University 11’s average cost per work order is 7× higher than University 7, indicating \$2.1 million annual savings opportunity  
+- **System Spend:** HVAC systems account for 45% of total maintenance costs, highlighting preventive maintenance needs  
+- **Operational Efficiency:** Universities with ≥70% planned maintenance show 25% lower costs and faster resolution times  
+
+---
+
+## 📊 Visuals
+
+| Executive Overview – KPIs & Trends                           | System Performance – Cost by System                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Executive Overview](images/executive_overview.png)         | ![System Performance](images/system_performance.png)        |
+
+| Work Order Efficiency – Volume & Cost Distribution           | Optimization Matrix – Cost vs Planned Maintenance Rate      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![WO Volume & Cost](images/wo_volume_cost.png)               | ![Optimization Matrix](images/optimization_matrix.png)       |
+
 
 ---
 ## 🎓 Education
