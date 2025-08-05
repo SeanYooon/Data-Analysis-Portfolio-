@@ -631,7 +631,7 @@ This project delivers a comprehensive analysis of 3.7 million maintenance work o
 
 | Executive Overview – KPIs & Trends                           | Business_Insights – Cost by System                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![System Performance](images/Executive_Overview.png)          |![Executive Overview](images/Business_Insights.png      |
+| ![System Performance](images/Executive_Overview.png)          |![Executive Overview](images/Business_Insights.png)     |
 
 
 
