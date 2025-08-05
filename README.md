@@ -629,13 +629,11 @@ This project delivers a comprehensive analysis of 3.7 million maintenance work o
 
 ## 📊 Visuals
 
-| Executive Overview – KPIs & Trends                           | System Performance – Cost by System                         |
+| Executive Overview – KPIs & Trends                           | Business_Insights – Cost by System                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Executive Overview](images/executive_overview.png)         | ![System Performance](images/system_performance.png)        |
+| ![System Performance](images/Executive_Overview.png)          |![Executive Overview](images/Business_Insights.png      |
 
-| Work Order Efficiency – Volume & Cost Distribution           | Optimization Matrix – Cost vs Planned Maintenance Rate      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![WO Volume & Cost](images/wo_volume_cost.png)               | ![Optimization Matrix](images/optimization_matrix.png)       |
+
 
 
 ---
