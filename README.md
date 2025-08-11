@@ -309,7 +309,7 @@ For a complete business analysis, including A/B testing results, modeling method
 ## 📚 Overview
 
 This project is an end-to-end credit risk analytics pipeline built for banking applications.  
-It predicts loan default, transforms outputs into FICO-style 300–850 credit scores, applies the 5 Cs of Credit assessment, and quantifies business impact (e.g., \$15.6M loss prevented).  
+It predicts loan default, transforms outputs into FICO-style 300–850 credit scores, applies the 5 Cs of Credit assessment, and quantifies business impact ($10.3M loss prevented).  
 **Key features:** regulatory-ready interpretability (SHAP), business rule integration, and professional-grade performance reporting.
 
 ## 🛠️ Tools & Libraries
@@ -362,7 +362,7 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 
 ## 💡 Business Impact Summary
 
-- **Loss Prevention:** \$15.6M in prevented defaults (estimate)
+- **Loss Prevention:** $10.3M in prevented defaults (estimate)
 - **Detection Rate:** 76.4% of defaults identified
 - **Approval Automation:** 85% of applications processed automatically
 
