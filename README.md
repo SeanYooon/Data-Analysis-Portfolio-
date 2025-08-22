@@ -49,6 +49,12 @@ This repository showcases selected projects that demonstrate my technical profic
 
   * 93.7% AUC; 76.4% detection rate
   * Estimated \$10.3M in loss prevention
+ 
+ * **Visuals**
+| Landing Outcome Map (Folium)                              | Feature Importance          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
+
 ---
 ### Customer Churn Prediction Dashboard
 
