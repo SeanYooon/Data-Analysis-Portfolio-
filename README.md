@@ -91,6 +91,12 @@ This repository showcases selected projects that demonstrate my technical profic
 
   * R² improved to 0.9280 post outlier removal
   * Key drivers identified: Conversion Rate, Age, Impressions efficiency
+
+* **Visuals:** 
+   | ROAS, CPC, Approved Conversion by Campaign                 | Report          | 
+|-------------------------------------------------------|--------------------------------------------|
+|![ROAS, CPC, Approved Conversion by Campaign](images/campaign_bar_chart.png)  | ![aaa](images/report.png-1.png) |
+
 ---
 ### SpaceX Falcon 9 Landing Prediction
 
