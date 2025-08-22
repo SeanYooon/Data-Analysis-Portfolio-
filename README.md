@@ -49,7 +49,7 @@ This repository showcases selected projects that demonstrate my technical profic
 
   * 93.7% AUC; 76.4% detection rate
   * Estimated \$10.3M in loss prevention
-
+---
 ### Customer Churn Prediction Dashboard
 
 **Business Goal:** Identify and prevent customer churn with predictive analytics and dashboards.
@@ -61,7 +61,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * Visualized KPIs and churn factors in Tableau dashboard
   * Conducted OLAP-style segmentation on tenure, contract type, etc.
 * **Results:** Enabled proactive targeting of high-risk segments
-
+---
 ### Marketing Campaign ROAS Optimization
 
 **Business Goal:** Improve digital marketing ROI by predicting and explaining ROAS drivers.
@@ -76,7 +76,7 @@ This repository showcases selected projects that demonstrate my technical profic
 
   * R² improved to 0.9280 post outlier removal
   * Key drivers identified: Conversion Rate, Age, Impressions efficiency
-
+---
 ### SpaceX Falcon 9 Landing Prediction
 
 **Business Goal:** Predict booster landing success to improve space mission planning.
@@ -88,7 +88,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * Built multiple classifiers; selected Random Forest (87% accuracy)
   * Mapped landing outcomes with Folium
 * **Results:** Visual tool for interpreting mission factors that drive landing outcomes
-
+---
 ### Housing Price Prediction
 
 **Business Goal:** Predict home prices from large-scale Connecticut housing data.
@@ -101,7 +101,7 @@ This repository showcases selected projects that demonstrate my technical profic
 * **Results:**
 
   * RMSE = 1.15; top features include location and assessed value
-
+---
 ### Rainfall Forecasting (Time Series)
 
 **Business Goal:** Forecast rainfall to aid in public resource planning.
@@ -114,7 +114,7 @@ This repository showcases selected projects that demonstrate my technical profic
 * **Results:**
 
   * RMSE = 1.095; tight forecast confidence intervals
-
+---
 ### Police Complaints Prediction
 
 **Business Goal:** Predict misconduct complaints among officers using historical data.
@@ -125,7 +125,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * Modeled likelihood of complaints from demographic/service history
   * Addressed fairness/ethics concerns in model usage
 * **Results:** High-AUC classifiers with ethical lens
-
+---
 ### Health Spending Visualization (Canada)
 
 **Business Goal:** Analyze per-capita and categorical health spending across provinces.
@@ -136,7 +136,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * Cleaned and integrated population and health funding data
   * Calculated per capita and YoY growth rates
 * **Results:** Interactive dashboard revealing policy trends by region
-
+---
 ### Insurance Cost Analysis (Excel)
 
 **Business Goal:** Simulate group benefits cost modeling for Sun Life-like scenarios.
