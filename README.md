@@ -52,9 +52,10 @@ This repository showcases selected projects that demonstrate my technical profic
  
  * **Visuals:**
 
-| Landing Outcome Map (Folium)                              | Feature Importance          |
+| Performance Dashboard                             | Model Interpretability          |
 |-------------------------------------------------------|--------------------------------------------|
-|![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
+|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
+
 
 ---
 ### Customer Churn Prediction Dashboard
@@ -182,6 +183,12 @@ This repository showcases selected projects that demonstrate my technical profic
   * Cleaned and integrated population and health funding data
   * Calculated per capita and YoY growth rates
 * **Results:** Interactive dashboard revealing policy trends by region
+ 
+
+| Stacked Bar + Dot Line – Spending by Category and Total Trend                              | Line Chart – YoY Growth Rate (Canada vs Quebec vs BC)         |
+|-------------------------------------------------------|--------------------------------------------|
+|![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
+
 ---
 ### Insurance Cost Analysis (Excel)
 
