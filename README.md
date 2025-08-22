@@ -94,9 +94,11 @@ This repository showcases selected projects that demonstrate my technical profic
 
 * **Visuals:** 
 
-| ROAS, CPC, Approved Conversion by Campaign                 | Report          | 
+| Model Analysis - with outlier                              | Actual vs Predicted - with outlier          |
 |-------------------------------------------------------|--------------------------------------------|
-|![ROAS, CPC, Approved Conversion by Campaign](images/campaign_bar_chart.png)  | ![aaa](images/report.png-1.png) |
+|![Actual vs Predicted](images/roas_model_analysis.png)    | ![Feature Importance](images/actual_vs_predicted_roas.png) |
+| Model Analysis - without outlier                              | Actual vs Predicted - without outlier          |
+|![Actual vs Predicted](images/roas_model_analysis_xoutlier.png)   | ![Feature Importance](images/actual_vs_predicted_roas_xoutlier.png) |
 
 ---
 ### SpaceX Falcon 9 Landing Prediction
@@ -110,6 +112,14 @@ This repository showcases selected projects that demonstrate my technical profic
   * Built multiple classifiers; selected Random Forest (87% accuracy)
   * Mapped landing outcomes with Folium
 * **Results:** Visual tool for interpreting mission factors that drive landing outcomes
+
+* **Visuals:** 
+
+| Landing Outcome Map (Folium)                              | Feature Importance          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
+
+
 ---
 ### Housing Price Prediction
 
@@ -123,6 +133,13 @@ This repository showcases selected projects that demonstrate my technical profic
 * **Results:**
 
   * RMSE = 1.15; top features include location and assessed value
+
+* **Visuals:**
+  
+| Actual vs Predicted                               | Feature Importance          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Actual vs Predicted](images/housing-importance.png)   | ![Feature Importance](images/housing-log.png) |
+
 ---
 ### Rainfall Forecasting (Time Series)
 
@@ -136,6 +153,13 @@ This repository showcases selected projects that demonstrate my technical profic
 * **Results:**
 
   * RMSE = 1.095; tight forecast confidence intervals
+
+ 
+| Forecast Plot                                | Residual ACF          |
+|-------------------------------------------------------|--------------------------------------------|
+|![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
+
+
 ---
 ### Police Complaints Prediction
 
