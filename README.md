@@ -51,6 +51,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * Estimated \$10.3M in loss prevention
  
  * **Visuals**
+
 | Landing Outcome Map (Folium)                              | Feature Importance          |
 |-------------------------------------------------------|--------------------------------------------|
 |![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
