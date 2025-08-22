@@ -93,7 +93,8 @@ This repository showcases selected projects that demonstrate my technical profic
   * Key drivers identified: Conversion Rate, Age, Impressions efficiency
 
 * **Visuals:** 
-   | ROAS, CPC, Approved Conversion by Campaign                 | Report          | 
+
+| ROAS, CPC, Approved Conversion by Campaign                 | Report          | 
 |-------------------------------------------------------|--------------------------------------------|
 |![ROAS, CPC, Approved Conversion by Campaign](images/campaign_bar_chart.png)  | ![aaa](images/report.png-1.png) |
 
