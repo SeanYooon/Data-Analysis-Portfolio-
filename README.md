@@ -50,7 +50,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * 93.7% AUC; 76.4% detection rate
   * Estimated \$10.3M in loss prevention
  
- * **Visuals**
+ * **Visuals:**
 
 | Landing Outcome Map (Folium)                              | Feature Importance          |
 |-------------------------------------------------------|--------------------------------------------|
@@ -67,7 +67,15 @@ This repository showcases selected projects that demonstrate my technical profic
   * Built a neural network churn model (\~79% accuracy)
   * Visualized KPIs and churn factors in Tableau dashboard
   * Conducted OLAP-style segmentation on tenure, contract type, etc.
+ 
 * **Results:** Enabled proactive targeting of high-risk segments
+
+* **Visuals:**
+
+| KPI: Churn Rate | Churn by Internet Service |
+|----------------|---------------------------|
+| ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
+
 ---
 ### Marketing Campaign ROAS Optimization
 
