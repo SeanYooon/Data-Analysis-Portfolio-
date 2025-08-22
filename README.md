@@ -95,11 +95,10 @@ This repository showcases selected projects that demonstrate my technical profic
 
 * **Visuals:** 
 
-| Model Analysis - with outlier                              | Actual vs Predicted - with outlier          |
+| Model Analysis                            | Actual vs Predicted           |
 |-------------------------------------------------------|--------------------------------------------|
 |![Actual vs Predicted](images/roas_model_analysis.png)    | ![Feature Importance](images/actual_vs_predicted_roas.png) |
-| Model Analysis - without outlier                              | Actual vs Predicted - without outlier          |
-|![Actual vs Predicted](images/roas_model_analysis_xoutlier.png)   | ![Feature Importance](images/actual_vs_predicted_roas_xoutlier.png) |
+
 
 ---
 ### SpaceX Falcon 9 Landing Prediction
