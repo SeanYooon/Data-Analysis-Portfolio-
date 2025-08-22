@@ -1,661 +1,172 @@
-# Seokhyun Yoon - Data Analyst Portfolio
+# Seokhyun Yoon – Data Analyst Portfolio
 
 ## 👋 About Me
 
 Hello, I'm Seokhyun Yoon — a Statistics graduate from Simon Fraser University with a strong foundation in data analysis, machine learning, and business intelligence tools.
 
-I’ve developed hands-on projects applying predictive modeling, time series analysis, and classification algorithms to real-world problems such as rainfall forecasting, housing price prediction, and rocket landing success rates.
+I specialize in applying predictive modeling, time series forecasting, classification algorithms, and dashboarding to solve real-world business challenges in areas such as customer retention, credit risk, digital marketing ROI, and geospatial insights.
 
-I work primarily with **Python, R, SQL, Power BI, Tableau**, and version control tools like Git. I enjoy simplifying complex data into actionable insights and visual stories that help people make better decisions.
+I work primarily with **Python, R, SQL, Power BI, Tableau**, and version control tools like Git. My goal is to transform complex data into actionable insights and data products that help stakeholders make better decisions.
 
-This repository showcases selected projects reflecting my technical skill set and ability to turn raw data into practical outcomes.  
-📄 [View My Resume (PDF)]([Sean Resume.pdf](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/600ea4aff841bf852fe868ec03f4e31772f46f97/Sean%20Resume.pdf))  
+This repository showcases selected projects that demonstrate my technical proficiency, business thinking, and ability to deliver data-driven solutions.
+
+✍️ [View My Resume (PDF)](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/600ea4af8f841bf852fe868ec03f4e31772f46f97/Sean%20Resume.pdf)
 🔗 [Visit My LinkedIn](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
-
-Let’s connect!
 
 ---
 
 ## 📁 Table of Contents
 
-- [About Me](/#-about-me)
-- Portfolio Projects
-  - Python
-    - [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction---classification--mapping)
-    - [Marketing Campaign ROAS Prediction](#marketing-campaign-roas-prediction--regression--feature-optimization)
-    - [Customer Churn Analysis & Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
-    - [Ad Campaign Performance & ROAS Analysis](#ad-campaign-performance--roas-analysis)
-    - [Credit risk prediction - scoring banking grade ML pipeline](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
-  - R
-    - [Housing Price Prediction](#housing-price-prediction--connecticut-home-sales-20192020)
-    - [Police Complaints Prediction](#police-complaints-prediction)
-    - [Rainfall Time Series Forecasting](#rainfall-forecasting--time-series-analysis-perth-australia)
-  - Tableau
-    - [Canada Health Spending by Province (2000–2022)](#-canada-health-spending-by-province-20002022)
-- [Education](#-education)
-- [Certificates](#-certificates)
-- [Contact](#-contact)
+* [👋 About Me](#-about-me)
+* [📊 Project Portfolio](#-project-portfolio)
+
+  * [Credit Risk Prediction & Scoring](#credit-risk-prediction--scoring)
+  * [Customer Churn Prediction Dashboard](#customer-churn-prediction-dashboard)
+  * [Marketing Campaign ROAS Optimization](#marketing-campaign-roas-optimization)
+  * [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction)
+  * [Housing Price Prediction](#housing-price-prediction)
+  * [Rainfall Forecasting (Time Series)](#rainfall-forecasting-time-series)
+  * [Police Complaints Prediction](#police-complaints-prediction)
+  * [Health Spending Visualization (Canada)](#health-spending-visualization-canada)
+  * [Insurance Cost Analysis (Excel)](#insurance-cost-analysis-excel)
 
 ---
 
-## 📊 Portfolio Projects
+## 📊 Project Portfolio
 
-Here are some projects I've completed and brief descriptions of the tools, goals, and results.
+### Credit Risk Prediction & Scoring
 
+**Business Goal:** Predict default risk to improve loan decisions and reduce losses.
 
-## SpaceX Falcon 9 Landing Prediction - Classification & Mapping
+* **Tech Stack:** Python, XGBoost, SHAP, SMOTE, Seaborn, Scikit-learn
+* **Key Actions:**
 
-## 📊 Project Overview
-Predicted the landing success of SpaceX Falcon 9 first-stage boosters using a classification model. Combined machine learning with geospatial visualizations and API-sourced launch data to explore how mission factors influence outcomes.
+  * Built credit scoring pipeline with 300–850 scale transformation
+  * Applied class imbalance handling (SMOTE) and model tuning
+  * Used SHAP for explainability and compliance
+  * Quantified potential financial loss savings
+* **Results:**
 
+  * 93.7% AUC; 76.4% detection rate
+  * Estimated \$10.3M in loss prevention
 
-## 🔧 Tools & Techniques
-Python, Pandas, Scikit-learn, Folium, Plotly, SpaceX API  
-Classification (Logistic Regression, SVM, Random Forest), Feature Engineering, API Integration
+### Customer Churn Prediction Dashboard
 
-## 🧠 Key Steps
-- Scraped and queried launch data via the SpaceX REST API  
-- Cleaned and transformed features (e.g., payload mass, orbit, site ID)  
-- Engineered new features like payload class and binary landing outcome  
-- Built and compared classification models: Logistic Regression, SVM, Random Forest  
-- Evaluated models using accuracy, precision, confusion matrix  
-- Created an interactive landing site map using Folium
+**Business Goal:** Identify and prevent customer churn with predictive analytics and dashboards.
 
+* **Tech Stack:** Python, PyTorch, SMOTE, Tableau, Scikit-learn
+* **Key Actions:**
 
-## ✅ Results
-- **Best model:** Random Forest Classifier (Accuracy ~87%)  
-- **Top predictive features:** Launch Site, Payload Mass, Orbit  
-- Created an interactive dashboard to visualize outcomes by location
+  * Built a neural network churn model (\~79% accuracy)
+  * Visualized KPIs and churn factors in Tableau dashboard
+  * Conducted OLAP-style segmentation on tenure, contract type, etc.
+* **Results:** Enabled proactive targeting of high-risk segments
 
+### Marketing Campaign ROAS Optimization
 
-## 📊 Visuals
+**Business Goal:** Improve digital marketing ROI by predicting and explaining ROAS drivers.
 
-| Landing Outcome Map (Folium)                              | Feature Importance          |
-|-------------------------------------------------------|--------------------------------------------|
-|![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
+* **Tech Stack:** Python, XGBoost, Seaborn, Pandas
+* **Key Actions:**
 
+  * Preprocessed data and created custom metrics (e.g., Impressions per Dollar)
+  * Removed outliers for better model generalization
+  * Trained and interpreted XGBoost regression
+* **Results:**
 
+  * R² improved to 0.9280 post outlier removal
+  * Key drivers identified: Conversion Rate, Age, Impressions efficiency
 
+### SpaceX Falcon 9 Landing Prediction
 
-## 📂 Files
-- [`SpaceX_Machine_Learning_Prediction.ipynb`](files/SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite.ipynb) – full Jupyter notebook  
-- [`falcon9.pdf`](files/spacex-final.pdf) – final PDF summary
+**Business Goal:** Predict booster landing success to improve space mission planning.
 
----
-## Marketing Campaign ROAS Prediction – Regression & Feature Optimization
+* **Tech Stack:** Python, Scikit-learn, Folium, Plotly, APIs
+* **Key Actions:**
 
-## 📊 Project Overview
-Built an XGBoost regression model to predict Return on Ad Spend (ROAS) using marketing campaign data. The goal was to support budget allocation decisions by identifying which campaign factors most significantly influence ad effectiveness. Outlier handling, feature engineering, and model interpretation were key components.
+  * Scraped SpaceX API and engineered features
+  * Built multiple classifiers; selected Random Forest (87% accuracy)
+  * Mapped landing outcomes with Folium
+* **Results:** Visual tool for interpreting mission factors that drive landing outcomes
 
-## 🔧 Tools & Techniques
-Python, Pandas, Scikit-learn, XGBoost, Seaborn, Matplotlib
-Regression Modeling, Outlier Detection, Feature Importance, MAE/R² Evaluation
+### Housing Price Prediction
 
-## 🧠 Key Steps
-1. **Data Preprocessing**
-   - Removed currency symbols and standardized numeric columns
-   - Converted `Duration` from text to numeric
-   - One-hot encoded categorical features such as `Channel_Used`, `Location`, and `Language`
+**Business Goal:** Predict home prices from large-scale Connecticut housing data.
 
-2. **Feature Engineering**
-   - Created new features:
-     - `Approved_Conversion_Rate`
-     - `Impressions_per_Dollar`
-     - `Cost_per_Approved_Conversion`
+* **Tech Stack:** R, XGBoost, glmnet, tidyverse
+* **Key Actions:**
 
-3. **Outlier Handling**
-   - Detected heavy-tailed ROAS distribution using box plots and histograms
-   - Removed top 1% ROAS outliers for model robustness and better generalization
+  * Cleaned and transformed 995K+ sales records
+  * Tuned XGBoost model with interaction terms and log scaling
+* **Results:**
 
-4. **Modeling**
-   - Trained XGBoost Regressor with GridSearchCV tuning
-   - Evaluated model using R² and MAE metrics
-   - Compared performance **with** and **without** outlier removal
+  * RMSE = 1.15; top features include location and assessed value
 
+### Rainfall Forecasting (Time Series)
 
-## 📈 Results
+**Business Goal:** Forecast rainfall to aid in public resource planning.
 
-| Condition             | R² Score | MAE    |
-|-----------------------|----------|--------|
-| With Outliers         | 0.9163   | 1.1743 |
-| Without Outliers      | 0.9280   | 0.5912 |
+* **Tech Stack:** R, forecast, ggplot2, Box-Jenkins (SARIMA)
+* **Key Actions:**
 
-> Removing outliers significantly improved model accuracy and reduced error.
+  * Diagnosed seasonality and stationarity issues
+  * Fitted SARIMA(1,0,0)x(0,1,1)\[12] using AIC tuning
+* **Results:**
 
+  * RMSE = 1.095; tight forecast confidence intervals
 
-## 📊 Visuals
+### Police Complaints Prediction
 
-| Model Analysis - with outlier                              | Actual vs Predicted - with outlier          |
-|-------------------------------------------------------|--------------------------------------------|
-|![Actual vs Predicted](images/roas_model_analysis.png)    | ![Feature Importance](images/actual_vs_predicted_roas.png) |
-| Model Analysis - without outlier                              | Actual vs Predicted - without outlier          |
-|![Actual vs Predicted](images/roas_model_analysis_xoutlier.png)   | ![Feature Importance](images/actual_vs_predicted_roas_xoutlier.png) |
+**Business Goal:** Predict misconduct complaints among officers using historical data.
 
-## 🔍 Feature Importance (Top 5)
+* **Tech Stack:** R, XGBoost, Random Forest, ROC curves
+* **Key Actions:**
 
-1. `Approved_Conversion`
-2. `Impressions_per_Dollar`
-3. `Approved_Conversion_Rate`
-4. `age`
-5. `Conversion_Rate`
+  * Modeled likelihood of complaints from demographic/service history
+  * Addressed fairness/ethics concerns in model usage
+* **Results:** High-AUC classifiers with ethical lens
 
-These features showed strong predictive power, helping to explain variations in ROAS across different campaigns.
+### Health Spending Visualization (Canada)
 
-## 🧠 Insights & Business Impact
+**Business Goal:** Analyze per-capita and categorical health spending across provinces.
 
-- Campaigns with high `Approved_Conversion` and efficient `Impressions_per_Dollar` tend to yield higher ROAS.
-- Target age group and conversion efficiency significantly affect return.
-- Cleaning data and removing noise (outliers) can enhance business decision-making by producing more stable models.
+* **Tech Stack:** Tableau, CIHI datasets
+* **Key Actions:**
 
-## ✅ Conclusion
+  * Cleaned and integrated population and health funding data
+  * Calculated per capita and YoY growth rates
+* **Results:** Interactive dashboard revealing policy trends by region
 
-This project demonstrates how machine learning can support digital marketing by:
+### Insurance Cost Analysis (Excel)
 
-- Forecasting ROAS
-- Identifying key drivers of campaign profitability
-- Reducing waste on underperforming segments
+**Business Goal:** Simulate group benefits cost modeling for Sun Life-like scenarios.
 
-The model is highly interpretable, accurate, and ready for use in ad performance dashboards or media planning tools.
+* **Tech Stack:** Excel, Pivot Tables, VBA
+* **Key Actions:**
 
-## 📂 Files
-- [`ad-campaign-roas-optimizer.ipynb`](ad-campaign-roas-optimizer.ipynb) – full notebook
-- [`conversion_data.csv`](files/conversion_data.csv) – orignial data
-- images/ - Visual assets used in README and notebook
-
-📚 Data Source
-**Source:** [Kaggle - Clicks and Conversion Tracking](https://www.kaggle.com/datasets/loveall/clicks-conversion-tracking)
-
-📓 [View Jupyter Notebook](ad-campaign-roas-optimizer.ipynb)
-
+  * Built age-tiered risk model using Excel formulas and macros
+  * Automated premium segmentation and risk profiling
+* **Results:** Dashboard visualizing smoker cost impact, family size premiums, and risk categories
 
 ---
-## Customer Churn Analysis & Prediction Dashboard
 
-This project simulates a full analytics pipeline to analyze customer churn behavior using OLAP-style exploration, predictive modeling with PyTorch, and an interactive Tableau dashboard.
-
-## 🚀 Overview
-
-This project aims to identify key drivers of customer churn in a telecom company and provide business-friendly insights using statistical analysis and machine learning. The project demonstrates:
-
-- Data cleaning and warehouse-style dimensional modeling  
-- OLAP exploration (churn rates by contract, internet service, tenure, etc.)  
-- Predictive churn classification using a neural network (PyTorch)  
-- Key KPIs and trends visualized using Tableau  
-
-## 🏗️ Technical Architecture & Data Warehouse Approach
-
-### Dimensional Model Design
-- **Fact Table**: `customer_activity` - Core metrics (tenure, monthly_charges, total_charges, churn_flag)
-- **Dimension Tables**: 
-  - `customer_demographics` - Gender, age, partner status, dependents
-  - `service_details` - Phone, internet, streaming services, tech support  
-  - `contract_info` - Contract type, payment method, billing preferences
-
-### OLAP-Style Analysis Framework (Month-to-month: 42.7%, One year: 11.3%, Two year: 2.8%)
-- Service complexity impact on retention patterns
-- Demographics-based risk segmentation and cohort analysis
-- Tenure group performance with statistical significance testing
-
-### Healthcare Analytics Application
-This dimensional modeling approach directly transfers to:
-- Patient retention analysis across service lines and departments
-- Population health KPI reporting with demographic drill-downs
-- Clinical outcome tracking by patient characteristics and treatment complexity
-- Healthcare utilization pattern analysis and resource optimization
-
-## 🧰 Tools Used
-
-- **Python** (pandas, PyTorch, scikit-learn, SMOTE)  
-- **Tableau Public** for dashboards  
-- **GitHub** for version control and documentation  
-
-## 🔍 OLAP-Style Exploration Highlights
-
-- **Churn Rate by Contract Type**  
-  Compared churn rates across `Month-to-month`, `One year`, and `Two year` contracts.  
-  → Found that short-term (Month-to-month) customers churned the most.
-
-- **Churn by Internet Service**  
-  Analyzed churn by service type: `DSL`, `Fiber optic`, or `No internet`.  
-  → Fiber optic users had the highest churn rate.
-
-- **Churn by Tenure Group**  
-  Created tenure buckets: `0–12m`, `13–24m`, `25–48m`, `49–72m`.  
-  → Longer-tenure customers churned significantly less.
-
-- **Monthly Charges Bucket Analysis**  
-  Grouped customers into pricing tiers: `Low`, `Medium`, `High`.  
-  → Higher monthly charges correlated with higher churn.
-
-## 🤖 Predictive Modeling
-
-The churn classification model was built in PyTorch and achieved:
-
-- **Accuracy:** ~79%  
-- **F1-score for churners:** ~0.58  
-- Applied class imbalance handling using SMOTE and weighted loss
-
-## 📈 Tableau Dashboard
-
-The dashboard summarizes churn performance and customer segmentation using KPI cards and bar charts.
-
-| KPI: Churn Rate | Churn by Internet Service |
-|----------------|---------------------------|
-| ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
-
-## 📂 Files  
-- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
-- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
-- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
-
-
-## 📚 Data Source
-
-- [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-
-## 🔗 View Project
-
-GitHub Repo: [Customer Churn Dashboard](https://github.com/SeanYooon/telco-churn-analysis/blob/main/README.md)
-
----
-
-## Ad Campaign Performance & ROAS Analysis
-
-## Project Overview
-Analyzed three ad campaigns (IDs: 916, 936, 1178) across key metrics (ROAS, CPC, Approved Conversions). Conducted statistical comparisons and built an XGBoost regression model to uncover performance drivers.
-
-
-## 🎯 Business Problem
-- **Question:** Which campaign strategy delivers the best ROAS?
-- Advertise with purpose: identifying cost-efficient campaigns and uncovering optimization opportunities.
-
-
-## 🧠 Analytical Approach
-
-1. **A/B Testing (Pairwise t-tests)**  
-   - Compared all campaign pairs for ROAS, CPC, and Approved Conversions  
-   - Found Campaign 1178 significantly different (less efficient), while 916 and 936 performed similarly
-
-2. **Predictive Modeling**  
-   - Trained XGBoost regression to predict ROAS  
-   - Evaluated model with MAE = 1.17, R² = 0.92  
-   - Identified top drivers: Approved_Conversion, Impressions_per_Dollar, Approved_Conversion_Rate
-
-## 📊 Key Visuals
-
-
-  | ROAS, CPC, Approved Conversion by Campaign                 | Report          | 
-|-------------------------------------------------------|--------------------------------------------|
-|![ROAS, CPC, Approved Conversion by Campaign](images/campaign_bar_chart.png)  | ![aaa](images/report.png-1.png) |
-
-## 🧮 Results & Insights
-- Campaign 1178 shows **higher conversions but is the least efficient**
-- Campaigns 916 & 936 deliver **strong returns and low cost**
-- Model confirms **Approved Conversion** and **efficiency metrics** drive ROAS
-
-## 💡 Recommendations
-1. **Prioritize Budget**: Shift ~70% to Campaigns 916 and 936
-2. **Audit Campaign 1178**: Evaluate targeting and creatives; pause if not ROAS-aligned
-3. **Continue Experimentation**: Run new A/B tests across segments and creatives
-
-## 📄 Full Report (PDF)
-
-For a complete business analysis, including A/B testing results, modeling methodology, visualizations, and actionable recommendations, view the full report:
-- [`Ad_Campaign_ROAS_Report.pdf`](files/Ad_Campaign_ROAS_Report.pdf) 
-
----
-## Credit Risk Prediction & Scoring (Banking-Grade ML Pipeline)
-
-## 📚 Overview
-
-This project is an end-to-end credit risk analytics pipeline built for banking applications.  
-It predicts loan default, transforms outputs into FICO-style 300–850 credit scores, applies the 5 Cs of Credit assessment, and quantifies business impact ($10.3M loss prevented).  
-**Key features:** regulatory-ready interpretability (SHAP), business rule integration, and professional-grade performance reporting.
-
-## 🛠️ Tools & Libraries
-
-- **Python** (pandas, numpy, scikit-learn, XGBoost, imblearn)
-- **Visualization:** matplotlib, seaborn, SHAP
-- **Notebook:** Jupyter
-
-## 🧩 Process
-
-1. **Exploratory Data Analysis (EDA)**
-   - Outlier detection, missing value imputation, feature-target relationships
-2. **Feature Engineering**
-   - Debt-to-income ratio, home ownership flags, employment length
-3. **Model Development**
-   - XGBoost with hyperparameter tuning (RandomizedSearchCV)
-   - SMOTE for class imbalance
-4. **Credit Scoring**
-   - Logistic scorecard transformation (PDO=50, base odds=1:9, 300–850 scale)
-5. **5 Cs of Credit Assessment**
-   - Character, Capacity, Capital, Collateral, Conditions
-6. **Interpretability**
-   - SHAP feature importance and individual prediction explanations
-7. **Performance Reporting**
-   - ROC, PR curve, confusion matrix, business impact summary
-
-## 📊 Key Results
-
-- **Hold-out AUC:** 0.937 (exceeds industry standard)
-- **Default Detection Rate:** 76.4%
-- **Loss Prevented:** \$15.6M (portfolio estimate)
-- **Approval Automation:** 85%
-- **Top Risk Factors:** Home ownership, loan grade, DTI, income, loan purpose
-
-## 📈 Visualizations
-
-| Performance Dashboard                             | Model Interpretability          |
-|-------------------------------------------------------|--------------------------------------------|
-|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
-
-
-## 🏦 Banking & Regulatory Context
-
-- **FICO-Equivalent Scoring:** 300–850 scale, points-to-double-odds (PDO=50)
-- **5 Cs of Credit:** Integrated into decision logic
-- **Model Interpretability:** SHAP values for global & local explainability
-- **Regulatory Alignment:** Basel III, SR 11-7, and Fair Lending (ECOA) principles followed
-- **Business Impact:** Quantified loss prevention, approval automation, and risk tiering
-
-
-## 💡 Business Impact Summary
-
-- **Loss Prevention:** $10.3M in prevented defaults (estimate)
-- **Detection Rate:** 76.4% of defaults identified
-- **Approval Automation:** 85% of applications processed automatically
-
-
-## 📖 Source
-
-- [Kaggle: Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
-
-## 📂 Files
-
-- [`credit_risk.ipynb`](/files/credit_risk.ipynb) – full notebook
-
----
-
-## Housing Price Prediction – Connecticut Home Sales (2019–2020)
-
-## 📊 Project Overview
-Predicted residential housing prices in Connecticut using a dataset of 995,000+ property sales. Built a regression model using XGBoost, with focus on data cleaning, feature engineering, and model tuning.
-
-## 🔧 Tools & Technologies
-R, XGBoost, tidyverse, glmnet, ranger, LightGBM, data.table
-
-## 🧠 Key Steps
-- Cleaned and prepared ~1M records from 2019–2020
-- Created new time-based and interaction features
-- Handled missing values through median/monthly imputation
-- Applied log transformation to reduce skew
-- Tuned XGBoost with randomized search + early stopping
-
-## 📈 Results
-- **Validation RMSE:** 1.15  
-- **Validation R²:** 0.26  
-- Top features: Assessed value, Town (Greenwich), interaction terms
-
-## 📊 Visuals
-
-| Actual vs Predicted                               | Feature Importance          |
-|-------------------------------------------------------|--------------------------------------------|
-|![Actual vs Predicted](images/housing-importance.png)   | ![Feature Importance](images/housing-log.png) |
-
-
-## 📂 Files
-- [`Housing-price-prediction.Rmd`](/files/Housing-price-prediction.Rmd) – full notebook
-- [`testing_data.csv`](data/Xte.csv) – Test feature set (for prediction)
-- [`testing_data.csv`](data/Xtr.csv) – Training feature set
-- [`testing_data.csv`](data/Ytr.csv) – Training labels (house prices)
-- [`pred0.csv`](data/pred0.csv) – Output predictions on `Xte`
-- [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall Project Report
-
-
----
-
-## Police Complaints Prediction
-
-**Code:**  
-- [`Final_Version.R`](https://github.com/jasondang01/440module2-jason-tyler-sean/blob/main/Final_Version.R)
-
-**Goal:** Predict which CPD officers would receive complaints in 2015–2016 using data from 2000–2014.
-
-**Description:** Modeled officer misconduct likelihood based on salary, prior complaints, and service data. Explored fairness and ethical data analysis.
-
-**Skills:** Data cleaning, feature engineering, classification, ROC analysis  
-**Tech Stack:** R, ggplot2, dplyr, tidyr, randomForest, XGBoost, pROC
-
-**Results:** Built accurate classifiers using Random Forest and XGBoost. Evaluated models with AUC and ROC metrics.
-
----
-
-## Rainfall Forecasting – Time Series Analysis (Perth, Australia)
-
-## 📊 Project Overview
-Forecasted monthly rainfall totals in Perth using a SARIMA model trained on 106 months of historical weather data. Applied time series modeling techniques (Box-Jenkins methodology) to capture seasonality and make future projections.
-
-## 🔧 Tools & Techniques
-- R, `forecast`, `tseries`, `ggplot2`
-- SARIMA modeling
-- Box-Jenkins methodology
-- Residual diagnostics (ACF/PACF)
-- Forecast validation against real data
-
-## 🧠 Key Steps
-- Loaded and cleaned 106 months of historical rainfall data
-- Conducted stationarity tests and seasonality checks
-- Ran a grid search over SARIMA configurations with AIC optimization
-- Selected SARIMA(1,0,0)x(0,1,1)[12] based on lowest AIC
-- Forecasted 14 future months (months 107–120)
-- Validated predictions against real airport rainfall data
-- Sourced rainfall data from the Australian Bureau of Meteorology (BOM) official dataset
-- Compared SARIMA model against a dynamic regression benchmark with external covariates
-
-## 📈 Results
-- **Model used:** SARIMA(1,0,0)x(0,1,1)[12]
-- **Forecasted range:** Months 107–120
-- **RMSE:** 1.095  
-- **MAE:** 0.863  
-- **95% CI coverage:** Forecasts closely followed actual values
-
-## 📊 Visuals
-| Forecast Plot                                | Residual ACF          |
-|-------------------------------------------------------|--------------------------------------------|
-|![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
-
-## 📂 Files
-- [`Rainfall.Rmd`](rainfall_forecasting.Rmd) – full notebook
-- [`IDCJAC0009_009021_1800_Data.csv`](data/rainfall.csv) – historical rainfall data  
-- [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
-- [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
-- [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
-
----
-## Insurance Data Analyst Excel Project
-
-This is a comprehensive Excel-based data analysis project simulating a **Group Benefits cost analysis** for Sun Life Financial. It demonstrates advanced Excel skills, business insight generation, and professional dashboard design tailored to real-world insurance data.
-
-## 📊 Project Summary
-
-This project uses the [Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) to create a dynamic and interactive **benefits cost analysis tool**. The goal is to emulate the responsibilities of a data analyst at Sun Life, including:
-
-- Advanced data transformation and validation
-- Use of **VLOOKUP**, **nested formulas**, and **logical functions**
-- **Pivot table** creation for demographic and regional insights
-- **VBA automation** for summary generation and risk segmentation
-- **Executive-level dashboard** with KPIs and visualizations
-
-
-## ✅ Features & Deliverables
-
-### 📂 File Structure
-- `Raw_Data`: Cleaned and structured dataset (1,338 records × 7 columns)
-- `Lookup_Tables`: Age ranges, regional multipliers, and family size premiums
-- `Pivot_Analysis`: 3 interactive pivot tables for deep insights
-- `Dashboard`: Executive view with KPIs, charts, and slicers
-- `VBA_Calculation`: Macros to automate cost summaries and risk segmentation
-- `Documentation`: (Optional) Overview of methodology and assumptions
-
-
-
-## 💡 Business Insights Extracted
-
-- **Smokers account for a disproportionate share** of high-cost claims
-- **Regional cost multipliers** reveal up to 25% pricing variance
-- **Larger families incur 60% higher premiums** due to dependents
-- **Older age groups** correlate with higher risk levels
-
-
-## 🧠 Excel Skills Demonstrated
-
-| Skillset               | Tools Used                                      |
-|------------------------|--------------------------------------------------|
-| **Formulas**           | VLOOKUP, IF, nested formulas, COUNTIFS, etc.    |
-| **Pivot Tables**       | Filters, slicers, grouping, calculated fields   |
-| **Data Visualization** | Histogram, column chart, conditional formatting |
-| **VBA Macros**         | Cost summary automation, risk segmentation      |
-| **Dashboard Design**   | KPI cards, slicers, formatting, layout          |
-
-
-
-## 📈 KPI Metrics
-
-- **Average Annual Cost**
-- **Total Covered Lives**
-- **High-Risk Members (Smokers > $20,000)**
-- **Cost per Member**
-
-All are dynamically calculated and displayed on the dashboard for executive decision-making.
-
-
-
-## 🧾 Tools & Technologies
-
-- Microsoft Excel (Mac version)
-- Excel VBA (for automation)
-- Pivot Tables & Charts
-- Conditional Formatting
-- CSV to XLSM transformation
-
-
-
-## 🗂️ File Info
-
-- File Name: `insurance.xlsm`
-- Format: Excel macro-enabled workbook
-- Size: ~2–3 MB
-- Macros: 2 working macros with buttons
-
-
-## 🏁 Final Thoughts
-
-This project highlights both **technical Excel mastery** and **strategic thinking** required in a business analyst role. It aligns with the core competencies outlined in **Sun Life’s Data Analyst job descriptions** and serves as a strong portfolio piece for insurance, healthcare, or benefits-focused roles.
-
-
-## 📎 Dataset Credit
-
-- Source: [Kaggle – Medical Cost Personal Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)
----
-## 📊 Canada Health Spending by Province (2000–2022)
-
-🔗 [View the Interactive Tableau Report](https://public.tableau.com/views/CanadaHealthSpendingbyProvince20002022/Sheet92?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
-📂 Source: [CIHI – National Health Expenditure Trends](https://www.cihi.ca/en/national-health-expenditure-trends)
-
-
-## 🧾 Overview
-
-This project analyzes healthcare expenditure across Canadian provinces from 2000 to 2022. Using population and health spending data, I calculated per capita spending and year-over-year growth rates. The resulting Tableau dashboard offers interactive insights into national and regional trends in health funding.
-
-## ⚙️ Key Steps
-- Cleaned and merged spending, population, and province-level data
-- Created simplified spending categories for visualization clarity
-- Calculated key metrics including:
-- Per Capita Spending: (SUM([Spending M]) * 1,000,000) / (SUM([Population K]) * 1,000)
-- YoY Growth Rate: (SUM([Spending M]) - LOOKUP(SUM([Spending M]), -1)) / ABS(LOOKUP(SUM([Spending M]), -1))
-- Built pie charts and trend lines in Tableau
-- Enabled dynamic filters by province and spending type
-
-🔍 Key Findings
-- YoY Growth Trend: National spending growth is trending downward, despite a sharp COVID-related increase in 2020. In contrast, Quebec shows a slightly increasing growth trend.
-- Spending Breakdown:
-Across provinces, health spending consistently follows the order:
-	1. Hospitals
-	2. Other (Public Health, Administration, Institutions)
-	3. Drugs
-	4. Physicians
-- Regional Comparison: Provinces with smaller populations (e.g., Yukon, PEI) have the highest per capita spending. Quebec ranks second in total expenditure but aligns closely with the national average in per capita terms.
-- Total Spending Increase: From 2000 to 2022, no province experienced a decline in total health expenditure.
-
-## 📊 Visuals
-| Stacked Bar + Dot Line – Spending by Category and Total Trend                              | Line Chart – YoY Growth Rate (Canada vs Quebec vs BC)         |
-|-------------------------------------------------------|--------------------------------------------|
-|![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
-
-## 📊 Work Order Portfolio Analysis for Facility Management
-
-🔗 [View the Interactive Tableau Report](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3)  
-📂 Source: [Internal Facility Management Work Order Data (2002–2021)](https://data.mendeley.com/datasets/cb8d2nsjss/1)  
-
----
-
-## 🧾 Overview
-
-This project delivers a comprehensive analysis of 3.7 million maintenance work orders across a 12-university real estate portfolio. Using SQL, Python, and Tableau, I built executive dashboards, performance scorecards, and operational insights that benchmark site performance, identify cost optimization opportunities, and drive strategic facility management decisions.
-
----
-
-## ⚙️ Key Steps
-
-- **Data Compilation:** Cleaned and merged work order, building, and weather data covering 3,573 buildings and 19 years of history  
-- **KPI Development:** Calculated Total Work Orders, Total Maintenance Spend, Avg Cost per Work Order, and Planned Maintenance Rate  
-- **Performance Benchmarking:** Created University-level and System-level cost comparisons using fixed LOD calculations in Tableau  
-- **Operational Analytics:** Developed charts for Work Order Volume, Cost Distribution, System Investment, and Resolution Efficiency  
-- **Business Insights:** Identified high‐cost outliers, calculated potential savings, and formulated strategic recommendations  
-- **Automation:** Built Python scripts and GitHub Actions pipelines to refresh the dashboard every 30 minutes with 99.9% data accuracy  
-
----
-
-## 🔍 Key Findings
-
-- **Portfolio Scale:** Managed 3.7 million work orders totaling \$563 million in maintenance investment  
-- **Performance Variance:** University 11’s average cost per work order is 7× higher than University 7, indicating \$2.1 million annual savings opportunity  
-- **System Spend:** HVAC systems account for 45% of total maintenance costs, highlighting preventive maintenance needs  
-- **Operational Efficiency:** Universities with ≥70% planned maintenance show 25% lower costs and faster resolution times  
-
----
-
-## 📊 Visuals
-
-| Executive Overview – KPIs & Trends                           | Business_Insights – Cost by System                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![System Performance](images/Executive_Overview.png)          |![Executive Overview](images/Business_Insights.png)     |
-
-
-
-
----
 ## 🎓 Education
 
-**Simon Fraser University** — Burnaby, BC  
-Bachelor of Science in Statistics  
+**Simon Fraser University** — Burnaby, BC
+Bachelor of Science in Statistics
 *May 2018 – December 2023*
 
 ---
 
 ## 📜 Certificates
 
-While real projects are the best proof of skills, I’ve also completed these certifications:
-
-- [IBM Data Science Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/XQD6FNV9Q5FB) (Dec 2023)
-- [Deep Learning Specialization – DeepLearning.AI](https://coursera.org/share/HROP8FKWDLCK) (Oct 2024)  
-- [Tableau for Data Analytics – LinkedIn Learning](https://www.linkedin.com/learning/certificates/814d91fd0c6ab19bb16c9d29fd23fb3a7915ad908637ed0b5ba19f5684ac1dc5) (Jan 2023)
+* [IBM Data Science Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/XQD6FNV9Q5FB) (Dec 2023)
+* [Deep Learning Specialization – DeepLearning.AI](https://coursera.org/share/HROP8FKWDLCK) (Oct 2024)
+* [Tableau for Data Analytics – LinkedIn Learning](https://www.linkedin.com/learning/certificates/814d91fd0c6ab19bb16c9d29fd23fb3a7915ad908637ed0b5ba19f5684ac1dc5) (Jan 2023)
 
 ---
 
 ## 📬 Contact
 
-- 📧 Email: [seokhyun.sean.yoon@gmail.com](mailto:seokhyun.sean.yoon@gmail.com)  
-- 💼 LinkedIn: [@Seokhyun_Yoon](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
+* 📧 Email: [seokhyun.sean.yoon@gmail.com](mailto:seokhyun.sean.yoon@gmail.com)
+* 💼 LinkedIn: [@Seokhyun\_Yoon](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
