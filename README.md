@@ -121,7 +121,7 @@ This repository showcases selected projects that demonstrate my technical profic
 - [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
 ---
 
-### 🚀 SpaceX Falcon 9 Landing Prediction
+###  SpaceX Falcon 9 Landing Prediction
 
 **Business Goal:** Predict booster landing success to support mission planning and reduce launch failure risks.
 
@@ -168,25 +168,41 @@ This repository showcases selected projects that demonstrate my technical profic
 |![Actual vs Predicted](images/housing-importance.png)   | ![Feature Importance](images/housing-log.png) |
 
 ---
-### Rainfall Forecasting (Time Series)
+###  Rainfall Forecasting (Time Series)
 
-**Business Goal:** Forecast rainfall to aid in public resource planning.
+**Business Goal:**  
+Forecast monthly rainfall in Perth, Australia to support weather planning and hydrology management using long-term seasonal patterns.
 
-* **Tech Stack:** R, forecast, ggplot2, Box-Jenkins (SARIMA)
-* **Key Actions:**
+* **Tech Stack:**  
+  R, `forecast`, `tseries`, `ggplot2`, Box-Jenkins Methodology
 
-  * Diagnosed seasonality and stationarity issues
-  * Fitted SARIMA(1,0,0)x(0,1,1)\[12] using AIC tuning
-* **Results:**
+* **Key Actions:**  
+  * Loaded and cleaned 106 months of historical rainfall data  
+  * Conducted stationarity checks and seasonal decomposition  
+  * Performed grid search to optimize SARIMA parameters based on AIC  
+  * Trained SARIMA(1,0,0)(0,1,1)[12] model to forecast 14 future months  
+  * Compared against a dynamic regression model with covariates  
+  * Validated forecasts against actual rainfall from BOM (Australia)
 
-  * RMSE = 1.095; tight forecast confidence intervals
+* **Results:**  
+  * Achieved >10% improvement in accuracy after model refinement  
+  * Detected strong annual seasonality in rainfall patterns  
+  * Delivered an interpretable model with clear confidence intervals  
+  * Highlighted SARIMA as effective for mid-term weather forecasting
 
+* **Visuals:**
  
 | Forecast Plot                                | Residual ACF          |
 |-------------------------------------------------------|--------------------------------------------|
 |![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
 
-
+* **Files:**
+  
+- [`Rainfall.Rmd`](rainfall_forecasting.Rmd) – full notebook
+- [`IDCJAC0009_009021_1800_Data.csv`](data/rainfall.csv) – historical rainfall data  
+- [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
+- [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
+- [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
 ---
 ### Police Complaints Prediction
 
