@@ -55,9 +55,10 @@ This repository showcases selected projects that demonstrate my technical profic
 
 * **Visuals:**
 
-| SHAP Feature Importance                                 | Confusion Matrix Heatmap                      |
-|---------------------------------------------------------|-----------------------------------------------|
-| ![SHAP Plot](images/credit_shap_plot.png)               | ![Confusion Matrix](images/credit_confmat.png) |
+
+| Performance Dashboard                             | Model Interpretability          |
+|-------------------------------------------------------|--------------------------------------------|
+|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
 
 * **Files:**  
   `credit_risk.ipynb`, `credit_risk_model.pt`, `credit_risk_shap_plot.png`, `credit_risk_confusion_matrix.png`
