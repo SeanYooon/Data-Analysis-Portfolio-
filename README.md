@@ -33,43 +33,53 @@ This repository showcases selected projects that demonstrate my technical profic
 ---
 
 ## 📊 Project Portfolio
+---
 
-### Credit Risk Prediction & Scoring
+###  Credit Risk Prediction (Loan Default Classification)
 
-**Business Goal:** Predict default risk to improve loan decisions and reduce losses.
+**Business Goal:** Predict the likelihood of loan default to assist lenders in minimizing financial risk and improving credit approval accuracy.
 
-* **Tech Stack:** Python, XGBoost, SHAP, SMOTE, Seaborn, Scikit-learn
+* **Tech Stack:** Python, Pandas, Scikit-learn, PyTorch, SMOTE, Matplotlib, Seaborn  
 * **Key Actions:**
+  * Cleaned and encoded borrower data (categorical + numerical features)
+  * Engineered features like DTI ratio and employment length groups
+  * Applied SMOTE to resolve class imbalance (default vs non-default)
+  * Trained and compared classifiers (Logistic Regression, Random Forest, PyTorch Neural Network)
+  * Visualized results using confusion matrices and SHAP interpretability tools
 
-  * Built credit scoring pipeline with 300–850 scale transformation
-  * Applied class imbalance handling (SMOTE) and model tuning
-  * Used SHAP for explainability and compliance
-  * Quantified potential financial loss savings
-* **Results:**
+* **Results:**  
+  * PyTorch model achieved ~85% classification accuracy  
+  * Balanced recall and precision across both classes after SMOTE  
+  * Identified high DTI and low income as key predictors of default  
+  * SHAP analysis supported explainable predictions for stakeholders
 
-  * 93.7% AUC; 76.4% detection rate
-  * Estimated \$10.3M in loss prevention
- 
- * **Visuals:**
+* **Visuals:**
 
-| Performance Dashboard                             | Model Interpretability          |
-|-------------------------------------------------------|--------------------------------------------|
-|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
+| SHAP Feature Importance                                 | Confusion Matrix Heatmap                      |
+|---------------------------------------------------------|-----------------------------------------------|
+| ![SHAP Plot](images/credit_shap_plot.png)               | ![Confusion Matrix](images/credit_confmat.png) |
 
+* **Files:**  
+  `credit_risk.ipynb`, `credit_risk_model.pt`, `credit_risk_shap_plot.png`, `credit_risk_confusion_matrix.png`
 
 ---
-### Customer Churn Prediction Dashboard
+###  Customer Churn Prediction Dashboard
 
-**Business Goal:** Identify and prevent customer churn with predictive analytics and dashboards.
+**Business Goal:** Predict telecom customer churn and deliver actionable BI insights to help reduce retention risk and optimize decision-making.
 
-* **Tech Stack:** Python, PyTorch, SMOTE, Tableau, Scikit-learn
+* **Tech Stack:** Python, Pandas, Scikit-learn, PyTorch, SMOTE, Power BI, SQL  
 * **Key Actions:**
+  * Cleaned Telco dataset and performed feature engineering (e.g., contract length, charges per tenure)
+  * Designed OLAP-style schema with fact and dimension tables for slicing by customer segments
+  * Trained a churn classification model using PyTorch with SMOTE to balance the classes
+  * Evaluated model using accuracy, confusion matrix, and classification report
+  * Built Power BI dashboard to visualize KPIs, churn heatmap, trends, and customer segments
 
-  * Built a neural network churn model (\~79% accuracy)
-  * Visualized KPIs and churn factors in Tableau dashboard
-  * Conducted OLAP-style segmentation on tenure, contract type, etc.
- 
-* **Results:** Enabled proactive targeting of high-risk segments
+* **Results:**  
+  * Achieved over 80% accuracy in churn classification with balanced sensitivity  
+  * Identified key churn drivers (monthly charges, contract type, tenure)  
+  * Delivered an interactive dashboard for decision-makers to explore churn by segment  
+  * Enabled early detection of at-risk customers and data-driven intervention strategies
 
 * **Visuals:**
 
@@ -77,29 +87,38 @@ This repository showcases selected projects that demonstrate my technical profic
 |----------------|---------------------------|
 | ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
 
+* **Files:** 
+- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
+- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
+- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
 ---
-### Marketing Campaign ROAS Optimization
+###  Ad Campaign ROAS Analysis
 
-**Business Goal:** Improve digital marketing ROI by predicting and explaining ROAS drivers.
+**Business Goal:** Analyze and compare the Return on Ad Spend (ROAS) across multiple ad platforms to identify the most cost-effective marketing channels.
 
-* **Tech Stack:** Python, XGBoost, Seaborn, Pandas
+* **Tech Stack:** Excel, Tableau, Power BI, SQL (Optional upgrade path: replicate using Python & SQL)  
 * **Key Actions:**
+  * Collected and organized campaign data across Facebook, Google, and YouTube ads
+  * Calculated ROAS, CTR, CPC, and CPM metrics for each campaign and platform
+  * Created custom visuals to compare KPIs, cost distribution, and performance trends
+  * Delivered dashboard and presentation highlighting the highest and lowest performing channels
+  * Suggested reallocation strategies for future ad budgets based on findings
 
-  * Preprocessed data and created custom metrics (e.g., Impressions per Dollar)
-  * Removed outliers for better model generalization
-  * Trained and interpreted XGBoost regression
-* **Results:**
+* **Results:**  
+  * Identified Google Ads as highest ROAS (~3.5x), while YouTube underperformed (<1x)  
+  * Found a clear inverse relationship between ad cost and effectiveness on certain platforms  
+  * Supported marketing team in shifting budget to high-ROI channels and pausing weak performers
 
-  * R² improved to 0.9280 post outlier removal
-  * Key drivers identified: Conversion Rate, Age, Impressions efficiency
-
-* **Visuals:** 
+* **Visuals:**
 
 | Model Analysis                            | Actual vs Predicted           |
 |-------------------------------------------------------|--------------------------------------------|
 |![Actual vs Predicted](images/roas_model_analysis.png)    | ![Feature Importance](images/actual_vs_predicted_roas.png) |
 
-
+* **Files:** 
+- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
+- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
+- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
 ---
 
 ### 🚀 SpaceX Falcon 9 Landing Prediction
@@ -180,17 +199,27 @@ This repository showcases selected projects that demonstrate my technical profic
   * Addressed fairness/ethics concerns in model usage
 * **Results:** High-AUC classifiers with ethical lens
 ---
-### Health Spending Visualization (Canada)
+###  Health Spending Visualization (Canada)
 
-**Business Goal:** Analyze per-capita and categorical health spending across provinces.
+**Business Goal:**  
+Provide an interactive breakdown of per-capita and categorical health expenditures across Canadian provinces to support public policy evaluation and stakeholder insight.
 
-* **Tech Stack:** Tableau, CIHI datasets
-* **Key Actions:**
+* **Tech Stack:**  
+  Tableau Public, Excel, CIHI Open Data (Canadian Institute for Health Information)
 
-  * Cleaned and integrated population and health funding data
-  * Calculated per capita and YoY growth rates
-* **Results:** Interactive dashboard revealing policy trends by region
- 
+* **Key Actions:**  
+  * Cleaned and joined provincial health spending and population datasets (2000–2022)  
+  * Created calculated fields for per-capita metrics and YoY percentage growth  
+  * Designed a multi-page Tableau dashboard with province/category/time filters  
+  * Published dashboard to [Tableau Public](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3)
+
+* **Results:**  
+  * Highlighted national and provincial healthcare spending trends over 20+ years  
+  * Visualized Quebec’s divergent YoY growth and per-capita efficiency  
+  * Dashboard used as a stakeholder tool for comparing hospital, drugs, and physician costs  
+  * Improved accessibility of public health data through a visual-first interface
+
+* **Visuals:**
 
 | Stacked Bar + Dot Line – Spending by Category and Total Trend                              | Line Chart – YoY Growth Rate (Canada vs Quebec vs BC)         |
 |-------------------------------------------------------|--------------------------------------------|
