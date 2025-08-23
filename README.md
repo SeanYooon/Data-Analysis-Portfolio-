@@ -22,7 +22,7 @@ This repository showcases selected projects that demonstrate my technical profic
 
   * [Credit Risk Prediction & Scoring](#credit-risk-prediction--scoring)
   * [Customer Churn Prediction Dashboard](#customer-churn-prediction-dashboard)
-  * [Marketing Campaign ROAS Optimization](#marketing-campaign-roas-optimization)
+  * [Ad Campaign ROAS Analysis](#ad-campaign-roas-analysis)
   * [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction)
   * [Housing Price Prediction](#housing-price-prediction)
   * [Rainfall Forecasting (Time Series)](#rainfall-forecasting-time-series)
@@ -48,7 +48,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * Visualized results using confusion matrices and SHAP interpretability tools
 
 * **Results:**  
-  * PyTorch model achieved ~85% classification accuracy  
+  * PyTorch model achieved approximately 85% classification accuracy  
   * Balanced recall and precision across both classes after SMOTE  
   * Identified high DTI and low income as key predictors of default  
   * SHAP analysis supported explainable predictions for stakeholders
@@ -61,7 +61,7 @@ This repository showcases selected projects that demonstrate my technical profic
 |![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
 
 * **Files:**  
-- [`credit_risk.ipynb`](/files/credit_risk.ipynb) – full notebook
+- [`credit_risk.ipynb`](/files/credit_risk.ipynb) – Full classification notebook
 ---
 ###  Customer Churn Prediction Dashboard
 
@@ -105,13 +105,13 @@ This repository showcases selected projects that demonstrate my technical profic
   * Suggested reallocation strategies for future ad budgets based on findings
 
 * **Results:**  
-  * Identified Google Ads as highest ROAS (~3.5x), while YouTube underperformed (<1x)  
+  * Identified Google Ads as highest ROAS (~ 3.5x), while YouTube underperformed (<1x)  
   * Found a clear inverse relationship between ad cost and effectiveness on certain platforms  
   * Supported marketing team in shifting budget to high-ROI channels and pausing weak performers
 
 * **Visuals:**
 
-| Model Analysis                            | Actual vs Predicted           |
+| ROAS by Channel                            |  Cost Effectiveness Comparison         |
 |-------------------------------------------------------|--------------------------------------------|
 |![Actual vs Predicted](images/roas_model_analysis.png)    | ![Feature Importance](images/actual_vs_predicted_roas.png) |
 
@@ -161,7 +161,7 @@ This repository showcases selected projects that demonstrate my technical profic
 
 * **Visuals:**
   
-| Actual vs Predicted                               | Feature Importance          |
+| Feature Importance | Actual vs Predicted        |
 |-------------------------------------------------------|--------------------------------------------|
 |![Actual vs Predicted](images/housing-importance.png)   | ![Feature Importance](images/housing-log.png) |
 
@@ -190,7 +190,7 @@ Forecast monthly rainfall in Perth, Australia to support weather planning and hy
 
 * **Visuals:**
  
-| Forecast Plot                                | Residual ACF          |
+| SARIMA Forecast | Residual Autocorrelation Plot         |
 |-------------------------------------------------------|--------------------------------------------|
 |![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
 
@@ -242,7 +242,7 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
 ---
 ### Insurance Cost Analysis (Excel)
 
-**Business Goal:** Simulate group benefits cost modeling for Sun Life-like scenarios.
+**Business Goal:** Simulate group benefits cost modeling.
 
 * **Tech Stack:** Excel, Pivot Tables, VBA
 * **Key Actions:**
@@ -256,8 +256,8 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
 ## 🎓 Education
 
 **Simon Fraser University** — Burnaby, BC
-Bachelor of Science in Statistics
-*May 2018 – December 2023*
+**Bachelor of Science in Statistics*
+*Graduated: December 2023*
 
 ---
 
@@ -272,4 +272,16 @@ Bachelor of Science in Statistics
 ## 📬 Contact
 
 * 📧 Email: [seokhyun.sean.yoon@gmail.com](mailto:seokhyun.sean.yoon@gmail.com)
-* 💼 LinkedIn: [@Seokhyun\_Yoon](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
+* 💼 LinkedIn: [Seokhyun\_Yoon](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
+
+---
+
+## 📌 Tools Summary (Optional)
+
+| Tool     | Used In Projects |
+|----------|------------------|
+| Python   | Credit Risk, Churn, SpaceX, ROAS |
+| R        | Rainfall, Housing, Police |
+| Power BI | Churn, ROAS      |
+| Tableau  | Health Spending, ROAS |
+| Excel    | Insurance, ROAS  |
