@@ -101,6 +101,8 @@ This repository showcases selected projects that demonstrate my technical profic
 
 
 ---
+---
+
 ### 🚀 SpaceX Falcon 9 Landing Prediction
 
 **Business Goal:** Predict booster landing success to support mission planning and reduce launch failure risks.
@@ -117,11 +119,11 @@ This repository showcases selected projects that demonstrate my technical profic
   * Identified an increasing success trend with higher flight numbers  
   * Delivered an interactive tool for launch analysis and planning
 
-* **Visuals:** 
+* **Visuals:**
 
-| Landing Outcome Map (Folium)                              | Feature Importance          |
-|-------------------------------------------------------|--------------------------------------------|
-|![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
+| Interactive Launch Map (Folium)                         | Model Accuracy Chart                          |
+|---------------------------------------------------------|-----------------------------------------------|
+| ![Folium Map](images/spacex_map.jpg)                    | ![Model Accuracy](images/spacex_accuracy.jpg) |
 
 * **Files:**  
   `spacex_final.ipynb`, `spacex_dashboard.py`, `spacex_map.ipynb`, `spacex_sql_queries.sql`, `spacex_model_results.png`
