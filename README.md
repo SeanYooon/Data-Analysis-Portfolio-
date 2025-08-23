@@ -101,7 +101,6 @@ This repository showcases selected projects that demonstrate my technical profic
 
 
 ---
----
 
 ### 🚀 SpaceX Falcon 9 Landing Prediction
 
@@ -126,7 +125,9 @@ This repository showcases selected projects that demonstrate my technical profic
 | ![Folium Map](images/spacex_map.jpg)                    | ![Model Accuracy](images/spacex_accuracy.jpg) |
 
 * **Files:**  
-  `spacex_final.ipynb`, `spacex_dashboard.py`, `spacex_map.ipynb`, `spacex_sql_queries.sql`, `spacex_model_results.png`
+
+- [`SpaceX_Machine_Learning_Prediction.ipynb`](files/SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite.ipynb) – full Jupyter notebook  
+- [`falcon9.pdf`](files/spacex-final.pdf) – final PDF summary
 ---
 ### Housing Price Prediction
 
