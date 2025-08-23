@@ -61,8 +61,7 @@ This repository showcases selected projects that demonstrate my technical profic
 |![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
 
 * **Files:**  
-  `credit_risk.ipynb`, `credit_risk_model.pt`, `credit_risk_shap_plot.png`, `credit_risk_confusion_matrix.png`
-
+- [`credit_risk.ipynb`](/files/credit_risk.ipynb) – full notebook
 ---
 ###  Customer Churn Prediction Dashboard
 
