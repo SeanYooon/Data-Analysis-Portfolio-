@@ -101,17 +101,21 @@ This repository showcases selected projects that demonstrate my technical profic
 
 
 ---
-### SpaceX Falcon 9 Landing Prediction
+### 🚀 SpaceX Falcon 9 Landing Prediction
 
-**Business Goal:** Predict booster landing success to improve space mission planning.
+**Business Goal:** Predict booster landing success to support mission planning and reduce launch failure risks.
 
-* **Tech Stack:** Python, Scikit-learn, Folium, Plotly, APIs
+* **Tech Stack:** Python, Pandas, Scikit-learn, Plotly Dash, Folium, SQL  
 * **Key Actions:**
+  * Pulled and cleaned SpaceX API data; added features via scraping (e.g., booster version)
+  * Conducted EDA with SQL, time series, and categorical visualizations
+  * Built interactive dashboard (Dash) and geographic map (Folium)
+  * Trained and compared classifiers (Logistic Regression, SVM, Decision Tree)
 
-  * Scraped SpaceX API and engineered features
-  * Built multiple classifiers; selected Random Forest (87% accuracy)
-  * Mapped landing outcomes with Folium
-* **Results:** Visual tool for interpreting mission factors that drive landing outcomes
+* **Results:**  
+  * Found strong correlations between orbit type and landing success  
+  * Identified an increasing success trend with higher flight numbers  
+  * Delivered an interactive tool for launch analysis and planning
 
 * **Visuals:** 
 
@@ -119,7 +123,8 @@ This repository showcases selected projects that demonstrate my technical profic
 |-------------------------------------------------------|--------------------------------------------|
 |![Landing Map](images/spacex_map.jpg)  | ![Feature Importance](images/spacex_accuracy.jpg) |
 
-
+* **Files:**  
+  `spacex_final.ipynb`, `spacex_dashboard.py`, `spacex_map.ipynb`, `spacex_sql_queries.sql`, `spacex_model_results.png`
 ---
 ### Housing Price Prediction
 
