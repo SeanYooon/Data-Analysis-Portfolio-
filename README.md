@@ -276,7 +276,7 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
 
 ---
 
-## 📌 Tools Summary (Optional)
+## 📌 Tools Summary 
 
 | Tool     | Used In Projects |
 |----------|------------------|
