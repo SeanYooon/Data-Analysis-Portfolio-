@@ -116,9 +116,7 @@ This repository showcases selected projects that demonstrate my technical profic
 |![Actual vs Predicted](images/roas_model_analysis.png)    | ![Feature Importance](images/actual_vs_predicted_roas.png) |
 
 * **Files:** 
-- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
-- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
-- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
+- [`Ad_Campaign_ROAS_Report.pdf`](files/Ad_Campaign_ROAS_Report.pdf) 
 ---
 
 ###  SpaceX Falcon 9 Landing Prediction
