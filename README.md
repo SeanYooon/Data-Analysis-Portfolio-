@@ -96,7 +96,7 @@ This repository showcases selected projects that demonstrate my technical profic
 
 **Business Goal:** Analyze and compare the Return on Ad Spend (ROAS) across multiple ad platforms to identify the most cost-effective marketing channels.
 
-* **Tech Stack:** Excel, Tableau, Power BI, SQL (Optional upgrade path: replicate using Python & SQL)  
+* **Tech Stack:** Excel, Tableau, Power BI, SQL 
 * **Key Actions:**
   * Collected and organized campaign data across Facebook, Google, and YouTube ads
   * Calculated ROAS, CTR, CPC, and CPM metrics for each campaign and platform
