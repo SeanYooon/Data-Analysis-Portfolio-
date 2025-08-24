@@ -201,17 +201,7 @@ Forecast monthly rainfall in Perth, Australia to support weather planning and hy
 - [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
 - [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
 - [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
----
-### Police Complaints Prediction
 
-**Business Goal:** Predict misconduct complaints among officers using historical data.
-
-* **Tech Stack:** R, XGBoost, Random Forest, ROC curves
-* **Key Actions:**
-
-  * Modeled likelihood of complaints from demographic/service history
-  * Addressed fairness/ethics concerns in model usage
-* **Results:** High-AUC classifiers with ethical lens
 ---
 ###  Health Spending Visualization (Canada)
 
