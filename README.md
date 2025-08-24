@@ -10,7 +10,7 @@ I work primarily with **Python, R, SQL, Power BI, Tableau**, and version control
 
 This repository showcases selected projects that demonstrate my technical proficiency, business thinking, and ability to deliver data-driven solutions.
 
-✍️ [View My Resume (PDF)](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/600ea4af8f841bf852fe868ec03f4e31772f46f97/Sean%20Resume.pdf](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/main/Sean%20Resume.pdf)
+✍️ [View My Resume (PDF)](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/main/Sean%20Resume.pdf)
 🔗 [Visit My LinkedIn](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
 
 ---
