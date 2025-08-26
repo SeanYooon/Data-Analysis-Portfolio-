@@ -124,7 +124,10 @@ Identify key drivers of online cart abandonment and quantify lost revenue potent
 * **Files:** 
 - [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
 - [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
-- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset 
+- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset
+
+* **Source:**
+- [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 ---
 ###  Ad Campaign ROAS Analysis
 
