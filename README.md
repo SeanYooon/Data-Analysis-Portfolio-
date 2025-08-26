@@ -20,6 +20,7 @@ This repository showcases selected projects that demonstrate my technical profic
 * [👋 About Me](#-about-me)
 * [📊 Project Portfolio](#-project-portfolio)
 
+  * [Cart Abandonment - Executive Dashboard](#credit-risk-prediction--scoring)
   * [Credit Risk Prediction & Scoring](#credit-risk-prediction--scoring)
   * [Customer Churn Prediction Dashboard](#customer-churn-prediction-dashboard)
   * [Ad Campaign ROAS Analysis](#ad-campaign-roas-analysis)
@@ -34,10 +35,41 @@ This repository showcases selected projects that demonstrate my technical profic
 
 ## 📊 Project Portfolio
 ---
+### Cart Abandonment – Executive Dashboard
+
+**Business Goal:**  
+Identify key drivers of online cart abandonment and quantify lost revenue potential to support e-commerce conversion optimization strategies.
+
+* **Tech Stack:** PostgreSQL, Tableau Public, Excel  
+* **Key Actions:**  
+  - Imported raw e-commerce session data (5,000 sessions) into PostgreSQL and created KPI summary tables.  
+  - Engineered features such as **Abandoned Flag**, **Lost Revenue Potential**, **Time Buckets**, and customer segmentation fields (Returning vs New, Coupon Used).  
+  - Built an executive KPI dashboard showing abandonment rate, average cart value, session totals, and lost revenue potential.  
+  - Analyzed **abandonment reasons** (High Shipping Cost, Payment Issues, etc.) and their financial impact.  
+  - Segmented performance by **time spent on site** and **customer type** to identify behavioral differences.  
+
+* **Results:**  
+  - Found **70% abandonment rate**, representing **$209K in lost revenue potential** across 5,000 sessions.  
+  - High shipping cost was the **largest abandonment driver**, linked to ~$75K in lost revenue.  
+  - First-time customers had significantly **lower conversion rates** than returning customers (only ~28% of cart value converted).  
+  - Sessions lasting **over 5 minutes** were strongly correlated with successful conversions.  
+  - Coupons showed **limited effect** on reducing abandonment, suggesting greater ROI from pricing or loyalty strategies.  
+
+* **Visuals:**  
+
+| KPI Overview | Abandonment Drivers |
+|--------------|---------------------|
+| ![KPI Dashboard](images/Dashboard1.pdf) | ![Top Reasons](images/cart_reasons.png) |
+
+* **Files:**  
+- [`cart_abandonment_dashboard.twb`]([files/cart_abandonment_dashboard.twb](https://public.tableau.com/app/profile/seokhyun.yoon/viz/CartAbandonment_17561755499880/Dashboard1#1)) – Tableau workbook  
+- [`cart_abandonment.csv`](files/cart_abandonment.csv) – Dataset  
+ 
+---
 
 ###  Credit Risk Prediction (Loan Default Classification)
 
-**Business Goal:** Predict the likelihood of loan default to assist lenders in minimizing financial risk and improving credit approval accuracy.
+**Business Goal:** Predict the likelihood of loan default to help lenders minimize financial risk and improve credit approval accuracy.
 
 * **Tech Stack:** Python, Pandas, Scikit-learn, PyTorch, SMOTE, Matplotlib, Seaborn  
 * **Key Actions:**
