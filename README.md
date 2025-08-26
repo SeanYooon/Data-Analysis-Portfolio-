@@ -68,7 +68,7 @@ Identify key drivers of online cart abandonment and quantify lost revenue potent
 - [View Tableau Dashboard](https://public.tableau.com/views/CartAbandonment_17561755499880/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 * **Source:**
-[Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/ritalin56/e-commerce-card-abandonment))
+[E-Commerce Card Abandonment](https://www.kaggle.com/datasets/ritalin56/e-commerce-card-abandonment))
 ---
 
 ###  Credit Risk Prediction (Loan Default Classification)
