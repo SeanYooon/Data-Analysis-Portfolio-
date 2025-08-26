@@ -20,7 +20,7 @@ This repository showcases selected projects that demonstrate my technical profic
 * [👋 About Me](#-about-me)
 * [📊 Project Portfolio](#-project-portfolio)
 
-  * [Cart Abandonment - Executive Dashboard](#credit-risk-prediction--scoring)
+  * [Cart Abandonment - Executive Dashboard](#cart-abandonment--executive-dashboard)
   * [Credit Risk Prediction & Scoring](#credit-risk-prediction--scoring)
   * [Customer Churn Prediction Dashboard](#customer-churn-prediction-dashboard)
   * [Ad Campaign ROAS Analysis](#ad-campaign-roas-analysis)
