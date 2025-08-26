@@ -62,7 +62,7 @@ Identify key drivers of online cart abandonment and quantify lost revenue potent
 | ![KPI Dashboard](images/Cart_Abandonment_dashboard.png) | ![Top Reasons](images/cart_reasons.png) |
 
 * **Files:**  
-- [`cart_abandonment_dashboard.twb`]([files/cart_abandonment_dashboard.twb](https://public.tableau.com/app/profile/seokhyun.yoon/viz/CartAbandonment_17561755499880/Dashboard1#1)) – Tableau workbook  
+- [`cart_abandonment_dashboard.twb`](https://public.tableau.com/views/CartAbandonment_17561755499880/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) – Tableau workbook  
 - [`cart_abandonment.csv`](files/cart_abandonment.csv) – Dataset  
  
 ---
