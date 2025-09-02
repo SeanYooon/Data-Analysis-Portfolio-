@@ -99,38 +99,45 @@ Identify key drivers of online cart abandonment and quantify lost revenue potent
 * **Files:**  
 - [`credit_risk.ipynb`](/files/credit_risk.ipynb) – Full classification notebook
 ---
-###  Customer Churn Prediction Dashboard
+### Customer Churn – Revenue Risk Dashboard
 
-**Business Goal:** Predict telecom customer churn and deliver actionable BI insights to help reduce retention risk and optimize decision-making.
+**Business Goal:**  
+Quantify how much revenue is at risk from churn and surface the segments (contract, tenure, services) where targeted saves will have the highest ROI.
 
-* **Tech Stack:** Python, Pandas, Scikit-learn, PyTorch, SMOTE, Power BI, SQL  
-* **Key Actions:**
-  * Cleaned Telco dataset and performed feature engineering (e.g., contract length, charges per tenure)
-  * Designed OLAP-style schema with fact and dimension tables for slicing by customer segments
-  * Trained a churn classification model using PyTorch with SMOTE to balance the classes
-  * Evaluated model using accuracy, confusion matrix, and classification report
-  * Built Power BI dashboard to visualize KPIs, churn heatmap, trends, and customer segments
+* **Tech Stack:** Tableau Public, Python/SQL (data prep), Excel  
+* **Key Actions:**  
+  - Cleaned the Telco Churn dataset; normalized yes/no fields and created calculated metrics (**Churn Rate**, **Lost Revenue %**, **Lost Revenue (Monthly)**).  
+  - Built an executive KPI strip (churn, revenue at risk, tenure) and four diagnostic views: **Contract**, **Tenure Group**, **Internet Service**, **Charge Bucket**.  
+  - Added reference lines (mean/median) and value labels for quick benchmarking; sized/colored by revenue to emphasize financial impact.  
 
-* **Results:**  
-  * Achieved over 80% accuracy in churn classification with balanced sensitivity  
-  * Identified key churn drivers (monthly charges, contract type, tenure)  
-  * Delivered an interactive dashboard for decision-makers to explore churn by segment  
-  * Enabled early detection of at-risk customers and data-driven intervention strategies
+* **Results (headline KPIs):**  
+  - **Churn Rate:** **26.6%**  
+  - **Lost Revenue (Monthly):** **$139K**  
+  - **Lost Revenue Potential (all-time):** **$1.7M**  
+  - **Total Charges:** **$16.1M** • **Avg. Tenure:** **32 months** • **Senior Customers:** **1,142**  
+
+* **Insights that drive action:**  
+  - **Month-to-month contracts churn ~42.7%** (largest driver of lost revenue); 1-year and 2-year contracts are far more stable (<12% and <5%).  
+  - **Early lifecycle (0–12 months)** shows the highest churn and revenue loss — retention plays should fire in months **1–3**.  
+  - **High-charge customers** churn more than low-charge customers → prioritize proactive saves for high-value accounts.  
+  - **Fiber** users churn more than **DSL** despite higher revenue, suggesting UX/support issues worth investigation.  
+  - A **10% improvement** in the highest-risk segments (month-to-month + high charge) would **recover ≈ $170K per month**.
 
 * **Visuals:**
 
-| KPI: Churn Rate | Churn by Internet Service |
-|----------------|---------------------------|
-| ![KPI Churn](images/telco5.png) | ![Internet Type](images/telco2.png) |
+| KPI Dashboard |
+|--------------|
+| ![KPI](images/ChurnDashboard.png) |
 
-* **Files:** 
-- [`churn_analysis.ipynb`](files/Churn.ipynb) – Notebook  
-- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – Dataset
-- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – Dataset
+* **Files:**  
 
-* **Source:**
-- [Telco Customer Churn Dataset (IBM Sample)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+- `churn_dashboard.pdf` – 1-page executive brief
 
+* **Link:**  
+- **[View Tableau Dashboard](https://public.tableau.com/views/Churnproject_17566857636810/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
+* **Source:**  
+- [Telco Customer Churn (Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
 ---
 ###  Ad Campaign ROAS Analysis
