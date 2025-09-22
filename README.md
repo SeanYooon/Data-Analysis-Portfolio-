@@ -279,7 +279,7 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
 
 * **Files:**
   
-- ['files/data/Cleaned health spending population combined.xlsx'] – cleaned dataset
+- ['files/Data/Cleaned health spending population combined.xlsx] – cleaned dataset
 
 * **Source**
 *[National Health Expenditure (NHEX) 2024 – Full Data Tables](https://www.cihi.ca/sites/default/files/document/nhex-2024-full-data-tables-en.xlsx)
