@@ -277,6 +277,13 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
 |-------------------------------------------------------|--------------------------------------------|
 |![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
 
+* **Files:**
+  
+- ['Cleaned health spending population combined.xlsx'] – cleaned dataset
+
+* **Source**
+* https://www.cihi.ca/sites/default/files/document/nhex-2024-full-data-tables-en.xlsx
+
 ---
 ### Insurance Cost Analysis (Excel)
 
