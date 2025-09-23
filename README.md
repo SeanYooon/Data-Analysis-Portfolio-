@@ -315,17 +315,18 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
   - Revealed Quebec’s unique spending growth patterns  
   - Highlighted per-capita efficiency differences across provinces  
   - Provided stakeholders an accessible, visual tool for health budget comparisons  
-- **Files:**  
-  - `models/staging/stg_health_spending.sql`  
-  - `models/marts/mart_health_spending.sql`  
-  - `models/staging/schema.yml` & `models/marts/schema.yml`  
-  - `canadian_health_expenditure_tableau_ready.csv` (exported mart data)  
-  - Tableau workbook: `Health_Spending_Canada.twbx` (published to Tableau Public)  
-- **Source:**  
-  National Health Expenditure (NHEX) 2024 — CIHI Open Data
 
-Sources
-[1] GitHub - SeanYooon/Data-Analysis-Portfolio- https://github.com/SeanYooon/Data-Analysis-Portfolio-
+- **Files:**  
+  - SQL models & tests in the [snowflake_dbt repo](https://github.com/SeanYoooon/snowflake_dbt)  
+  - Exported CSV for Tableau Public:  ['Cleaned_health_spending_population_combined.xlsx']('files/Data/Cleaned_health_spending_population_combined.xlsx') 
+  - Tableau workbook: `Health_Spending_Canada.twbx` (published to Tableau Public) : [Tableau Public](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3)
+
+- **Data Source:**  
+
+* [National Health Expenditure (NHEX) 2024 – Full Data Tables](https://www.cihi.ca/sites/default/files/document/nhex-2024-full-data-tables-en.xlsx)
+
+- **Github Repo**
+[1] GitHub -[https://github.com/SeanYooon/Data-Analysis-Portfolio-](https://github.com/SeanYooon/snowflake_dbt)
 
 ---
 ### Insurance Cost Analysis (Excel)
