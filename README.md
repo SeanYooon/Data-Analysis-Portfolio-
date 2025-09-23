@@ -284,19 +284,7 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
 * **Source**
 * [National Health Expenditure (NHEX) 2024 – Full Data Tables](https://www.cihi.ca/sites/default/files/document/nhex-2024-full-data-tables-en.xlsx)
 ---
-### Insurance Cost Analysis (Excel)
 
-**Business Goal:** Simulate group benefits cost modeling.
-
-* **Tech Stack:** Excel, Pivot Tables, VBA
-* **Key Actions:**
-
-  * Built age-tiered risk model using Excel formulas and macros
-  * Automated premium segmentation and risk profiling
-* **Results:** Dashboard visualizing smoker cost impact, family size premiums, and risk categories
-
-
----
 ### Health Spending Visualization (Canada)
 
 **Business Goal:** Deliver an interactive, per-capita breakdown of Canadian provincial health expenditures (2000–2022) to inform public policy and budget planning.
@@ -316,12 +304,13 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
      - Aggregates by `province`, `year`, `category`  
      - Computes total spending and average per-capita metrics  
   4. **Automated tests** in `schema.yml` to ensure no nulls in key fields  
-- **Visualization:**  
-  -  Exported `mart_health_spending` to CSV for Tableau Public  
-  -  Multi-page dashboard with:  
-    - Stacked bars + line showing **spending by category** vs. **total trend**  
-    - Line charts for **year-over-year growth** comparing Canada, Quebec, and BC  
-    - Province and category filters for drill-down analysis  
+
+- **Visuals:**
+
+| Stacked Bar + Dot Line – Spending by Category and Total Trend                              | Line Chart – YoY Growth Rate (Canada vs Quebec vs BC)         |
+|-------------------------------------------------------|--------------------------------------------|
+|![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
+
 - **Results & Impact:**  
   - Revealed Quebec’s unique spending growth patterns  
   - Highlighted per-capita efficiency differences across provinces  
@@ -339,67 +328,16 @@ Sources
 [1] GitHub - SeanYooon/Data-Analysis-Portfolio- https://github.com/SeanYooon/Data-Analysis-Portfolio-
 
 ---
-## 🇨🇦 Health Spending Visualization (Canada)
+### Insurance Cost Analysis (Excel)
 
-**Business Goal**  
-Deliver an interactive, per-capita breakdown of Canadian provincial health expenditures (2000–2022) to support public policy and budget planning.
+**Business Goal:** Simulate group benefits cost modeling.
 
----
+* **Tech Stack:** Excel, Pivot Tables, VBA
+* **Key Actions:**
 
-### 🔧 Tech Stack  
-- **dbt Cloud (Snowflake)** → SQL modeling, staging & mart layers, automated tests  
-- **Tableau Public** → Dashboard visualization  
-- **CIHI Open Data (NHEX 2024)** → Health spending & population sources  
-
----
-
-### 📊 Data Pipeline  
-1. **Raw ingestion**  
-   - CIHI dataset loaded into `ANALYTICS_DB.RAW.HEALTH_SPENDING_RAW` via `sources.yml`.  
-2. **Staging model** (`stg_health_spending.sql`)  
-   - Normalized values (`—` → NULL, empty → NULL).  
-   - Casted `POPULATION_K` and `SPENDING` to numeric types.  
-   - Calculated `spending_per_capita` and `prev_spending_pc`.  
-   - Applied data quality filters (null checks).  
-3. **Mart model** (`mart_health_spending.sql`)  
-   - Aggregated by `province`, `year`, `category`.  
-   - Computed total spending + average per-capita metrics.  
-4. **Testing** (`schema.yml`)  
-   - Enforced `not_null` constraints on key fields.  
-   - Validated accepted values for categorical columns.  
-
----
-
-### 📈 Visualization (Tableau Public)  
-- Exported `mart_health_spending` to CSV for Tableau Public.  
-- Built a multi-page interactive dashboard with:  
-  - **Stacked bar + trend line**: spending by category vs. overall trend.  
-  - **Comparative line charts**: year-over-year growth for Canada, Quebec, and BC.  
-  - **Interactive filters**: drill-down by province and category.  
-
-👉 [View Dashboard on Tableau Public](#) *(add your link)*  
-
----
-
-### 🚀 Results & Insights  
-- Exposed **Quebec’s unique growth trajectory** compared to other provinces.  
-- Revealed **per-capita efficiency differences** across Canada.  
-- Delivered an **accessible, policy-ready tool** for healthcare budget planning.  
-
----
-
-### 📂 Files  
-- `models/staging/stg_health_spending.sql`  
-- `models/marts/mart_health_spending.sql`  
-- `models/staging/schema.yml` & `models/marts/schema.yml`  
-- `canadian_health_expenditure_tableau_ready.csv` (exported mart data)  
-- Tableau workbook: `Health_Spending_Canada.twbx` (published to Tableau Public)  
-
----
-
-**Source:**  
-[National Health Expenditure (NHEX) 2024 — CIHI Open Data](https://www.cihi.ca/en/national-health-expenditure-database-nhex)
----
+  * Built age-tiered risk model using Excel formulas and macros
+  * Automated premium segmentation and risk profiling
+* **Results:** Dashboard visualizing smoker cost impact, family size premiums, and risk categories
 
 ---
 
