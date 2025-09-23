@@ -251,39 +251,6 @@ Forecast monthly rainfall in Perth, Australia to support weather planning and hy
 - [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
 
 ---
-###  Health Spending Visualization (Canada)
-
-**Business Goal:**  
-Provide an interactive breakdown of per-capita and categorical health expenditures across Canadian provinces to support public policy evaluation and stakeholder insight.
-
-* **Tech Stack:**  
-  Tableau Public, Excel, CIHI Open Data (Canadian Institute for Health Information)
-
-* **Key Actions:**  
-  * Cleaned and joined provincial health spending and population datasets (2000–2022)  
-  * Created calculated fields for per-capita metrics and YoY percentage growth  
-  * Designed a multi-page Tableau dashboard with province/category/time filters  
-  * Published dashboard to [Tableau Public](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3)
-
-* **Results:**  
-  * Highlighted national and provincial healthcare spending trends over 20+ years  
-  * Visualized Quebec’s divergent YoY growth and per-capita efficiency  
-  * Dashboard used as a stakeholder tool for comparing hospital, drugs, and physician costs  
-  * Improved accessibility of public health data through a visual-first interface
-
-* **Visuals:**
-
-| Stacked Bar + Dot Line – Spending by Category and Total Trend                              | Line Chart – YoY Growth Rate (Canada vs Quebec vs BC)         |
-|-------------------------------------------------------|--------------------------------------------|
-|![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
-
-* **Files:**
-  
-- ['Cleaned_health_spending_population_combined.xlsx']('files/Data/Cleaned_health_spending_population_combined.xlsx') – cleaned dataset
-
-* **Source**
-* [National Health Expenditure (NHEX) 2024 – Full Data Tables](https://www.cihi.ca/sites/default/files/document/nhex-2024-full-data-tables-en.xlsx)
----
 
 ### Health Spending Visualization (Canada)
 
@@ -367,10 +334,14 @@ Provide an interactive breakdown of per-capita and categorical health expenditur
 
 ## 📌 Tools Summary 
 
-| Tool     | Used In Projects |
-|----------|------------------|
-| Python   | Credit Risk, Churn, SpaceX, ROAS |
-| R        | Rainfall, Housing, Police |
-| Power BI | Churn, ROAS      |
-| Tableau  | Health Spending, ROAS |
-| Excel    | Insurance, ROAS  |
+## 🛠️ Tools & Project Usage
+
+| Tool       | Used In Projects                      |
+|------------|---------------------------------------|
+| Python     | Credit Risk, Churn, SpaceX, ROAS      |
+| R          | Rainfall, Housing, Police             |
+| Power BI   | Churn, ROAS                           |
+| Tableau    | Health Spending, ROAS                 |
+| Excel      | Insurance, ROAS                       |
+| Snowflake  | Heart Disease, Health Spending        |
+| dbt Cloud  | Heart Disease, Health Spending        |
