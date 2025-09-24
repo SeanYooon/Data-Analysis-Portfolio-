@@ -142,6 +142,36 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 - [`credit_risk.ipynb`](/files/credit_risk.ipynb) – full notebook
 
 ---
+### Customer Churn Analysis & Prediction Dashboard
+
+**Business Goal:** Identify key drivers of customer churn and provide business stakeholders with predictive insights and retention strategies.
+
+* **Tech Stack:** Python (Pandas, Scikit-learn, PyTorch, SMOTE), SQL, Tableau  
+* **Key Actions:**
+  * Designed dimensional data warehouse model (fact + dimension tables) for OLAP-style exploration  
+  * Analyzed churn patterns by contract type, internet service, tenure group, and pricing tiers  
+  * Built churn classification models with PyTorch (neural network), Random Forest, and XGBoost  
+  * Applied SMOTE oversampling and weighted loss to address class imbalance, boosting recall for churners  
+  * Developed Tableau dashboard with KPIs, contract breakdowns, and churn trend visualizations  
+
+* **Results:**  
+  * Month-to-month contracts showed highest churn (42.7%) vs. two-year (2.8%)  
+  * Fiber optic internet users churned significantly more than DSL or non-internet customers  
+  * Predictive model achieved ~79% accuracy and F1-score of 0.58 for churners  
+  * Dashboard enabled non-technical stakeholders to monitor churn risk in near real-time  
+
+* **Visuals:**
+
+| Churn KPIs                        | Churn by Internet Service             |
+|-----------------------------------|---------------------------------------|
+| ![Churn KPI](images/telco5.png)   | ![Internet Service](images/telco2.png)|
+
+* **Files:**  
+- [`churn_analysis.ipynb`](files/Churn.ipynb) – analysis notebook  
+- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – processed dataset  
+- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – raw dataset  
+
+---
 ###  Ad Campaign ROAS Analysis
 
 **Business Goal:** Analyze and compare the Return on Ad Spend (ROAS) across multiple ad platforms to identify the most cost-effective marketing channels.
