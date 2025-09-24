@@ -22,7 +22,7 @@ This repository showcases selected projects that demonstrate my technical profic
 
   * [Cart Abandonment - Executive Dashboard](#cart-abandonment--executive-dashboard)
   * [Credit Risk Prediction & Scoring](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
-  * [Customer Churn Prediction Dashboard](#customer-churn-prediction-dashboard)
+  * [Customer Churn Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
   * [Ad Campaign ROAS Analysis](#ad-campaign-roas-analysis)
   * [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction)
   * [Housing Price Prediction](#housing-price-prediction)
