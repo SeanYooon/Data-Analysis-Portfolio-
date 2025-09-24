@@ -162,9 +162,9 @@ It predicts loan default, transforms outputs into FICO-style 300–850 credit sc
 
 * **Visuals:**
 
-| Churn KPIs                        | Churn by Internet Service             |
-|-----------------------------------|---------------------------------------|
-| ![Churn KPI](images/telco5.png)   | ![Internet Service](images/telco2.png)|
+| Churn KPIs                        | 
+|-----------------------------------|
+| ![Churn KPI](images/ChurnDashboard.png)   | 
 
 * **Files:**  
 - [`churn_analysis.ipynb`](files/Churn.ipynb) – analysis notebook  
