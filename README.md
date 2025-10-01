@@ -31,7 +31,7 @@ This repository showcases selected projects that demonstrate my technical profic
   * [Health Spending Visualization (Canada)](#health-spending-visualization-canada)
   * [Donor management crm analytics project](#donor-management--crm-analytics-project)
   * [Insurance Cost Analysis (Excel)](#insurance-cost-analysis-excel)
-\
+
 ---
 
 ## 📊 Project Portfolio
