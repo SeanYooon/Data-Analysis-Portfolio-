@@ -20,7 +20,8 @@ This repository showcases selected projects that demonstrate my technical profic
 * [👋 About Me](#-about-me)
 * [📊 Project Portfolio](#-project-portfolio)
 
-  * [Cart Abandonment - Executive Dashboard    (PostgreSQL, Tableau, Excel)](#cart-abandonment--executive-dashboard)
+  * [Cart Abandonment - Executive Dashboard
+  * (PostgreSQL, Tableau, Excel)](#cart-abandonment--executive-dashboard)
   * [Credit Risk Prediction & Scoring    (Python, XGBoost, SHAP, Scikit-learn)](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
   * [Customer Churn Prediction Dashboard    (Python, PyTorch, SQL, Tableau)](#customer-churn-analysis--prediction-dashboard)
   * [Ad Campaign ROAS Analysis    (Excel, Tableau, Power BI, SQL)](#ad-campaign-roas-analysis)
