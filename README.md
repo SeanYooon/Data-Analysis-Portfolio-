@@ -29,8 +29,9 @@ This repository showcases selected projects that demonstrate my technical profic
   * [Rainfall Forecasting (Time Series)](#rainfall-forecasting-time-series)
   * [Police Complaints Prediction](#police-complaints-prediction)
   * [Health Spending Visualization (Canada)](#health-spending-visualization-canada)
+  * [Donor management crm analytics project](#donor-management--crm-analytics-project)
   * [Insurance Cost Analysis (Excel)](#insurance-cost-analysis-excel)
-
+\
 ---
 
 ## 📊 Project Portfolio
