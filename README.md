@@ -345,9 +345,10 @@ Design and implement a scalable, customizable CRM solution using Zoho CRM to cen
   - Streamlined reporting with automated KPI dashboards, significantly reducing manual effort and accelerating insight delivery for fundraising leadership.  
 
 * **Visuals:**  
-| Donor Income Capacity Analysis          | Education Level Segmentation               |
-|-----------------------------------------|--------------------------------------------|
-|![Forecast Plot](images/crm-income.jpeg) | ![Residual ACF](images/crm-eudcation.jpeg) |
+
+| Donor Income Capacity Analysis | Education Level Segmentation |
+|--------------------------------|------------------------------|
+| ![Forecast Plot](images/crm-income.jpeg) | ![Residual ACF](images/crm-education.jpeg) |
 
 * **Files:** 
 
