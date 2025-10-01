@@ -20,17 +20,17 @@ This repository showcases selected projects that demonstrate my technical profic
 * [👋 About Me](#-about-me)
 * [📊 Project Portfolio](#-project-portfolio)
 
-  * [Cart Abandonment - Executive Dashboard (PostgreSQL, Tableau, Excel)](#cart-abandonment--executive-dashboard)
-  * [Credit Risk Prediction & Scoring (Python, XGBoost, SHAP, Scikit-learn)](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
-  * [Customer Churn Prediction Dashboard (Python, PyTorch, SQL, Tableau)](#customer-churn-analysis--prediction-dashboard)
-  * [Ad Campaign ROAS Analysis (Excel, Tableau, Power BI, SQL)](#ad-campaign-roas-analysis)
-  * [SpaceX Falcon 9 Landing Prediction (Python, Plotly Dash, Folium, SQL)](#spacex-falcon-9-landing-prediction)
-  * [Housing Price Prediction (R, XGBoost, glmnet, tidyverse)](#housing-price-prediction)
-  * [Rainfall Forecasting (Time Series)(R, SARIMA, ggplot2, forecast) ](#rainfall-forecasting-time-series)
-  * [Police Complaints Prediction(R, Statistical Modeling)](#police-complaints-prediction)
-  * [Health Spending Visualization (Canada)(dbt Cloud, Snowflake, Tableau)](#health-spending-visualization-canada)
-  * [Donor management crm analytics project(Zoho CRM, SQL, Python, Tableau)](#donor-management--crm-analytics-project)
-  * [Insurance Cost Analysis (Excel)(Excel, Pivot Tables, VBA)](#insurance-cost-analysis-excel)
+  * [Cart Abandonment - Executive Dashboard    (PostgreSQL, Tableau, Excel)](#cart-abandonment--executive-dashboard)
+  * [Credit Risk Prediction & Scoring    (Python, XGBoost, SHAP, Scikit-learn)](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
+  * [Customer Churn Prediction Dashboard    (Python, PyTorch, SQL, Tableau)](#customer-churn-analysis--prediction-dashboard)
+  * [Ad Campaign ROAS Analysis    (Excel, Tableau, Power BI, SQL)](#ad-campaign-roas-analysis)
+  * [SpaceX Falcon 9 Landing Prediction    (Python, Plotly Dash, Folium, SQL)](#spacex-falcon-9-landing-prediction)
+  * [Housing Price Prediction    (R, XGBoost, glmnet, tidyverse)](#housing-price-prediction)
+  * [Rainfall Forecasting (Time Series)   (R, SARIMA, ggplot2, forecast) ](#rainfall-forecasting-time-series)
+  * [Police Complaints Prediction   (R, Statistical Modeling)](#police-complaints-prediction)
+  * [Health Spending Visualization (Canada)   (dbt Cloud, Snowflake, Tableau)](#health-spending-visualization-canada)
+  * [Donor management crm analytics project   (Zoho CRM, SQL, Python, Tableau)](#donor-management--crm-analytics-project)
+  * [Insurance Cost Analysis (Excel)   (Excel, Pivot Tables, VBA)](#insurance-cost-analysis-excel)
 
 ---
 
