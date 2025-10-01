@@ -330,28 +330,29 @@ Forecast monthly rainfall in Perth, Australia to support weather planning and hy
 ### Donor Management & CRM Analytics Project
 
 **Business Goal:**  
-Design, implement, and analyze a scalable CRM solution to manage donor records and generate actionable insights for advancement and fundraising teams.
+Design and implement a scalable, customizable CRM solution using Zoho CRM to centralize donor records, automate workflows, and generate actionable donor insights that enhance advancement and fundraising effectiveness.
 
-* **Tech Stack:** Zoho CRM, SQL, Python
-* 
+* **Tech Stack:** Zoho CRM, SQL, Python, Tableau  
 * **Key Actions:**  
-  - Imported and configured 4,500+ donor records with custom field mapping for attributes including age, income, education level, occupation, and donation capacity.  
-  - Developed segmented reports analyzing donor demographics, donation capacity (totaling $4.8M+), geographic distribution, and lapsed donor identification.  
-  - Automated CRM dashboards displaying KPIs for donor engagement and fundraising potential.  
-  - Applied business process analysis to optimize data workflows and improve report generation efficiency.  
+  - Imported and customized 4,500+ donor records with enriched fields such as income, education level, occupation, and donation capacity to create comprehensive donor profiles.  
+  - Developed dynamic segmented reports and dashboards focusing on key donor segments including income > $50K, education levels (Professional School, Bachelor’s, Doctorate), and occupations (Professional Specialty, Executive Managerial, Sales).  
+  - Automated personalized donor engagement tracking and KPI reporting to reduce manual work and provide real-time advancement insights.  
+  - Conducted business process analysis to optimize donor data workflows, ensuring data accuracy and alignment with strategic fundraising campaigns.  
 
 * **Results:**  
-  - Delivered comprehensive donor analytics supporting strategic fundraising targeting.  
-  - Achieved clear identification of high-capacity donors and donation patterns.  
-  - Reduced manual reporting effort by automating key advancement metrics dashboards.  
+  - Delivered actionable donor segmentation identifying high-capacity donors representing $4.8M+ in giving potential, empowering targeted outreach strategies.  
+  - Enabled advancement teams to prioritize donors with income above $50K and advanced education levels, improving campaign ROI through data-driven decisions.  
+  - Streamlined reporting with automated KPI dashboards, significantly reducing manual effort and accelerating insight delivery for fundraising leadership.  
 
 * **Visuals:**  
-  - Include screenshots of CRM dashboards and segmented reports  
-  - Example KPI monitoring, capacity by income brackets, education segmentation charts  
+| Donor Income Capacity Analysis                       | Education Level Segmentation         |
+|-------------------------------------------------------|--------------------------------------------|
+|![Forecast Plot](images/crm-income.jpeg) | ![Residual ACF](images/crm-eudcation.jpeg) |
+
+* **Files:** 
 
 - **Data Source:**  
-
-* [Finding Donors for CharityML](https://www.kaggle.com/datasets/nancyalaswad90/finding-donors-for-charityml/code/data)
+- [Finding Donors for CharityML](https://www.kaggle.com/datasets/nancyalaswad90/finding-donors-for-charityml/code/data)
 ---
 ### Insurance Cost Analysis (Excel)
 
