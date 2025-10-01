@@ -22,37 +22,37 @@ This repository showcases selected projects that demonstrate my technical profic
 
   * [Cart Abandonment - Executive Dashboard](#cart-abandonment--executive-dashboard)
 
-    (PostgreSQL, Tableau, Excel)
+    * (PostgreSQL, Tableau, Excel)
   * [Credit Risk Prediction & Scoring](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
 
-    (Python, XGBoost, SHAP, Scikit-learn)
+    * (Python, XGBoost, SHAP, Scikit-learn)
   * [Customer Churn Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
 
-    (Python, PyTorch, SQL, Tableau)
+    * (Python, PyTorch, SQL, Tableau)
   * [Ad Campaign ROAS Analysis](#ad-campaign-roas-analysis)
 
-    (Excel, Tableau, Power BI, SQL)
+    * (Excel, Tableau, Power BI, SQL)
   * [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction)
 
-    (Python, Plotly Dash, Folium, SQL)
+    * (Python, Plotly Dash, Folium, SQL)
   * [Housing Price Prediction](#housing-price-prediction)
 
-    (R, XGBoost, glmnet, tidyverse)
+    * (R, XGBoost, glmnet, tidyverse)
   * [Rainfall Forecasting (Time Series)](#rainfall-forecasting-time-series)
 
-    (R, SARIMA, ggplot2, forecast)
+    * (R, SARIMA, ggplot2, forecast)
   * [Police Complaints Prediction](#police-complaints-prediction)
 
-    (R, Statistical Modeling)
+    * (R, Statistical Modeling)
   * [Health Spending Visualization (Canada)](#health-spending-visualization-canada)
 
-    (dbt Cloud, Snowflake, Tableau)
+    * (dbt Cloud, Snowflake, Tableau)
   * [Donor management crm analytics project](#donor-management--crm-analytics-project)
 
-    (Zoho CRM, SQL, Python, Tableau)
+    * (Zoho CRM, SQL, Python, Tableau)
   * [Insurance Cost Analysis (Excel)](#insurance-cost-analysis-excel)
 
-    (Excel, Pivot Tables, VBA)
+    * (Excel, Pivot Tables, VBA)
 
 ---
 
