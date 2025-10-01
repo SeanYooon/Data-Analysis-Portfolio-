@@ -72,8 +72,7 @@ Identify key drivers of online cart abandonment and quantify lost revenue potent
 ---
 ## Credit Risk Prediction & Scoring (Banking-Grade ML Pipeline)
 
-##  Overview
-
+**Business Goal:**  
 This project is an end-to-end credit risk analytics pipeline built for banking applications.  
 It predicts loan default, transforms outputs into FICO-style 300–850 credit scores, applies the 5 Cs of Credit assessment, and quantifies business impact ($10.3M loss prevented).  
 **Key features:** regulatory-ready interpretability (SHAP), business rule integration, and professional-grade performance reporting.
@@ -326,7 +325,32 @@ Forecast monthly rainfall in Perth, Australia to support weather planning and hy
 
 - **Github Repo**
 [1] GitHub -[https://github.com/SeanYooon/Data-Analysis-Portfolio-](https://github.com/SeanYooon/snowflake_dbt)
+---
+### Donor Management & CRM Analytics Project
 
+**Business Goal:**  
+Design, implement, and analyze a scalable CRM solution to manage donor records and generate actionable insights for advancement and fundraising teams.
+
+* **Tech Stack:** Zoho CRM, SQL, Python
+* 
+* **Key Actions:**  
+  - Imported and configured 4,500+ donor records with custom field mapping for attributes including age, income, education level, occupation, and donation capacity.  
+  - Developed segmented reports analyzing donor demographics, donation capacity (totaling $4.8M+), geographic distribution, and lapsed donor identification.  
+  - Automated CRM dashboards displaying KPIs for donor engagement and fundraising potential.  
+  - Applied business process analysis to optimize data workflows and improve report generation efficiency.  
+
+* **Results:**  
+  - Delivered comprehensive donor analytics supporting strategic fundraising targeting.  
+  - Achieved clear identification of high-capacity donors and donation patterns.  
+  - Reduced manual reporting effort by automating key advancement metrics dashboards.  
+
+* **Visuals:**  
+  - Include screenshots of CRM dashboards and segmented reports  
+  - Example KPI monitoring, capacity by income brackets, education segmentation charts  
+
+- **Data Source:**  
+
+* [Finding Donors for CharityML](https://www.kaggle.com/datasets/nancyalaswad90/finding-donors-for-charityml/code/data)
 ---
 ### Insurance Cost Analysis (Excel)
 
