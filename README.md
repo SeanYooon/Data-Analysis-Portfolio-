@@ -351,6 +351,7 @@ Design and implement a scalable, customizable CRM solution using Zoho CRM to cen
 | ![Forecast Plot](images/crm-income.jpeg) | ![Residual ACF](images/crm-education.jpeg) |
 
 * **Files:** 
+- [`cleaned crm dataset`](files/crm_cleaned_first_4500.csv) – The free CRM version supports only 5,000 rows per import, so this subset (first 4,500 rows) was used from the full dataset of 40,000+ records.
 
 - **Data Source:**  
 - [Finding Donors for CharityML](https://www.kaggle.com/datasets/nancyalaswad90/finding-donors-for-charityml/code/data)
