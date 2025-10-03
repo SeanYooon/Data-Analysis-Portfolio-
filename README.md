@@ -414,8 +414,6 @@ Design and implement a scalable, customizable CRM solution using Zoho CRM to cen
 
 ---
 
-## 📌 Tools Summary 
-
 ## 🛠️ Tools & Project Usage
 
 | Tool       | Used In Projects                      |
