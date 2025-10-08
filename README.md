@@ -338,7 +338,7 @@ Forecast monthly rainfall in Perth, Australia to support weather planning and hy
   - Provided stakeholders an accessible, visual tool for health budget comparisons  
 
 - **Files:**  
-  - SQL models & tests in the [snowflake_dbt repo](https://github.com/SeanYoooon/snowflake_dbt)  
+  - SQL models & tests in the [snowflake_dbt repo](https://github.com/SeanYooon/snowflake_dbt)  
   - Exported CSV for Tableau Public:  ['Cleaned_health_spending_population_combined.xlsx']('files/Data/Cleaned_health_spending_population_combined.xlsx') 
   - Tableau workbook: `Health_Spending_Canada.twbx` (published to Tableau Public) : [Tableau Public](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3)
 
