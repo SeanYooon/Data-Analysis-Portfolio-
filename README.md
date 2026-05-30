@@ -34,6 +34,12 @@ The version in this repo is the Python-based implementation: a scheduled pipelin
 
 **Key finding:** Deals that followed the full O2C pipeline (proper stage progression, linked to BC orders) closed at a **78% win rate**. Deals that skipped stages or were never linked to an order closed at **~8%**. That gap drove the push to formalize the process.
 
+### Dashboard Preview
+
+| Page 1 – Sales Pipeline Overview | Page 2 – Delivery Lead Time | Page 3 – Full O2C Cycle |
+|---|---|---|
+| ![Page 1](01_HubSpot_BC_O2C_Pipeline/screenshots/page1_pipeline_overview.png) | ![Page 2](01_HubSpot_BC_O2C_Pipeline/screenshots/page2_delivery_leadtime.png) | ![Page 3](01_HubSpot_BC_O2C_Pipeline/screenshots/page3_full_o2c_cycle.png) |
+
 → [View project folder](01_HubSpot_BC_O2C_Pipeline/)
 
 ---
