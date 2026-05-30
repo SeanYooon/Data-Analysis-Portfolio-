@@ -1,427 +1,69 @@
-# Seokhyun Yoon – Data Analyst Portfolio
+# Seokhyun (Sean) Yoon – Data Analyst Portfolio
 
-## 👋 About Me
-
-Hello, I'm Seokhyun Yoon — a Statistics graduate from Simon Fraser University with a strong foundation in data analysis, machine learning, and business intelligence tools.
-
-I specialize in applying predictive modeling, time series forecasting, classification algorithms, and dashboarding to solve real-world business challenges in areas such as customer retention, credit risk, digital marketing ROI, and geospatial insights.
-
-I work primarily with **Python, R, SQL, Power BI, Tableau**, and version control tools like Git. My goal is to transform complex data into actionable insights and data products that help stakeholders make better decisions.
-
-This repository showcases selected projects that demonstrate my technical proficiency, business thinking, and ability to deliver data-driven solutions.
-
-✍️ [View My Resume (PDF)](https://github.com/SeanYooon/Data-Analysis-Portfolio-/blob/main/Sean%20Resume.pdf)
-🔗 [Visit My LinkedIn](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
+📧 seokhyun.sean.yoon@gmail.com · 💼 [LinkedIn](https://www.linkedin.com/in/seokhyun-yoon-241a61104/) · 📄 [Resume](Sean%20Resume.pdf)
 
 ---
 
-## 📁 Table of Contents
+## About Me
 
-* [👋 About Me](#-about-me)
-* [📊 Project Portfolio](#-project-portfolio)
+I'm a Statistics grad from Simon Fraser University with a few years of hands-on experience turning messy business data into something useful — whether that's a revenue pipeline, a risk model, or a dashboard a VP can actually read.
 
-  * [Cart Abandonment - Executive Dashboard](#cart-abandonment--executive-dashboard)
+My background is a mix of traditional analytics (R, SQL, Excel) and more engineering-leaning work like building API pipelines and automating workflows with Python and GitHub Actions. I've worked with real CRM data (HubSpot, Zoho), cloud warehouses (Snowflake), and ML libraries from scikit-learn to XGBoost and PyTorch.
 
-    * (PostgreSQL, Tableau, Excel)
-  * [Credit Risk Prediction & Scoring](#credit-risk-prediction--scoring-banking-grade-ml-pipeline)
-
-    * (Python, XGBoost, SHAP, Scikit-learn)
-  * [Customer Churn Prediction Dashboard](#customer-churn-analysis--prediction-dashboard)
-
-    * (Python, PyTorch, SQL, Tableau)
-  * [Ad Campaign ROAS Analysis](#ad-campaign-roas-analysis)
-
-    * (Excel, Tableau, Power BI, SQL)
-  * [SpaceX Falcon 9 Landing Prediction](#spacex-falcon-9-landing-prediction)
-
-    * (Python, Plotly Dash, Folium, SQL)
-  * [Housing Price Prediction](#housing-price-prediction)
-
-    * (R, XGBoost, glmnet, tidyverse)
-  * [Rainfall Forecasting (Time Series)](#rainfall-forecasting-time-series)
-
-    * (R, SARIMA, ggplot2, forecast)
-  * [Police Complaints Prediction](#police-complaints-prediction)
-
-    * (R, Statistical Modeling)
-  * [Health Spending Visualization (Canada)](#health-spending-visualization-canada)
-
-    * (dbt Cloud, Snowflake, Tableau)
-  * [Donor management crm analytics project](#donor-management--crm-analytics-project)
-
-    * (Zoho CRM, SQL, Python, Tableau)
-  * [Insurance Cost Analysis (Excel)](#insurance-cost-analysis-excel)
-
-    * (Excel, Pivot Tables, VBA)
+I'm drawn to B2B and SaaS environments where there's real operational complexity — deals, pipelines, churn, and the gap between what the CRM says and what's actually happening.
 
 ---
 
-## 📊 Project Portfolio
----
-### Cart Abandonment – Executive Dashboard
+## Projects
 
-**Business Goal:**  
-Identify key drivers of online cart abandonment and quantify lost revenue potential to support e-commerce conversion optimization strategies.
-
-* **Tech Stack:** PostgreSQL, Tableau Public, Excel  
-* **Key Actions:**  
-  - Imported raw e-commerce session data (5,000 sessions) into PostgreSQL and created KPI summary tables.  
-  - Engineered features such as **Abandoned Flag**, **Lost Revenue Potential**, **Time Buckets**, and customer segmentation fields (Returning vs New, Coupon Used).  
-  - Built an executive KPI dashboard showing abandonment rate, average cart value, session totals, and lost revenue potential.  
-  - Analyzed **abandonment reasons** (High Shipping Cost, Payment Issues, etc.) and their financial impact.  
-  - Segmented performance by **time spent on site** and **customer type** to identify behavioral differences.  
-
-* **Results:**  
-  - Found **70% abandonment rate**, representing **$209K in lost revenue potential** across 5,000 sessions.  
-  - High shipping cost was the **largest abandonment driver**, linked to ~$75K in lost revenue.  
-  - First-time customers had significantly **lower conversion rates** than returning customers (only ~28% of cart value converted).  
-  - Sessions lasting **over 5 minutes** were strongly correlated with successful conversions.  
-  - Coupons showed **limited effect** on reducing abandonment, suggesting greater ROI from pricing or loyalty strategies.  
-
-* **Visuals:**  
-
-| KPI Overview | 
-|--------------|
-| ![KPI Dashboard](images/Cart_Abandonment_dashboard.png) 
-
-* **Files:**  
-- [`cart_abandonment.csv`](files/cart_abandonment.csv) – Dataset  
-
-* **Link:**  
-- [View Tableau Dashboard](https://public.tableau.com/views/CartAbandonment_17561755499880/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-
-* **Source:**
-[E-Commerce Card Abandonment](https://www.kaggle.com/datasets/ritalin56/e-commerce-card-abandonment))
----
-## Credit Risk Prediction & Scoring (Banking-Grade ML Pipeline)
-
-**Business Goal:**  
-This project is an end-to-end credit risk analytics pipeline built for banking applications.  
-It predicts loan default, transforms outputs into FICO-style 300–850 credit scores, applies the 5 Cs of Credit assessment, and quantifies business impact ($10.3M loss prevented).  
-**Key features:** regulatory-ready interpretability (SHAP), business rule integration, and professional-grade performance reporting.
-
-## Tools & Libraries
-
-- **Python** (pandas, numpy, scikit-learn, XGBoost, imblearn)
-- **Visualization:** matplotlib, seaborn, SHAP
-- **Notebook:** Jupyter
-
-## Process
-
-1. **Exploratory Data Analysis (EDA)**
-   - Outlier detection, missing value imputation, feature-target relationships
-2. **Feature Engineering**
-   - Debt-to-income ratio, home ownership flags, employment length
-3. **Model Development**
-   - XGBoost with hyperparameter tuning (RandomizedSearchCV)
-   - SMOTE for class imbalance
-4. **Credit Scoring**
-   - Logistic scorecard transformation (PDO=50, base odds=1:9, 300–850 scale)
-5. **5 Cs of Credit Assessment**
-   - Character, Capacity, Capital, Collateral, Conditions
-6. **Interpretability**
-   - SHAP feature importance and individual prediction explanations
-7. **Performance Reporting**
-   - ROC, PR curve, confusion matrix, business impact summary
-
-##  Key Results
-
-- **Hold-out AUC:** 0.937 (exceeds industry standard)
-- **Default Detection Rate:** 76.4%
-- **Loss Prevented:** \$15.6M (portfolio estimate)
-- **Approval Automation:** 85%
-- **Top Risk Factors:** Home ownership, loan grade, DTI, income, loan purpose
-
-##  Visualizations
-
-| Performance Dashboard                             | Model Interpretability          |
-|-------------------------------------------------------|--------------------------------------------|
-|![*ROC, Debt-to-Income by Default, Precision-Recall, Confusion Matrix*](images/credit-dashboard.png)    | ![*Top 5 SHAP feature importances (housing status, loan grade, DTI, etc.)*](images/credit-shap.png) |
-
-
-##  Banking & Regulatory Context
-
-- **FICO-Equivalent Scoring:** 300–850 scale, points-to-double-odds (PDO=50)
-- **5 Cs of Credit:** Integrated into decision logic
-- **Model Interpretability:** SHAP values for global & local explainability
-- **Regulatory Alignment:** Basel III, SR 11-7, and Fair Lending (ECOA) principles followed
-- **Business Impact:** Quantified loss prevention, approval automation, and risk tiering
-
-
-##  Business Impact Summary
-
-- **Loss Prevention:** $10.3M in prevented defaults (estimate)
-- **Detection Rate:** 76.4% of defaults identified
-- **Approval Automation:** 85% of applications processed automatically
-
-
-##  Source
-
-- [Kaggle: Credit Risk Dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
-
-##  Files
-
-- [`credit_risk.ipynb`](/files/credit_risk.ipynb) – full notebook
-
----
-### Customer Churn Analysis & Prediction Dashboard
-
-**Business Goal:** Identify key drivers of customer churn and provide business stakeholders with predictive insights and retention strategies.
-
-* **Tech Stack:** Python (Pandas, Scikit-learn, PyTorch, SMOTE), SQL, Tableau  
-* **Key Actions:**
-  * Designed dimensional data warehouse model (fact + dimension tables) for OLAP-style exploration  
-  * Analyzed churn patterns by contract type, internet service, tenure group, and pricing tiers  
-  * Built churn classification models with PyTorch (neural network), Random Forest, and XGBoost  
-  * Applied SMOTE oversampling and weighted loss to address class imbalance, boosting recall for churners  
-  * Developed Tableau dashboard with KPIs, contract breakdowns, and churn trend visualizations  
-
-* **Results:**  
-  * Month-to-month contracts showed highest churn (42.7%) vs. two-year (2.8%)  
-  * Fiber optic internet users churned significantly more than DSL or non-internet customers  
-  * Predictive model achieved ~79% accuracy and F1-score of 0.58 for churners  
-  * Dashboard enabled non-technical stakeholders to monitor churn risk in near real-time  
-
-* **Visuals:**
-
-| Churn KPIs                        | 
-|-----------------------------------|
-| ![Churn KPI](images/ChurnDashboard.png)   | 
-
-* **Files:**  
-- [`churn_analysis.ipynb`](files/Churn.ipynb) – analysis notebook  
-- [`cleaned_telco_churn.csv`](files/cleaned_telco_churn.csv) – processed dataset  
-- [`Original_churn_data.csv`](files/WA_Fn-UseC_-Telco-Customer-Churn_(1).csv) – raw dataset  
-
----
-###  Ad Campaign ROAS Analysis
-
-**Business Goal:** Analyze and compare the Return on Ad Spend (ROAS) across multiple ad platforms to identify the most cost-effective marketing channels.
-
-* **Tech Stack:** Excel, Tableau, Power BI, SQL 
-* **Key Actions:**
-  * Collected and organized campaign data across Facebook, Google, and YouTube ads
-  * Calculated ROAS, CTR, CPC, and CPM metrics for each campaign and platform
-  * Created custom visuals to compare KPIs, cost distribution, and performance trends
-  * Delivered dashboard and presentation highlighting the highest and lowest performing channels
-  * Suggested reallocation strategies for future ad budgets based on findings
-
-* **Results:**  
-  * Identified Google Ads as highest ROAS (~ 3.5x), while YouTube underperformed (<1x)  
-  * Found a clear inverse relationship between ad cost and effectiveness on certain platforms  
-  * Supported marketing team in shifting budget to high-ROI channels and pausing weak performers
-
-* **Visuals:**
-
-| ROAS by Channel                            |  Cost Effectiveness Comparison         |
-|-------------------------------------------------------|--------------------------------------------|
-|![Actual vs Predicted](images/roas_model_analysis.png)    | ![Feature Importance](images/actual_vs_predicted_roas.png) |
-
-* **Files:** 
-- [`Ad_Campaign_ROAS_Report.pdf`](files/Ad_Campaign_ROAS_Report.pdf) 
----
-
-###  SpaceX Falcon 9 Landing Prediction
-
-**Business Goal:** Predict booster landing success to support mission planning and reduce launch failure risks.
-
-* **Tech Stack:** Python, Pandas, Scikit-learn, Plotly Dash, Folium, SQL  
-* **Key Actions:**
-  * Pulled and cleaned SpaceX API data; added features via scraping (e.g., booster version)
-  * Conducted EDA with SQL, time series, and categorical visualizations
-  * Built interactive dashboard (Dash) and geographic map (Folium)
-  * Trained and compared classifiers (Logistic Regression, SVM, Decision Tree)
-
-* **Results:**  
-  * Found strong correlations between orbit type and landing success  
-  * Identified an increasing success trend with higher flight numbers  
-  * Delivered an interactive tool for launch analysis and planning
-
-* **Visuals:**
-
-| Interactive Launch Map (Folium)                         | Model Accuracy Chart                          |
-|---------------------------------------------------------|-----------------------------------------------|
-| ![Folium Map](images/spacex_map.jpg)                    | ![Model Accuracy](images/spacex_accuracy.jpg) |
-
-* **Files:**  
-
-- [`SpaceX_Machine_Learning_Prediction.ipynb`](files/SpaceX_Machine_Learning_Prediction_Part_5.jupyterlite.ipynb) – full Jupyter notebook  
-- [`falcon9.pdf`](files/spacex-final.pdf) – final PDF summary
----
-### Housing Price Prediction
-
-**Business Goal:** Predict home prices from large-scale Connecticut housing data.
-
-* **Tech Stack:** R, XGBoost, glmnet, tidyverse
-* **Key Actions:**
-
-  * Cleaned and transformed 995K+ sales records
-  * Tuned XGBoost model with interaction terms and log scaling
-* **Results:**
-
-  * RMSE = 1.15; top features include location and assessed value
-
-* **Visuals:**
-  
-| Feature Importance | Actual vs Predicted        |
-|-------------------------------------------------------|--------------------------------------------|
-|![Actual vs Predicted](images/housing-importance.png)   | ![Feature Importance](images/housing-log.png) |
-
----
-###  Rainfall Forecasting (Time Series)
-
-**Business Goal:**  
-Forecast monthly rainfall in Perth, Australia to support weather planning and hydrology management using long-term seasonal patterns.
-
-* **Tech Stack:**  
-  R, `forecast`, `tseries`, `ggplot2`, Box-Jenkins Methodology
-
-* **Key Actions:**  
-  * Loaded and cleaned 106 months of historical rainfall data  
-  * Conducted stationarity checks and seasonal decomposition  
-  * Performed grid search to optimize SARIMA parameters based on AIC  
-  * Trained SARIMA(1,0,0)(0,1,1)[12] model to forecast 14 future months  
-  * Compared against a dynamic regression model with covariates  
-  * Validated forecasts against actual rainfall from BOM (Australia)
-
-* **Results:**  
-  * Achieved >10% improvement in accuracy after model refinement  
-  * Detected strong annual seasonality in rainfall patterns  
-  * Delivered an interpretable model with clear confidence intervals  
-  * Highlighted SARIMA as effective for mid-term weather forecasting
-
-* **Visuals:**
- 
-| SARIMA Forecast | Residual Autocorrelation Plot         |
-|-------------------------------------------------------|--------------------------------------------|
-|![Forecast Plot](images/Rplot.png) | ![Residual ACF](images/rainfallacf.png) |
-
-* **Files:**
-  
-- [`Rainfall.Rmd`](rainfall_forecasting.Rmd) – full notebook
-- [`IDCJAC0009_009021_1800_Data.csv`](data/rainfall.csv) – historical rainfall data  
-- [`images/rainfall_forecast.pdf`](images/rainfall_forecast.pdf) – forecast plot  
-- [`images/residual_acf.pdf`](images/residual_acf.pdf) – residual autocorrelation chart
-- [`Rainfall_Report.pdf`](files/485_Project_Report_Official.pdf) - Rainfall report 
+| # | Project | What it does | Tech Stack |
+|---|---------|--------------|------------|
+| 01 | [HubSpot × Business Central O2C Pipeline](01_HubSpot_BC_O2C_Pipeline/) | Automated API sync between HubSpot CRM and Business Central ERP; scheduled daily via GitHub Actions | Python, REST APIs, GitHub Actions, python-dotenv |
+| 02 | [Canadian Health Spending – dbt + Snowflake](02_Health_Spending_dbt_Snowflake/) | End-to-end data pipeline from raw CIHI data to Tableau dashboard; per-capita spending by province 2000–2022 | dbt Cloud, Snowflake, Tableau Public |
+| 03 | [Credit Risk ML Pipeline](03_Credit_Risk_ML/) | Loan default prediction with FICO-style scoring (300–850), SHAP explainability, and $10.3M estimated loss prevention | Python, XGBoost, SHAP, scikit-learn, Jupyter |
 
 ---
 
-### Health Spending Visualization (Canada)
+## Project Highlights
 
-**Business Goal:** Deliver an interactive, per-capita breakdown of Canadian provincial health expenditures (2000–2022) to inform public policy and budget planning.
+### 01 · HubSpot × Business Central O2C Pipeline
 
-- **Tech Stack:**  
-  -  dbt Cloud (Snowflake) for SQL modeling & testing  
-  -  Tableau Public for dashboarding  
-  -  CIHI Open Data for raw health spending & population  
-- **Data Pipeline:**  
-  1. **Raw ingestion** of CIHI HEALTH_SPENDING_RAW via `sources.yml`  
-  2. **Staging model** (`stg_health_spending.sql`)  
-     - Converts “—” and empty strings to NULL  
-     - Casts `POPULATION_K`, `SPENDING` to float  
-     - Calculates `spending_per_capita` and prior-year spending (`prev_spending_pc`)  
-     - Filters out nulls to enforce data quality  
-  3. **Mart model** (`mart_health_spending.sql`)  
-     - Aggregates by `province`, `year`, `category`  
-     - Computes total spending and average per-capita metrics  
-  4. **Automated tests** in `schema.yml` to ensure no nulls in key fields  
+This one started as an internal proposal to automate a manual order-to-cash reconciliation process using Azure Logic Apps. After presenting the initial design to leadership, it grew into a broader conversation about Dataverse integration across the company — the scope expanded from one team's workflow to a potential company-wide data layer connecting CRM, ERP, and finance.
 
-- **Visuals:**
+The version in this repo is the Python-based implementation: a scheduled pipeline that pulls deal and order data from HubSpot and syncs it to Business Central via REST APIs, running daily on GitHub Actions with secrets managed through environment variables.
 
-| Stacked Bar + Dot Line – Spending by Category and Total Trend                              | Line Chart – YoY Growth Rate (Canada vs Quebec vs BC)         |
-|-------------------------------------------------------|--------------------------------------------|
-|![Forecast Plot](images/Dashboard_2.png) | ![Residual ACF](images/Sheet_13.png) |
+**Key finding:** Deals that followed the full O2C pipeline (proper stage progression, linked to BC orders) closed at a **78% win rate**. Deals that skipped stages or were never linked to an order closed at **~8%**. That gap drove the push to formalize the process.
 
-- **Results & Impact:**  
-  - Revealed Quebec’s unique spending growth patterns  
-  - Highlighted per-capita efficiency differences across provinces  
-  - Provided stakeholders an accessible, visual tool for health budget comparisons  
-
-- **Files:**  
-  - SQL models & tests in the [snowflake_dbt repo](https://github.com/SeanYooon/snowflake_dbt)  
-  - Exported CSV for Tableau Public:  ['Cleaned_health_spending_population_combined.xlsx']('files/Data/Cleaned_health_spending_population_combined.xlsx') 
-  - Tableau workbook: `Health_Spending_Canada.twbx` (published to Tableau Public) : [Tableau Public](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3)
-
-- **Data Source:**  
-
-* [National Health Expenditure (NHEX) 2024 – Full Data Tables](https://www.cihi.ca/sites/default/files/document/nhex-2024-full-data-tables-en.xlsx)
-
-- **Github Repo**
-[1] GitHub -[https://github.com/SeanYooon/Data-Analysis-Portfolio-](https://github.com/SeanYooon/snowflake_dbt)
----
-### Donor Management & CRM Analytics Project
-
-**Business Goal:**  
-Design and implement a scalable, customizable CRM solution using Zoho CRM to centralize donor records, automate workflows, and generate actionable donor insights that enhance advancement and fundraising effectiveness.
-
-* **Tech Stack:** Zoho CRM, SQL, Python, Tableau  
-* **Key Actions:**  
-  - Imported and customized 4,500+ donor records with enriched fields such as income, education level, occupation, and donation capacity to create comprehensive donor profiles.  
-  - Developed dynamic segmented reports and dashboards focusing on key donor segments including income > $50K, education levels (Professional School, Bachelor’s, Doctorate), and occupations (Professional Specialty, Executive Managerial, Sales).  
-  - Automated personalized donor engagement tracking and KPI reporting to reduce manual work and provide real-time advancement insights.  
-  - Conducted business process analysis to optimize donor data workflows, ensuring data accuracy and alignment with strategic fundraising campaigns.  
-
-* **Results:**  
-  - Delivered actionable donor segmentation identifying high-capacity donors representing $4.8M+ in giving potential, empowering targeted outreach strategies.  
-  - Enabled advancement teams to prioritize donors with income above $50K and advanced education levels, improving campaign ROI through data-driven decisions.  
-  - Streamlined reporting with automated KPI dashboards, significantly reducing manual effort and accelerating insight delivery for fundraising leadership.  
-
-* **Visuals:**  
-
-| Donor Income Capacity Analysis | Education Level Segmentation |
-|--------------------------------|------------------------------|
-| ![Forecast Plot](images/crm-income.jpeg) | ![Residual ACF](images/crm-education.jpeg) |
-
-* **Files:** 
-- [`cleaned crm dataset`](files/crm_cleaned_first_4500.csv) – The free CRM version supports only 5,000 rows per import, so this subset (first 4,500 rows) was used from the full dataset of 40,000+ records.
-
-- **Data Source:**  
-- [Finding Donors for CharityML](https://www.kaggle.com/datasets/nancyalaswad90/finding-donors-for-charityml/code/data)
----
-### Insurance Cost Analysis (Excel)
-
-**Business Goal:** Simulate group benefits cost modeling.
-
-* **Tech Stack:** Excel, Pivot Tables, VBA
-* **Key Actions:**
-
-  * Built age-tiered risk model using Excel formulas and macros
-  * Automated premium segmentation and risk profiling
-* **Results:** Dashboard visualizing smoker cost impact, family size premiums, and risk categories
+→ [View project folder](01_HubSpot_BC_O2C_Pipeline/)
 
 ---
 
-## 🎓 Education
+### 02 · Canadian Health Spending – dbt + Snowflake
 
-**Simon Fraser University** — Burnaby, BC
-**Bachelor of Science in Statistics*
-*Graduated: December 2023*
+Built a multi-layer dbt pipeline on top of CIHI's national health expenditure data. The staging model handles messy source data (missing values encoded as "—", inconsistent types), and the mart layer aggregates spending per capita by province and category for Tableau consumption.
 
----
+Notable: Quebec's spending growth pattern is structurally different from BC and Ontario, something that's hard to see in the raw tables but obvious once you model it properly.
 
-## 📜 Certificates
-
-* [IBM Data Science Professional Certificate](https://www.coursera.org/account/accomplishments/specialization/XQD6FNV9Q5FB) (Dec 2023)
-* [Deep Learning Specialization – DeepLearning.AI](https://coursera.org/share/HROP8FKWDLCK) (Oct 2024)
-* [Tableau for Data Analytics – LinkedIn Learning](https://www.linkedin.com/learning/certificates/814d91fd0c6ab19bb16c9d29fd23fb3a7915ad908637ed0b5ba19f5684ac1dc5) (Jan 2023)
+→ [View project folder](02_Health_Spending_dbt_Snowflake/) · [Tableau dashboard](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3) · [dbt + Snowflake repo](https://github.com/SeanYooon/snowflake_dbt)
 
 ---
 
-## 📬 Contact
+### 03 · Credit Risk ML Pipeline
 
-* 📧 Email: [seokhyun.sean.yoon@gmail.com](mailto:seokhyun.sean.yoon@gmail.com)
-* 💼 LinkedIn: [Seokhyun\_Yoon](https://www.linkedin.com/in/seokhyun-yoon-241a61104/)
+End-to-end pipeline covering EDA, feature engineering, XGBoost modeling with SMOTE, and a logistic scorecard transformation that maps default probabilities to a 300–850 FICO-style scale. SHAP is used for both global and per-decision explanations.
+
+The model hit AUC 0.937 on hold-out and automated 85% of approval decisions, with an estimated $10.3M in prevented losses on the portfolio. Designed with Basel III and SR 11-7 principles in mind — not just optimizing for accuracy but making sure the model can actually be audited.
+
+→ [View project folder](03_Credit_Risk_ML/)
 
 ---
 
-## 🛠️ Tools & Project Usage
+## Education
 
-| Tool       | Used In Projects                      |
-|------------|---------------------------------------|
-| Python     | Credit Risk, Churn, SpaceX, ROAS      |
-| R          | Rainfall, Housing, Police             |
-| Power BI   | Churn, ROAS                           |
-| Tableau    | Health Spending, ROAS                 |
-| Excel      | Insurance, ROAS                       |
-| Snowflake  | Heart Disease, Health Spending        |
-| dbt Cloud  | Heart Disease, Health Spending        |
+**Simon Fraser University** — B.Sc. Statistics, December 2023
+
+## Certifications
+
+- IBM Data Science Professional Certificate (Dec 2023)
+- Deep Learning Specialization – DeepLearning.AI (Oct 2024)
+- Tableau for Data Analytics – LinkedIn Learning (Jan 2023)

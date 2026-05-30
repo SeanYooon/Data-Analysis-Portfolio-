@@ -1,0 +1,29 @@
+name: HubSpot BC O2C Pipeline
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # runs daily at 6 AM UTC
+  workflow_dispatch:        # allow manual trigger
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r 01_HubSpot_BC_O2C_Pipeline/requirements.txt
+
+      - name: Run pipeline
+        env:
+          HUBSPOT_API_KEY: ${{ secrets.HUBSPOT_API_KEY }}
+          BC_API_KEY: ${{ secrets.BC_API_KEY }}
+          BC_BASE_URL: ${{ secrets.BC_BASE_URL }}
+        run: python 01_HubSpot_BC_O2C_Pipeline/hs_pipeline_V4.py
