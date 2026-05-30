@@ -36,9 +36,9 @@ The version in this repo is the Python-based implementation: a scheduled pipelin
 
 ### Dashboard Preview
 
-| Page 1 – Sales Pipeline Overview | Page 2 – Delivery Lead Time | Page 3 – Full O2C Cycle |
+| Page 1 – Sales Pipeline | Page 2 – Delivery Lead Time | Page 3 – Full O2C Cycle |
 |---|---|---|
-| ![Page 1](01_HubSpot_BC_O2C_Pipeline/screenshots/page1_pipeline_overview.png) | ![Page 2](01_HubSpot_BC_O2C_Pipeline/screenshots/page2_delivery_leadtime.png) | ![Page 3](01_HubSpot_BC_O2C_Pipeline/screenshots/page3_full_o2c_cycle.png) |
+| ![P1](01_HubSpot_BC_O2C_Pipeline/screenshots/page1_pipeline_overview.png) | ![P2](01_HubSpot_BC_O2C_Pipeline/screenshots/page2_delivery_leadtime.png) | ![P3](01_HubSpot_BC_O2C_Pipeline/screenshots/page3_full_o2c_cycle.png) |
 
 → [View project folder](01_HubSpot_BC_O2C_Pipeline/)
 
@@ -50,6 +50,10 @@ Built a multi-layer dbt pipeline on top of CIHI's national health expenditure da
 
 Notable: Quebec's spending growth pattern is structurally different from BC and Ontario, something that's hard to see in the raw tables but obvious once you model it properly.
 
+| Spending by Category & Total Trend | YoY Growth Rate |
+|---|---|
+| ![Dashboard](02_Health_Spending_dbt_Snowflake/screenshots/Dashboard_2.png) | ![YoY Growth](02_Health_Spending_dbt_Snowflake/screenshots/Sheet_13.png) |
+
 → [View project folder](02_Health_Spending_dbt_Snowflake/) · [Tableau dashboard](https://public.tableau.com/app/profile/seokhyun.yoon/viz/Book2_17542733788110/Story3) · [dbt + Snowflake repo](https://github.com/SeanYooon/snowflake_dbt)
 
 ---
@@ -59,6 +63,10 @@ Notable: Quebec's spending growth pattern is structurally different from BC and 
 End-to-end pipeline covering EDA, feature engineering, XGBoost modeling with SMOTE, and a logistic scorecard transformation that maps default probabilities to a 300–850 FICO-style scale. SHAP is used for both global and per-decision explanations.
 
 The model hit AUC 0.937 on hold-out and automated 85% of approval decisions, with an estimated $10.3M in prevented losses on the portfolio. Designed with Basel III and SR 11-7 principles in mind — not just optimizing for accuracy but making sure the model can actually be audited.
+
+| Performance Dashboard | Model Interpretability |
+|---|---|
+| ![Credit Dashboard](03_Credit_Risk_ML/screenshots/credit-dashboard.png) | ![SHAP](03_Credit_Risk_ML/screenshots/credit-shap.png) |
 
 → [View project folder](03_Credit_Risk_ML/)
 
