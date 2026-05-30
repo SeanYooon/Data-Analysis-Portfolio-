@@ -1,20 +1,18 @@
-name: HubSpot BC O2C Pipeline
+name: HubSpot Pipeline
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # runs daily at 6 AM UTC
-  workflow_dispatch:        # allow manual trigger
+    - cron: '0 9 * * *'
+  workflow_dispatch:
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
@@ -23,7 +21,14 @@ jobs:
 
       - name: Run pipeline
         env:
-          HUBSPOT_API_KEY: ${{ secrets.HUBSPOT_API_KEY }}
-          BC_API_KEY: ${{ secrets.BC_API_KEY }}
-          BC_BASE_URL: ${{ secrets.BC_BASE_URL }}
+          HS_TOKEN: ${{ secrets.HS_TOKEN }}
+          HS_PIPELINE_ID: ${{ secrets.HS_PIPELINE_ID }}
         run: python 01_HubSpot_BC_O2C_Pipeline/hs_pipeline_V4.py
+
+      - name: Commit output CSVs
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add *.csv
+          git diff --staged --quiet || git commit -m "Auto-update data $(date +'%Y-%m-%d')"
+          git push
