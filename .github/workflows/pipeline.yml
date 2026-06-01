@@ -24,11 +24,6 @@ jobs:
           HS_TOKEN: ${{ secrets.HS_TOKEN }}
           HS_PIPELINE_ID: ${{ secrets.HS_PIPELINE_ID }}
         run: python 01_HubSpot_BC_O2C_Pipeline/hs_pipeline_V4.py
-
-      - name: Commit output CSVs
-        run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
-          git add *.csv
-          git diff --staged --quiet || git commit -m "Auto-update data $(date +'%Y-%m-%d')"
-          git push
+        # CSV output is intentionally not committed to the repo.
+        # In production, output would be written to a shared storage (e.g. OneDrive, SharePoint, or Azure Blob).
+        # This pipeline demonstrates the automation structure; data privacy is maintained by excluding output files.
