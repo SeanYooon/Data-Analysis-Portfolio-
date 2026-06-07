@@ -38,7 +38,7 @@ The version in this repo is the Python-based implementation: a scheduled pipelin
 
 | Page 1 – Sales Pipeline | Page 2 – Delivery Lead Time | Page 3 – Full O2C Cycle |
 |---|---|---|
-| ![P1](01_HubSpot_BC_O2C_Pipeline/screenshots/page1_pipeline_overview.png) | ![P2](01_HubSpot_BC_O2C_Pipeline/screenshots/page2_delivery_leadtime.png) | ![P3](01_HubSpot_BC_O2C_Pipeline/screenshots/page3_full_o2c_cycle.png) |
+| ![P1](01_HubSpot_BC_O2C_Pipeline/screenshots/Dashboard_Page9.jpg) | ![P2](01_HubSpot_BC_O2C_Pipeline/screenshots/Dashboard_Page10.jpg) | ![P3](01_HubSpot_BC_O2C_Pipeline/screenshots/Dashboard_Page11.jpg) |
 
 → [View project folder](01_HubSpot_BC_O2C_Pipeline/)
 
