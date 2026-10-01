@@ -89,6 +89,8 @@ Across 6 months of transactions, Grocery (29.9%) and Gas (16.6%) were the top ca
 
 ## Certifications
 
+- Microsoft PL-300: Power BI Data Analyst Associate
 - IBM Data Science Professional Certificate (Dec 2023)
 - Deep Learning Specialization – DeepLearning.AI (Oct 2024)
+- dbt Fundamentals
 - Tableau for Data Analytics – LinkedIn Learning (Jan 2023)
