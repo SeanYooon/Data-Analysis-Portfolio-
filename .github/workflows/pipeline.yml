@@ -24,6 +24,8 @@ jobs:
           HS_TOKEN: ${{ secrets.HS_TOKEN }}
           HS_PIPELINE_ID: ${{ secrets.HS_PIPELINE_ID }}
         run: python 01_HubSpot_BC_O2C_Pipeline/hs_pipeline_V4.py
-        # CSV output is intentionally not committed to the repo.
-        # In production, output would be written to a shared storage (e.g. OneDrive, SharePoint, or Azure Blob).
-        # This pipeline demonstrates the automation structure; data privacy is maintained by excluding output files.
+        # Production automation runs on a local, Windows-scheduled job that writes to the
+        # author's OneDrive for the daily Power BI refresh — that local path isn't reachable
+        # from this runner. This workflow pulls, cleans, and anonymizes real HubSpot data
+        # end-to-end to demonstrate the pipeline logic and CI packaging; the final write step
+        # is expected to no-op here rather than reach local storage (see hs_pipeline_V4.py Step 8).
