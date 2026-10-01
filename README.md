@@ -28,11 +28,11 @@ I'm drawn to B2B and SaaS environments where there's real operational complexity
 
 ### 01 · HubSpot × Business Central O2C Pipeline
 
-This one started as an internal proposal to automate a manual order-to-cash reconciliation process using Azure Logic Apps. After presenting the initial design to leadership, it grew into a broader conversation about Dataverse integration across the company — the scope expanded from one team's workflow to a potential company-wide data layer connecting CRM, ERP, and finance.
+This one started when I requested approval for an Azure subscription to support a pipeline I was building. That request got escalated into a leadership meeting, which turned into a broader conversation about Dataverse integration — I prepared and presented my case there, and the group ultimately decided to consolidate through Dataverse rather than running separate pipelines per team.
 
-The version in this repo is the Python-based implementation: a scheduled pipeline that pulls deal and order data from HubSpot and syncs it to Business Central via REST APIs, running daily on GitHub Actions with secrets managed through environment variables.
+The version in this repo is the Python-based implementation: a pipeline that pulls deal data from HubSpot and joins it with Business Central ERP data via REST APIs, packaged here as a GitHub Actions workflow to demonstrate the automation structure (the daily production run operates against internal company infrastructure, so the output-write step is omitted from this public version).
 
-**Key finding:** Deals that followed the full O2C pipeline (proper stage progression, linked to BC orders) closed at a **78% win rate**. Deals that skipped stages or were never linked to an order closed at **~8%**. That gap drove the push to formalize the process.
+**Key finding:** Deals that closed within 90 days of creation had a **78% win rate**, versus just **8%** for deals that took longer — a 9.3x gap. Won deals averaged only 7 days to close, while lost deals averaged over 100 days before finally being marked closed-lost, meaning a stalling deal usually wasn't neutral — it was already heading toward a loss. That finding drove a concrete change to the team's follow-up process.
 
 ### Dashboard Preview
 
