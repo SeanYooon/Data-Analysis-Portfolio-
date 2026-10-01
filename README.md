@@ -21,6 +21,7 @@ I'm drawn to B2B and SaaS environments where there's real operational complexity
 | 01 | [HubSpot × Business Central O2C Pipeline](01_HubSpot_BC_O2C_Pipeline/) | Automated API sync between HubSpot CRM and Business Central ERP; scheduled daily via GitHub Actions | Python, REST APIs, GitHub Actions, python-dotenv |
 | 02 | [Canadian Health Spending – dbt + Snowflake](02_Health_Spending_dbt_Snowflake/) | End-to-end data pipeline from raw CIHI data to Tableau dashboard; per-capita spending by province 2000–2022 | dbt Cloud, Snowflake, Tableau Public |
 | 03 | [Credit Risk ML Pipeline](03_Credit_Risk_ML/) | Loan default prediction with FICO-style scoring (300–850), SHAP explainability, and $10.3M estimated loss prevention | Python, XGBoost, SHAP, scikit-learn, Jupyter |
+| 04 | [Personal Spending Dashboard](04_Personal_Spending_Dashboard/) | Monthly bank-statement tracker with Power Query ingestion and LAMBDA-based auto-categorization | Excel (Power Query, LAMBDA, XLOOKUP, Dynamic Arrays), PivotTables |
 
 ---
 
@@ -69,6 +70,16 @@ The model hit AUC 0.937 on hold-out and automated 85% of approval decisions, wit
 | ![Credit Dashboard](03_Credit_Risk_ML/screenshots/credit-dashboard.png) | ![SHAP](03_Credit_Risk_ML/screenshots/credit-shap.png) |
 
 → [View project folder](03_Credit_Risk_ML/)
+
+---
+
+### 04 · Personal Spending Dashboard
+
+A personal project built entirely in native Excel — no external database or BI tool — to see how far Power Query, `LAMBDA`, and dynamic arrays could go for a recurring reporting task. Power Query ingests monthly bank-statement CSVs into a single table; a reusable `LAMBDA` function wraps `XLOOKUP` + `SEARCH` to auto-categorize each transaction against a keyword-mapping table, so adding a new merchant rule is just a new row, not a formula edit. `UNIQUE`/`FILTER`/`SORT` dynamic arrays drive the category summary, and a PivotTable-based dashboard refreshes end-to-end on one click.
+
+Across 6 months of transactions, Grocery (29.9%) and Gas (16.6%) were the top categories, with only ~3.7% of transactions falling through to "Uncategorized" — the metric used to judge whether the mapping table needed more rules.
+
+→ [View project folder](04_Personal_Spending_Dashboard/)
 
 ---
 
